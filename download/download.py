@@ -3,9 +3,10 @@ import argparse
 from datetime import datetime
 from huggingface_hub import snapshot_download
 from pathlib import Path
+import shutil
 
 
-log_file = "error_log.txt"
+log_file = "download_log.txt"
 
 if __name__ == "__main__":
     # --- Config ---
@@ -22,17 +23,32 @@ if __name__ == "__main__":
 
     start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(log_file, 'a') as f:
-        f.write(f"Downloading {model_name} started at {start_time}")
+        f.write(
+            (
+                "------------------------------------------------------------------------------------------------\n"
+                f"{start_time}: Downloading {model_name} started."
+            )
+        )
 
     # --- Define save dir ---
     os.makedirs(save_model_directory, exist_ok=True)
 
+    # --- Remove whatever existing stuff ---
+    # shutil.rmtree(save_model_directory) # comment this out if setting resume_download=True
+
     # --- Download ---
     try:
-        snapshot_download(repo_id=model_name, local_dir=save_model_directory, token=huggingface_token)
+        snapshot_download(repo_id=model_name, local_dir=save_model_directory, token=huggingface_token, resume_download=True)
 
         with open(log_file, 'a') as f:
-            f.write(f"Model '{model_name}' downloaded successfully to '{save_model_directory}'\n")
+            end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            f.write(f"\n{end_time}: Successfully downloaded '{model_name}' to '{save_model_directory}'\n")
     except Exception as e:
         with open(log_file, 'a') as f:
-            f.write(f"Error downloading model: {e}\n")
+            end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            f.write(f"\n{end_time}: Error downloading model: {e}\n")
+        raise
+
+    finally:
+        with open(log_file, 'a') as f:
+            f.write("------------------------------------------------------------------------------------------------\n")
