@@ -4,6 +4,10 @@ This folder has been adapted to simplify the finetuning process and made easily 
 
 
 ## 0, Installation
+Note: if nvcc is not yet installed, do `conda install nvidia/label/cuda-12.1.1::cuda-toolkit`
+
+You can test it by running `nvcc --version`
+
 ```
 pip install --upgrade pip "setuptools<70.0.0" wheel 
 pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
@@ -18,7 +22,7 @@ python -m nltk.downloader punkt
 See [here](../download/README.md).
 
 ## 2. Prepare Dataset For Training
-Dataset needs to be processed to be of the following format:
+Your only involvement in writing code is likely here. To finetune, ensure dataset is of the following format:
 
 ```json
 {
@@ -34,24 +38,12 @@ Dataset needs to be processed to be of the following format:
     ],
 }
 ```
-### Raw Dataset
-Expected to be of JSONL format.
+
+You can see a sample [here](./datasets/formatted_datasets/prepared_tweet.jsonl) too.
 
 ### Chat Template
 You can specify the system, user, and assistant prompt(s) [here](./dataset_preparation/prompt_templates/).
 
-### Dataset Converter
-Your only involvement in writing code is likely [here](./dataset_preparation/dataset_preparer.py) in `./dataset_preparation/dataset_preparer.py`. Code the logic for extracting relevant fields from raw dataset.
-
-### Conversion From Raw Datasets
-Below is a sample command to transform raw datasets into the format above:
-
-```bash
-python -m dataset_preparation.dataset_preparer \ 
---dataset_name example_dataset \ 
---input_path data/example/train.jsonl \
---template_path dataset_preparation/prompt_templates/example.json
-```
 
 ## 3. Specify Config File
 You can specify the training config in [`scripts/custom_scripts`](./scripts/custom_scripts/)
@@ -59,7 +51,7 @@ You can specify the training config in [`scripts/custom_scripts`](./scripts/cust
 ## 4. Run!
 Sample command
 ```bash
-sh scripts/custom_scripts/books_lora.sh
+sh scripts/custom_scripts/tweet_lora
 ```
 
 ### Merging the LoRA Adaptors
@@ -72,18 +64,10 @@ sh scripts/custom_scripts/merge_lora.sh
 ```
 
 ## 5. [Optional] Prediction
-To perform inference, the model first needs to be hosted. Navigating to the directory where the saved model is stored, below is a sample command:
+To perform inference, the model first needs to be hosted. Navigate to the directory where the the vllm folder resides. Below is a sample command.
+
+Tip: Make sure you're in the right conda env for deployment!
 
 ```bash
 python -m vllm.entrypoints.openai.api_server --load-format safetensors --dtype bfloat16 --max-model-len 2048 --tensor-parallel-size 1 --model custom_model_path
 ```
-
-### Prediction
-Below is a sample command:
-```bash
-python -m autothought_eval.predict \ 
---model example_model \ 
---prompts_template_path dataset_preparation/prompt_templates/example.json \
---input_file data/example/test.jsonl
-```
-

@@ -52,4 +52,5 @@ accelerate launch \
     # --wandb_name <name> \
     # --wandb_entity <entity name>
 
-sh "$(dirname "$0")/merge_lora.sh"
+# UNCOMMENT BELOW THE MERGE AS WELL!
+# sh "$(dirname "$0")/merge_lora.sh"
