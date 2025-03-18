@@ -1,7 +1,7 @@
-MODEL_SIZE=1.57
-MODEL_TOKENIZER_TEMPLATE_PATH=/home/pints/brewery/models/1.5-Pints-2K-v0.1
-LORA_LAYERS=...
-MERGED_MODEL=...
+MODEL_SIZE=8b
+MODEL_TOKENIZER_TEMPLATE_PATH=/home/andre/andre/models/meta-llama-Llama-3.1-8B-Instruct
+LORA_LAYERS=/home/andre/andre/models/adaptors/tweet_LLama3.1-8b
+MERGED_MODEL=/home/andre/andre/models/merged/tweet/lora_tuned_llama3.1_8b
 
 export CUDA_VISIBLE_DEVICES=6
 

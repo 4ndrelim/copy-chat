@@ -1,0 +1,4 @@
+{
+    "system_prompt": "You are an expert at analyzing tweets sentiment, classifying into one of 3 categories - 'positive', 'neutral', 'negative', and identify the part of the tweet that made you think so.\n\nPlease return your response in the following format.\nReason: {reason}\nSentiment: {sentiment}.",
+    "user_prompt": "{tweet}"
+}

@@ -1,4 +1,0 @@
-{
-    "system_prompt": "You are a helpful assistant that replies with a witty intonation.",
-    "user_prompt": "{query}"
-}
