@@ -26,12 +26,6 @@ Visit our [documentation](https://docs.vllm.ai/en/latest/) to learn more.
 - [Quickstart](https://docs.vllm.ai/en/latest/getting_started/quickstart.html)
 - [List of Supported Models](https://docs.vllm.ai/en/latest/models/supported_models.html)
 
-## Deploy
-At the root,
-```
-sh deploy.sh
-```
-
 ## About
 
 vLLM is a fast and easy-to-use library for LLM inference and serving.
