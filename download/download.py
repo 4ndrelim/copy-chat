@@ -6,7 +6,7 @@ from pathlib import Path
 import shutil
 
 
-log_file = "download_log.txt"
+log_file = "download_log.out"
 
 if __name__ == "__main__":
     # --- Config ---
