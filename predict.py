@@ -21,7 +21,7 @@ class VLLMInferenceClient:
             base_url=base_url,
             api_key="None"
         )
-        self.system_prompt = "You are an expert at analyzing tweets sentiment, classifying into one of 3 categories - 'positive', 'neutral', 'negative', and identify the part of the tweet that made you think so.\n\nPlease return your response in the following format.\nReason: {reason}\nSentiment: {sentiment}."
+        self.system_prompt = "You are an expert at analyzing tweets sentiment, classifying into only one of 3 categories - 'positive', 'neutral', 'negative', and identify the part of the tweet that made you think so.\n\nPlease return your response in the following format.\nReason: {reason}\nSentiment: {sentiment}.\n\nFor example:\nTweet: Today is my birthday, I will celebrate it with friends!\nReason: Birthdays are typically a happy occasion, and celebration suggests positivity.\nSentiment: postive"
         self.user_prompt_template = lambda tweet: f"Tweet: {tweet}"
         self.model = model
 
