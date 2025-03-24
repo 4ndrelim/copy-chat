@@ -106,8 +106,8 @@ lstm_model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', met
 lstm_model.fit(X_train_pad, y_train, epochs=3, batch_size=32, validation_split=0.2, verbose=1)
 
 # Predict with LSTM
-y_pred_lstm = lstm_model.predict(X_test_pad)
-y_pred_lstm = np.argmax(y_pred_lstm, axis=1)
+lstm_raw_preds = lstm_model.predict(X_test_pad)  # Store the raw softmax outputs
+y_pred_lstm = np.argmax(lstm_raw_preds, axis=1)  # Then get the predicted labels
 
 # Evaluate LSTM
 accuracy_lstm = accuracy_score(y_test, y_pred_lstm)
@@ -117,3 +117,31 @@ f1_lstm = f1_score(y_test, y_pred_lstm, average='weighted')
 
 print("LSTM Results:")
 print(f"Accuracy: {accuracy_lstm:.4f}, Precision: {precision_lstm:.4f}, Recall: {recall_lstm:.4f}, F1 Score: {f1_lstm:.4f}")
+
+def generate_eval_csv(model_name, y_true, y_pred, raw_output, filename):
+    decoded_true = label_encoder.inverse_transform(y_true)
+    decoded_pred = label_encoder.inverse_transform(y_pred)
+
+    df_result = pd.DataFrame({
+        'textID': test_data.index,
+        'text': test_data['text'],
+        'label': decoded_true,
+        'raw_output': raw_output,
+        'reason': ['Wrong prediction' if t != p else '' for t, p in zip(decoded_true, decoded_pred)],
+        'predicted': decoded_pred
+    })
+
+    df_result.to_csv(filename, index=False)
+    print(f"{model_name} evaluation written to {filename}")
+
+# Naive Bayes CSV
+nb_raw_output = list(nb_model.predict(X_test))
+generate_eval_csv("Naive Bayes", y_test, y_pred_nb, nb_raw_output, "classical_eval_bayes.csv")
+
+# SVM CSV
+svm_raw_output = list(svm_model.predict(X_test))
+generate_eval_csv("SVM", y_test, y_pred_svm, svm_raw_output, "classical_eval_svm.csv")
+
+# LSTM CSV
+lstm_raw_output = [str(logits.tolist()) for logits in lstm_raw_preds]  # serialize softmax outputs
+generate_eval_csv("LSTM", y_test, y_pred_lstm, lstm_raw_output, "classical_eval_lstm.csv")
