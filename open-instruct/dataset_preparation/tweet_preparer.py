@@ -128,3 +128,5 @@ def start(
 
 if __name__ == '__main__':
     CLI(start, as_positional=False)
+
+# python -m dataset_preparation.tweet_preparer --dataset_name tweets_sentiment --input_path datasets/raw_datasets/tweets/train.csv --template_path dataset_preparation/prompt_templates/improved_tweet.json --output_path datasets/formatted_datasets/prepared_improved_tweet.jsonl

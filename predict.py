@@ -16,13 +16,13 @@ class VLLMInferenceClient:
     """
     A client to interact with a vLLM server for text generation.
     """
-    def __init__(self, base_url: str, model: str):
+    def __init__(self, base_url: str, model: str, prompt_template: dict):
         self.client = OpenAI(
             base_url=base_url,
             api_key="None"
         )
-        self.system_prompt = "You are an expert at analyzing tweets sentiment, classifying into only one of 3 categories - 'positive', 'neutral', 'negative', and identify the part of the tweet that made you think so.\n\nPlease return your response in the following format.\nReason: {reason}\nSentiment: {sentiment}.\n\nFor example:\nTweet: Today is my birthday, I will celebrate it with friends!\nReason: Birthdays are typically a happy occasion, and celebration suggests positivity.\nSentiment: postive"
-        self.user_prompt_template = lambda tweet: f"Tweet: {tweet}"
+        self.system_prompt = prompt_template['system_prompt']
+        self.user_prompt = prompt_template['user_prompt']
         self.model = model
 
     def generate(self, tweet: str) -> str:
@@ -30,7 +30,7 @@ class VLLMInferenceClient:
         Sends a request to the vLLM server for generation.
         """
         system_prompt = self.system_prompt
-        user_prompt = self.user_prompt_template(tweet=tweet)
+        user_prompt = self.user_prompt.format(tweet=tweet)
 
         chat_response = self.client.chat.completions.create(
             model=self.model,
@@ -95,7 +95,10 @@ async def main(args):
     input_csv = args.input_file
     output_csv = args.output_file
     model = args.model
-    client = VLLMInferenceClient(base_url, model)
+    prompt_template_path = args.prompt_template
+    with open(prompt_template_path, "r", encoding="utf-8") as file:
+        prompt_template = json.load(file)
+    client = VLLMInferenceClient(base_url, model, prompt_template)
 
     df = pd.read_csv(input_csv, encoding='latin1')
     res = []
@@ -116,10 +119,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate questions for text chunks using vLLM")
     parser.add_argument("--base_url", type=str, default="http://localhost:8181/v1", help="Address where the vLLM server is running")
     parser.add_argument("--model", type=str, required=True, help="Specify the model to use")
+    parser.add_argument("--prompt_template", type=str, required=True, help="Path to prompt template to apply.")
     parser.add_argument("--input_file", type=str, required=True, help="Path to the input text JSONL file containing paragraphs")
     parser.add_argument("--output_file", type=str, default="autothought_eval/results/output.jsonl", help="Path to save the output JSONL file")
     args = parser.parse_args()
 
     asyncio.run(main(args))
 
-# python predict.py --model my_model --input_file test.csv --output_file prediction.csv
+# python predict.py --model my_model --prompt_template ./open-instruct/dataset_preparation/prompt_templates/improved_tweet.json --input_file test_clean.csv --output_file prediction.csv

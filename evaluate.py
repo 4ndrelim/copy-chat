@@ -6,7 +6,7 @@ from sklearn.metrics import (
     confusion_matrix
 )
 
-def evaluate_predictions(predictions_file: str):
+def evaluate_predictions(predictions_file: str, ignore_neutral: bool=False):
     df = pd.read_csv(predictions_file)
 
     required_cols = {'textID', 'predicted', 'label'}
@@ -21,33 +21,41 @@ def evaluate_predictions(predictions_file: str):
     all_preds  = df['predicted'].tolist()
     overall_accuracy = accuracy_score(all_labels, all_preds)
 
-    # the 3 standard classes
+    if ignore_neutral:
+        num_neutral_ignored = df['label'].isin({'neutral'}).sum()
+        valid_labels_mask = df['label'].isin({'positive', 'negative'})
+        df = df[valid_labels_mask]
+
+    # define valid pred classes
     valid_classes = {'positive', 'negative', 'neutral'}
 
-    # count num of invalid
+    # count how many predictions are invalid (i.e., do not match the 3 valid classes)
     invalid_preds_mask = ~df['predicted'].isin(valid_classes)
     num_invalid_predictions = invalid_preds_mask.sum()
 
-    # we only care abt the 3 classes
+    # For confusion matrix, we only keep the subset for these three classes
+    # so that the CM is strictly among [positive, negative, neutral].
+    # Alternatively, you could label them as "other" if you want them to appear in the CM.
     df_for_cm = df[~invalid_preds_mask].copy()
 
-    valid_labels_mask = df_for_cm['label'].isin(valid_classes)
-    df_for_cm = df_for_cm[valid_labels_mask]
-
-    # get filtered
+    # Extract lists from the filtered dataframe
     labels_filtered = df_for_cm['label'].tolist()
     preds_filtered = df_for_cm['predicted'].tolist()
 
+    # Now compute metrics strictly for the valid 3-class subset
     accuracy_3 = accuracy_score(labels_filtered, preds_filtered)
     precision_3, recall_3, f1_3, _ = precision_recall_fscore_support(
         labels_filtered, preds_filtered, average='weighted'
     )
 
-    # confusion matrix
-    unique_labels = sorted(list(valid_classes)) 
+    # Generate confusion matrix for just the 3 classes
+    unique_labels = sorted(list(valid_classes))  # ['negative', 'neutral', 'positive'] or any sorted order
     cm_3 = confusion_matrix(labels_filtered, preds_filtered, labels=unique_labels)
+
+    # Create a DataFrame for the confusion matrix to display
     cm_df_3 = pd.DataFrame(cm_3, index=unique_labels, columns=unique_labels)
 
+    # Print results to the console
     print("=" * 50)
     print("Evaluation Metrics (3-class subset only)")
     print("=" * 50)
@@ -60,9 +68,11 @@ def evaluate_predictions(predictions_file: str):
     print("Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):")
     print(cm_df_3)
     print("")
-    print(f"Number of predictions outside the 3 valid classes = {num_invalid_predictions}")
+    if ignore_neutral:
+        print(f"Excluding all neutral labels (note: model can still predict 'neutral') = {num_neutral_ignored}")
+    print(f"[LLMs] Number of predictions that deviated from the 3 classes {valid_classes} = {num_invalid_predictions}")
 
-    #spit out a report
+    # Save everything to a text file
     output_filename = "classification_report.txt"
     with open(output_filename, "w") as file:
         file.write("=" * 50 + "\n")
@@ -76,7 +86,9 @@ def evaluate_predictions(predictions_file: str):
         file.write("=" * 50 + "\n\n")
         file.write("Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):\n")
         file.write(cm_df_3.to_string() + "\n\n")
-        file.write(f"Number of predictions outside the 3 valid classes = {num_invalid_predictions}\n")
+        if ignore_neutral:
+            file.write(f"Excluding all neutral labels (note: model can still predict 'neutral') = {num_neutral_ignored}\n")
+        file.write(f"[LLMs] Number of predictions that deviated from the 3 classes {valid_classes} = {num_invalid_predictions}\n")
 
     print(f"Saved metrics and confusion matrix to '{output_filename}'.")
 
@@ -88,6 +100,12 @@ if __name__ == "__main__":
         required=True, 
         help="Path to the CSV file containing 'textID', 'predicted', 'label'"
     )
+    parser.add_argument(
+        "--ignore_neutral",
+        type=bool,
+        required=False,
+        help="Flag to set whether to ignore all data with label of 'neutral' from eval"
+    )
     args = parser.parse_args()
 
-    evaluate_predictions(args.predictions_file)
+    evaluate_predictions(args.predictions_file, args.ignore_neutral)
