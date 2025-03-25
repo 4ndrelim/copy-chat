@@ -1,0 +1,71 @@
+==================================================
+Llama3.1-8B-Instruct (few-shot)
+==================================================
+Overall Accuracy (no filter): 0.6259
+Accuracy: 0.6263
+Precision (weighted): 0.6390
+Recall (weighted): 0.6263
+F1 (weighted): 0.6175
+==================================================
+
+Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):
+          negative  neutral  positive
+negative       588      275       136
+neutral        195      676       559
+positive        42      113       948
+
+[LLMs] Number of predictions that deviated from the 3 classes {'neutral', 'positive', 'negative'} = 2
+
+
+
+==================================================
+Naive Bayes
+==================================================
+Overall Accuracy (no filter): 0.6477
+Accuracy: 0.6477
+Precision (weighted): 0.6822
+Recall (weighted): 0.6477
+F1 (weighted): 0.6448
+==================================================
+
+Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):
+          negative  neutral  positive
+negative       500      470        31
+neutral        124     1149       157
+positive        40      423       640
+
+
+
+==================================================
+LSTM
+==================================================
+Overall Accuracy (no filter): 0.7094
+Accuracy: 0.7094
+Precision (weighted): 0.7150
+Recall (weighted): 0.7094
+F1 (weighted): 0.7104
+==================================================
+
+Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):
+          negative  neutral  positive
+negative       756      219        26
+neutral        323      953       154
+positive        65      240       798
+
+
+
+==================================================
+SVM
+==================================================
+Overall Accuracy (no filter): 0.7136
+Accuracy: 0.7136
+Precision (weighted): 0.7264
+Recall (weighted): 0.7136
+F1 (weighted): 0.7149
+==================================================
+
+Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):
+          negative  neutral  positive
+negative       643      338        20
+neutral        193     1104       133
+positive        45      283       775
