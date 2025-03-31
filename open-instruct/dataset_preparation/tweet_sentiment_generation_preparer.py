@@ -17,6 +17,27 @@ from dataset_preparation.dataset_utils import (
 
 from utils.logger import setup_logger
 
+import random
+
+def slice_tweet(tweet: str, sentiment: str, min_prefix_words=2, min_completion_words=1) -> tuple[str, str] | None:
+    """
+    Slice the tweet into a prefix and completion, formatted with sentiment control.
+    Returns (prompt, completion) tuple or None if tweet is too short.
+    """
+    words = tweet.strip().split()
+    if len(words) < min_prefix_words + min_completion_words:
+        return None
+
+    min_cut = min_prefix_words
+    max_cut = len(words) - min_completion_words
+    cut_index = random.randint(min_cut, max_cut)
+
+    prefix = " ".join(words[:cut_index])
+    completion = " ".join(words[cut_index:])
+
+    prompt = f"<sentiment: {sentiment}> {prefix}"
+    return (prompt, completion)
+
 
 def load_prompt_templates(template_path: Path) -> Dict[str, str]:
     if not template_path.is_file():
@@ -31,9 +52,6 @@ def load_prompt_templates(template_path: Path) -> Dict[str, str]:
     except json.JSONDecodeError as e:
         raise ValueError(f"Error decoding template file: {e}")
 
-
-# question as user prompt
-# chunk as response
 def formatter(
         data: dict,
         dataset_name: str,
@@ -42,27 +60,29 @@ def formatter(
         logger: Optional[Logger]=None
         ) -> Dict[str, List[Dict[str, str]]]:
     try:
-        tweet_id = data['id']
-        tweet = data['tweet']
+        tweet_id = data['textID']
+        tweet = data['text']
+        sentiment = data['sentiment']
     except KeyError as e:
         if logger:
             logger.error(f"KeyError encountered: {e}")
         raise KeyError(f"Missing key(s) while attempting to format dataset for training.")
 
+    sliced = slice_tweet(tweet=tweet, sentiment=sentiment)
+    if not sliced:
+        return None
+    prompt, completion = sliced
     system_prompt = templates["system_prompt"]
-    user_prompt = templates["user_prompt"].format(tweet=tweet)
+    user_prompt = templates["user_prompt"].format(prefix=prompt)
 
     if not is_evaluation:
-        sentiment = data['sentiment']
-        rationale = data['rationale']
-        answer = f"Reason: {rationale}\nSentiment: {sentiment}"
         return {
             "dataset": dataset_name,
             "id": tweet_id,
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
-                {"role": "assistant", "content": answer}
+                {"role": "assistant", "content": completion}
             ],
             # "judging": {"content": data['content'], "question": data['question']}
         }
@@ -99,29 +119,22 @@ def start(
     templates = load_prompt_templates(template_path)
     logger.info(f"Loaded prompt templates from {template_path}")
 
-    # read csv
-    with open(input_path, mode='r', encoding='utf-8', errors='replace') as f:
-        df = pd.read_csv(f, delimiter=',')
+    # read raw train jsonl file
+    with open(input_path, 'r', encoding='utf-8') as in_file:
+        tweets_data = [json.loads(line) for line in in_file]
 
-    tweets_data = [
-        {
-            'id': row['textID'],
-            'tweet': row['text'],
-            'rationale': row['selected_text'] if 'selected_text' in row else None,
-            'sentiment': row['sentiment'] if 'sentiment' in row else None
-        }
-        for _, row in df.iterrows()
-    ]
     res = []
     for data in tweets_data:
-        res.append(formatter(
+        formatted = formatter(
             data, 
             dataset_name, 
             templates, 
             is_evaluation,
             logger
-            )
         )
+        if not formatted:
+            continue
+        res.append(formatted)
 
     write_jsonl_file(content=res, output_path=output_path)
     logger.info(f"Dataset of size {len(res)} prepared at {output_path.resolve()}")
@@ -129,4 +142,24 @@ def start(
 if __name__ == '__main__':
     CLI(start, as_positional=False)
 
-# python -m dataset_preparation.tweet_preparer --dataset_name tweets_sentiment --input_path datasets/raw_datasets/tweets/train.csv --template_path dataset_preparation/prompt_templates/improved_tweet.json --output_path datasets/formatted_datasets/prepared_improved_tweet.jsonl
+# python -m dataset_preparation.tweet_generation_preparer --dataset_name tweets_sentiment_generation --input_path datasets/raw_datasets/tweets/train.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/prepared_sentiment_generation.jsonl
+
+# import json
+
+# input_file = '../archive/train.jsonl'
+# output_file = '../archive/prepared_train.jsonl'  
+
+# with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
+#     for line in infile:
+#         record = json.loads(line)
+
+#         record['original_text'] = record.pop('text')
+
+#         # Create new 'text' field as per the sentiment + text format
+#         record['text'] = f"<sentiment: {record['sentiment']}> {record['original_text']}"
+
+#         # Write to new JSONL file
+#         json.dump(record, outfile)
+#         outfile.write('\n')
+
+# print(f"Transformed JSONL saved as {output_file}")
