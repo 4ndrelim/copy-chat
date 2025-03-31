@@ -6,7 +6,7 @@ df = pd.read_csv('../archive/train.csv', encoding='latin1')
 
 # Select required fields
 fields_to_keep = ['textID', 'text', 'selected_text', 'sentiment']
-df_filtered = df[fields_to_keep]
+df_filtered = df[fields_to_keep].dropna()
 
 # Convert to JSONL
 output_file = '../archive/train.jsonl'
