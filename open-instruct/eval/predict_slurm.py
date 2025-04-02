@@ -123,10 +123,14 @@ def parse_args():
         default=1.0,
         help="top_p for sampling.")
     parser.add_argument(
-            "-v", "--verbose",
-            action="store_true",
-            default=True,
-            help="Whether to print additional info (labelled SBATCH_INFO)")
+        "-v", "--verbose",
+        action="store_true",
+        default=True,
+        help="Whether to print additional info (labelled SBATCH_INFO)")
+    parser.add_argument(
+        "--stop_token",
+        type=str,
+        help="Stop token to use for SamplingParams")
     args = parser.parse_args()
 
     # model_name_or_path and openai_engine should be exclusive.
@@ -195,11 +199,19 @@ if __name__ == "__main__":
                 tensor_parallel_size=torch.cuda.device_count(),
             )
             sprint("Instantiating vllm SamplingParams")
-            sampling_params = vllm.SamplingParams(
-                temperature=args.temperature if args.do_sample else 0, 
-                top_p=args.top_p,
-                max_tokens=args.max_new_tokens,
-            )
+            if args.stop_token:
+                sampling_params = vllm.SamplingParams(
+                    temperature=args.temperature if args.do_sample else 0, 
+                    top_p=args.top_p,
+                    max_tokens=args.max_new_tokens,
+                    stop=args.stop_token
+                )
+            else:
+                sampling_params = vllm.SamplingParams(
+                    temperature=args.temperature if args.do_sample else 0, 
+                    top_p=args.top_p,
+                    max_tokens=args.max_new_tokens
+                )
             sprint("Generating results!")
             outputs = model.generate(prompts, sampling_params)
             sprint("Finished generating results")
