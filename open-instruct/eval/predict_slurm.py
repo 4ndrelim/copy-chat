@@ -33,8 +33,9 @@ import os
 import sys
 from pathlib import Path
 
-# from vllm import vllm
-import vllm
+from vllm import vllm
+
+# import vllm
 import torch
 
 # force add parent of parent of directory of script to path (open-instruct)
@@ -191,19 +192,13 @@ if __name__ == "__main__":
         tokenizer_mode="slow" if args.use_slow_tokenizer else "auto",
         tensor_parallel_size=torch.cuda.device_count(),
     )
-    if args.stop_token:
-        sampling_params = vllm.SamplingParams(
-            temperature=args.temperature if args.do_sample else 0,
-            top_p=args.top_p,
-            max_tokens=args.max_new_tokens,
-            stop=args.stop_token,
-        )
-    else:
-        sampling_params = vllm.SamplingParams(
-            temperature=args.temperature if args.do_sample else 0,
-            top_p=args.top_p,
-            max_tokens=args.max_new_tokens,
-        )
+    sampling_params = vllm.SamplingParams(
+        temperature=args.temperature if args.do_sample else 0,
+        top_p=args.top_p,
+        max_tokens=args.max_new_tokens,
+        stop=args.stop_token if args.stop_token else None,
+    )
+
     outputs = model.chat(prompts, sampling_params)
     outputs = [it.outputs[0].text for it in outputs]
     sprint(f"{outputs[:2]=}")
