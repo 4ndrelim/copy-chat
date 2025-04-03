@@ -50,11 +50,6 @@ def split_text(
     elif split_point < min_prefix_tokens:
         split_point = min_prefix_tokens
 
-    if text == " Miss you":
-        print(f"{tokens=}")
-        print(f"Splitting at {split_point=}, {len(tokens)=}")
-        print(f"{len(tokens)=}")
-
     prefix_tokens = tokens[:split_point]
     rest = tokens[split_point:]
     return tokenizer.decode(prefix_tokens, skip_special_tokens=True), tokenizer.decode(
