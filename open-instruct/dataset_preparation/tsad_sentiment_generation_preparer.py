@@ -32,7 +32,7 @@ tokenizer = AutoTokenizer.from_pretrained(
 
 
 def split_text(
-    text, percent=0.5, min_prefix_tokens=7, min_completion_tokens=3, verbose=False
+    text, percent=0.5, min_prefix_tokens=7, min_completion_tokens=1, verbose=False
 ):
     # Tokenize text into IDs, then split, and decode back to text
     # Prioritise having completion tokens over prefix tokens
@@ -43,10 +43,17 @@ def split_text(
         )
     tokens = tokenizer(text).input_ids
     split_point = int(len(tokens) * percent)
-    if len(tokens) - split_point < min_completion_tokens:
+    if len(tokens) < min_prefix_tokens + min_completion_tokens:
+        split_point = len(tokens) - 1
+    elif len(tokens) - split_point < min_completion_tokens:
         split_point = len(tokens) - min_completion_tokens
     elif split_point < min_prefix_tokens:
         split_point = min_prefix_tokens
+
+    if text == " Miss you":
+        print(f"{tokens=}")
+        print(f"Splitting at {split_point=}, {len(tokens)=}")
+        print(f"{len(tokens)=}")
 
     prefix_tokens = tokens[:split_point]
     rest = tokens[split_point:]
