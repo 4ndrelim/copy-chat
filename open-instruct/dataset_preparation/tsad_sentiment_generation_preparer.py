@@ -24,8 +24,8 @@ from utils.logger import setup_logger
 
 
 def slice_tweet(
-    text: str, percent=0.5, min_prefix_tokens=7, min_completion_tokens=1, verbose=False
-) -> tuple[str, str] | None:
+    text: str, percent=0.5, min_prefix_tokens=7, min_completion_tokens=3, verbose=False
+) -> tuple[str, str]:
     """
     Slice the tweet into a prefix and completion
     """
@@ -39,7 +39,7 @@ def slice_tweet(
     tokens = tokenizer(text).input_ids
     split_point = int(len(tokens) * percent)
     if len(tokens) < min_prefix_tokens + min_completion_tokens:
-        split_point = len(tokens) - 1
+        split_point = len(tokens) - min_completion_tokens
     elif len(tokens) - split_point < min_completion_tokens:
         split_point = len(tokens) - min_completion_tokens
     elif split_point < min_prefix_tokens:
@@ -78,7 +78,7 @@ def formatter(
 
     res = []
     for sentiment in sentiments:
-        prefix, completion = slice_tweet(tweet=tweet)
+        prefix, completion = slice_tweet(tweet)
         system_prompt = templates["system_prompt"]
         user_prompt = templates["user_prompt"].format(prefix=prefix)
 
@@ -153,8 +153,6 @@ def start(
         formatted = formatter(
             data, dataset_name, templates, is_evaluation, replicate_sentiments, logger
         )
-        if not formatted:
-            continue
         res.extend(formatted)
 
     write_jsonl_file(content=res, output_path=output_path)
