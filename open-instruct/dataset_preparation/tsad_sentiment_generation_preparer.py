@@ -22,18 +22,13 @@ from dataset_preparation.dataset_utils import (
 
 from utils.logger import setup_logger
 
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-tokenizer = AutoTokenizer.from_pretrained(
-    f"{os.environ['HOME']}/copy-chat/models/meta-llama-Llama-3.1-8B-Instruct",
-    trust_remote_code=False,
-    use_fast=False,
-)
-
-
-def split_text(
-    text, percent=0.5, min_prefix_tokens=7, min_completion_tokens=1, verbose=False
-):
+def slice_tweet(
+    text: str, percent=0.5, min_prefix_tokens=7, min_completion_tokens=1, verbose=False
+) -> tuple[str, str] | None:
+    """
+    Slice the tweet into a prefix and completion
+    """
     # Tokenize text into IDs, then split, and decode back to text
     # Prioritise having completion tokens over prefix tokens
     # This is to ensure that the model has enough context to generate a response
@@ -57,19 +52,55 @@ def split_text(
     )
 
 
-def slice_tweet(tweet: str, sentiment: str):
-    # -> tuple[str, str] | None
-    """
-    Slice the tweet into a prefix and completion, formatted with sentiment control.
-    Returns (prompt, completion) tuple or None if tweet is too short.
-    """
-    prefix, completion = split_text(
-        text=tweet,
-        percent=0.5,
-    )
+def formatter(
+    data: dict,
+    dataset_name: str,
+    templates: Dict[str, str],
+    is_evaluation: bool = False,
+    replicate_sentiments: bool = False,
+    logger: Optional[Logger] = None,
+) -> List[Dict[str, List[Dict[str, str]]]]:
+    try:
+        tweet_id = data["textID"]
+        tweet = data["text"]
+        sentiment = data["sentiment"]
+    except KeyError as e:
+        if logger:
+            logger.error(f"KeyError encountered: {e}")
+        raise KeyError(
+            f"Missing key(s) while attempting to format dataset for training."
+        )
 
-    prompt = f"<sentiment: {sentiment}> {prefix}"
-    return (prompt, completion)
+    if replicate_sentiments:
+        sentiments = ["positive", "negative", "neutral"]
+    else:
+        sentiments = [sentiment]
+
+    res = []
+    for sentiment in sentiments:
+        prefix, completion = slice_tweet(tweet=tweet)
+        system_prompt = templates["system_prompt"]
+        user_prompt = templates["user_prompt"].format(prefix=prefix)
+
+        prompt = {
+            "dataset": dataset_name,
+            "id": tweet_id,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": f"<sentiment: {sentiment}> {user_prompt}"},
+            ],
+        }
+
+        if not is_evaluation:
+            prompt["messages"].append(
+                {
+                    "role": "assistant",
+                    "content": completion,
+                }
+            )
+
+        res.append(prompt)
+    return res
 
 
 def load_prompt_templates(template_path: Path) -> Dict[str, str]:
@@ -88,56 +119,13 @@ def load_prompt_templates(template_path: Path) -> Dict[str, str]:
         raise ValueError(f"Error decoding template file: {e}")
 
 
-def formatter(
-    data: dict,
-    dataset_name: str,
-    templates: Dict[str, str],
-    is_evaluation: bool = False,
-    logger: Optional[Logger] = None,
-) -> Dict[str, List[Dict[str, str]]]:
-    try:
-        tweet_id = data["textID"]
-        tweet = data["text"]
-        sentiment = data["sentiment"]
-    except KeyError as e:
-        if logger:
-            logger.error(f"KeyError encountered: {e}")
-        raise KeyError(
-            f"Missing key(s) while attempting to format dataset for training."
-        )
-
-    sliced = slice_tweet(tweet=tweet, sentiment=sentiment)
-    if not sliced:
-        return None
-    prompt, completion = sliced
-    system_prompt = templates["system_prompt"]
-    user_prompt = templates["user_prompt"].format(prefix=prompt)
-
-    inter = {
-        "dataset": dataset_name,
-        "id": tweet_id,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-    }
-
-    if not is_evaluation:
-        inter["messages"].append(
-            {
-                "role": "assistant",
-                "content": completion,
-            }
-        )
-    return inter
-
-
 def start(
     dataset_name: str,
     input_path: Path,
     template_path: Path,
     output_path: Optional[Path],
     is_evaluation: bool = False,
+    replicate_sentiments: bool = False,
 ):
 
     if not input_path.is_file():
@@ -158,24 +146,27 @@ def start(
 
     # read raw train jsonl file
     with open(input_path, "r", encoding="utf-8") as in_file:
-        # # print debug
-        # tweets_data = []
-        # for line in in_file:
-        #     print(line)
-        #     print(json.loads(line))
-        #     tweets_data.append(json.loads(line))
-        tweets_data = [json.loads(line) for line in in_file]
+        train_data = [json.loads(line) for line in in_file]
 
     res = []
-    for data in tweets_data:
-        formatted = formatter(data, dataset_name, templates, is_evaluation, logger)
+    for data in train_data:
+        formatted = formatter(
+            data, dataset_name, templates, is_evaluation, replicate_sentiments, logger
+        )
         if not formatted:
             continue
-        res.append(formatted)
+        res.extend(formatted)
 
     write_jsonl_file(content=res, output_path=output_path)
     logger.info(f"Dataset of size {len(res)} prepared at {output_path.resolve()}")
 
 
 if __name__ == "__main__":
+    os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    tokenizer = AutoTokenizer.from_pretrained(
+        f"{os.environ['HOME']}/copy-chat/models/meta-llama-Llama-3.1-8B-Instruct",
+        trust_remote_code=False,
+        use_fast=False,
+    )
+
     CLI(start, as_positional=False)
