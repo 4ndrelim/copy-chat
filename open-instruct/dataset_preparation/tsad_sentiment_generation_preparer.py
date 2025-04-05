@@ -32,10 +32,6 @@ def slice_tweet(
     # Tokenize text into IDs, then split, and decode back to text
     # Prioritise having completion tokens over prefix tokens
     # This is to ensure that the model has enough context to generate a response
-    if verbose:
-        print(
-            f"Splitting {text=} with {percent=}, {min_prefix_tokens=}, {min_completion_tokens=}"
-        )
     tokens = tokenizer(text).input_ids
     split_point = int(len(tokens) * percent)
     if len(tokens) < min_prefix_tokens + min_completion_tokens:
@@ -45,12 +41,19 @@ def slice_tweet(
     elif split_point < min_prefix_tokens:
         split_point = min_prefix_tokens
 
-    prefix_tokens = tokens[:split_point]
-    rest = tokens[split_point:]
-    return tokenizer.decode(prefix_tokens, skip_special_tokens=True), tokenizer.decode(
-        rest, skip_special_tokens=True
-    )
+    prefix_tokens = tokenizer.decode(tokens[:split_point], skip_special_tokens=True)
+    rest = tokenizer.decode(tokens[split_point:], skip_special_tokens=True)
+    if verbose:
+        print(
+            f"slice_tweet args: {percent=}, {min_prefix_tokens=}, {min_completion_tokens=}"
+        )
+        print(f"{text=}, {split_point=}, {len(tokens)=}")
+        print(f"{tokenizer.tokenize(text)=}")
+        print(f"{prefix_tokens=}")
+        print(f"{rest=}")
+        print()
 
+    return prefix_tokens, rest
 
 def formatter(
     data: dict,
@@ -59,6 +62,7 @@ def formatter(
     is_evaluation: bool = False,
     replicate_sentiments: bool = False,
     logger: Optional[Logger] = None,
+    verbose: bool = False
 ) -> List[Dict[str, List[Dict[str, str]]]]:
     try:
         tweet_id = data["textID"]
@@ -78,7 +82,7 @@ def formatter(
 
     res = []
     for sentiment in sentiments:
-        prefix, completion = slice_tweet(tweet)
+        prefix, completion = slice_tweet(tweet, verbose=verbose)
         system_prompt = templates["system_prompt"]
         user_prompt = templates["user_prompt"].format(prefix=prefix)
 
@@ -87,7 +91,7 @@ def formatter(
             "id": tweet_id,
             "messages": [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"<sentiment: {sentiment}> {user_prompt}"},
+                {"role": "user", "content": f"<sentiment: {sentiment}>{user_prompt}"},
             ],
         }
 
@@ -126,6 +130,7 @@ def start(
     output_path: Optional[Path],
     is_evaluation: bool = False,
     replicate_sentiments: bool = False,
+    print_samples: int = 0,
 ):
 
     if not input_path.is_file():
@@ -149,10 +154,12 @@ def start(
         train_data = [json.loads(line) for line in in_file]
 
     res = []
+    count = 0
     for data in train_data:
         formatted = formatter(
-            data, dataset_name, templates, is_evaluation, replicate_sentiments, logger
+            data, dataset_name, templates, is_evaluation, replicate_sentiments, logger, count < print_samples
         )
+        count += 1
         res.extend(formatted)
 
     write_jsonl_file(content=res, output_path=output_path)
@@ -168,3 +175,4 @@ if __name__ == "__main__":
     )
 
     CLI(start, as_positional=False)
+
