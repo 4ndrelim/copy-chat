@@ -1,8 +1,7 @@
 #!/bin/sh
 #SBATCH --job-name=pred_lora
-#SBATCH --time=60
+#SBATCH --time=90
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=$(whoami)@comp.nus.edu.sg
 #SBATCH --mem-per-gpu=40G 
 #SBATCH --gpus=a100-40:1
 ###SBATCH --nodelist=xgpg7
@@ -12,11 +11,12 @@ echo $CUDA_VISIBLE_DEVICES
 srun nvidia-smi
 
 echo "SBATCH_INFO: Running predict_slurm.py..."
-python3 /home/c/czixuan/copy-chat/open-instruct/eval/predict_slurm.py \
---model /home/c/czixuan/copy-chat/models/merged/tweet/lora_tuned_Llama-3.1-8B \
---input_files /home/c/czixuan/copy-chat/open-instruct/datasets/formatted_datasets/prepared_sentiment_generation_short.jsonl  \
---output_file /home/c/czixuan/copy-chat/predictions/sentiment_generation/llama_old_sen_tuned_sen_gen.jsonl \
---stop_token '<|system|>' \
+python3 $HOME/copy-chat/open-instruct/eval/predict_slurm.py \
+--model $HOME/copy-chat/models/merged/tweet/p2_Llama-3.1-8B_v03 \
+--input_files $HOME/copy-chat/open-instruct/datasets/formatted_datasets/tsad_03_test_senrep.jsonl \
+--output_file $HOME/copy-chat/predictions/sentiment_generation/tsad_p2_llama_v03_senrep.jsonl \
 --use_vllm \
---use_chat_format
+--use_chat_format \
+--max_new_tokens 256
 
+#--stop_token '<|system|>' \
