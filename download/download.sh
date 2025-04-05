@@ -6,6 +6,9 @@
 # Define a list of model names
 MODELS=(
     "Qwen/Qwen2.5-7B-Instruct"
+    "meta-llama/Llama-3.1-8B"
+    "meta-llama/Llama-3.1-8B-Instruct"
+    "mistralai/Ministral-8B-Instruct-2410"
 )
 
 # Define log file
