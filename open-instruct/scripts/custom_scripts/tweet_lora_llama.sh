@@ -19,27 +19,13 @@ NUM_GPUS=1
 BATCH_SIZE_PER_GPU=8
 TOTAL_BATCH_SIZE=64
 GRADIENT_ACC_STEPS=$(($TOTAL_BATCH_SIZE/$NUM_GPUS/$BATCH_SIZE_PER_GPU)) # 8
-
-# determine the output model name
-base="p2_$MODEL_NAME"
-suffix="_v"
-counter=1
-dirname="$base"
-
-while [ -d "$HOME/copy-chat/models/merged/tweet/$dirname" ]; do
-    dirname="${base}${suffix}$(printf "%02d" $counter)"
-    counter=$((counter + 1))
-done
-
+DIR_NAME=$(./name_version.sh p2_${MODEL_NAME}_v $HOME/copy-chat/models/merged/tweet)
 MODEL_TOKENIZER_TEMPLATE_PATH=$HOME/copy-chat/models/meta-llama-Llama-3.1-8B-Instruct
 TRAIN_FILE=$HOME/copy-chat/open-instruct/datasets/formatted_datasets/$1.jsonl
-OUTPUT_PATH=$HOME/copy-chat/models/adaptors/$dirname
-SBATCH_INFO_FILE=$OUTPUT_PATH/training_info.txt
+OUTPUT_PATH=$HOME/copy-chat/models/adaptors/$DIR_NAME
 
-mkdir $OUTPUT_PATH
-touch $SBATCH_INFO_FILE
-echo "Training $MODEL_NAME of size ${MODEL_SIZE} using $NUM_GPUS GPUs, $BATCH_SIZE_PER_GPU batch size per GPU, $GRADIENT_ACC_STEPS gradient accumulation steps" | tee -a $SBATCH_INFO_FILE
-echo "SBATCH_INFO: Train file: $TRAIN_FILE" | tee -a $SBATCH_INFO_FILE
+echo "Training $MODEL_NAME of size ${MODEL_SIZE} using $NUM_GPUS GPUs, $BATCH_SIZE_PER_GPU batch size per GPU, $GRADIENT_ACC_STEPS gradient accumulation steps"
+echo "SBATCH_INFO: Train file: $TRAIN_FILE"
 echo "SBATCH_INFO: Output path: $OUTPUT_PATH"
 
 # Lora training
@@ -81,7 +67,7 @@ accelerate launch \
 # sh "$(dirname "$0")/merge_lora_llama.sh"
 # Merge script copy pasted here:
 LORA_LAYERS=$OUTPUT_PATH
-MERGED_MODEL=$HOME/copy-chat/models/merged/tweet/$dirname
+MERGED_MODEL=$HOME/copy-chat/models/merged/tweet/$DIR_NAME
 echo "SBATCH_INFO: Merged model path: $MERGED_MODEL"
 
 accelerate launch \
