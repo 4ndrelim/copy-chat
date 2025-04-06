@@ -22,31 +22,30 @@ from dataset_preparation.dataset_utils import (
 
 from utils.logger import setup_logger
 
+discarded_data = []
+MIN_COMPLETION_TOKENS = 3
 
 def slice_tweet(
-    text: str, percent=0.5, min_prefix_tokens=7, min_completion_tokens=3, verbose=False
+    text: str, percent=0.5, verbose=False, discard=False
 ) -> tuple[str, str]:
     """
     Slice the tweet into a prefix and completion
     """
     # Tokenize text into IDs, then split, and decode back to text
-    # Prioritise having completion tokens over prefix tokens
-    # This is to ensure that the model has enough context to generate a response
+    # Best effort attempt to keep at least min_completion_tokens cut off in the tweet
+    text = text.strip()
     tokens = tokenizer(text).input_ids
-    split_point = int(len(tokens) * percent)
-    if len(tokens) < min_prefix_tokens + min_completion_tokens:
-        split_point = len(tokens) - min_completion_tokens
-    elif len(tokens) - split_point < min_completion_tokens:
-        split_point = len(tokens) - min_completion_tokens
-    elif split_point < min_prefix_tokens:
-        split_point = min_prefix_tokens
+    num_tokens = len(tokens) - 1  # includes the invisible start token
+    if discard and num_tokens < 2:
+        return "", text
 
+    # there should be at least 1 token to start from, and 1 token to complete
+    # also re add the starting token here
+    split_point = max(1, min(int(num_tokens * percent), num_tokens - MIN_COMPLETION_TOKENS)) + 1
     prefix_tokens = tokenizer.decode(tokens[:split_point], skip_special_tokens=True)
     rest = tokenizer.decode(tokens[split_point:], skip_special_tokens=True)
     if verbose:
-        print(
-            f"slice_tweet args: {percent=}, {min_prefix_tokens=}, {min_completion_tokens=}"
-        )
+        print(f"slice_tweet args: {percent=}, {MIN_COMPLETION_TOKENS=}")
         print(f"{text=}, {split_point=}, {len(tokens)=}")
         print(f"{tokenizer.tokenize(text)=}")
         print(f"{prefix_tokens=}")
@@ -55,6 +54,7 @@ def slice_tweet(
 
     return prefix_tokens, rest
 
+
 def formatter(
     data: dict,
     dataset_name: str,
@@ -62,7 +62,8 @@ def formatter(
     is_evaluation: bool = False,
     replicate_sentiments: bool = False,
     logger: Optional[Logger] = None,
-    verbose: bool = False
+    verbose: bool = False,
+    discard: bool = False,
 ) -> List[Dict[str, List[Dict[str, str]]]]:
     try:
         tweet_id = data["textID"]
@@ -82,7 +83,12 @@ def formatter(
 
     res = []
     for sentiment in sentiments:
-        prefix, completion = slice_tweet(tweet, verbose=verbose)
+        prefix, completion = slice_tweet(tweet, verbose=verbose, discard=discard)
+        # discard if tweet is too short
+        if discard and not prefix:
+            print(f"Discarding {tweet}, too short")
+            discarded_data.append(tweet_id)
+            continue
         system_prompt = templates["system_prompt"]
         user_prompt = templates["user_prompt"].format(prefix=prefix)
 
@@ -131,6 +137,7 @@ def start(
     is_evaluation: bool = False,
     replicate_sentiments: bool = False,
     print_samples: int = 0,
+    discard: bool = False
 ):
 
     if not input_path.is_file():
@@ -157,11 +164,19 @@ def start(
     count = 0
     for data in train_data:
         formatted = formatter(
-            data, dataset_name, templates, is_evaluation, replicate_sentiments, logger, count < print_samples
+            data,
+            dataset_name,
+            templates,
+            is_evaluation,
+            replicate_sentiments,
+            logger,
+            count < print_samples,
+            discard
         )
         count += 1
         res.extend(formatted)
 
+    print(f"{discarded_data=}")
     write_jsonl_file(content=res, output_path=output_path)
     logger.info(f"Dataset of size {len(res)} prepared at {output_path.resolve()}")
 
