@@ -1,5 +1,5 @@
 """
-This script extracts tweets for a given username from tweets.db and saves them as a CSV file with optional end tokens. 
+This script extracts tweets for a given username from tweets.db and saves them as a CSV file. 
 
 Run with python script_name.py <username> [--endtoken].
 """
@@ -9,7 +9,7 @@ import sqlite3
 import pandas as pd
 import json
 
-def main(username, endtoken):
+def main(username):
     # Connect to the database
     conn = sqlite3.connect('tweets.db')
     cursor = conn.cursor()
@@ -43,9 +43,6 @@ def main(username, endtoken):
     output_df['text'] = df['text']
     output_df['date'] = df['created_at']
 
-    if endtoken:
-        output_df['text'] = output_df['text'].astype(str) + "|<end>|"
-
     # Static NA fields
     output_df['isRetweet'] = "na"
     output_df['isDeleted'] = "na"
@@ -58,7 +55,7 @@ def main(username, endtoken):
     output_df['isFlagged'] = parsed_json.apply(lambda x: 't' if x.get('possibly_sensitive') else 'f')
 
     # Export to CSV
-    fname = f"{username}_endtoken.csv" if endtoken else f"{username}.csv"
+    fname = f"{username}.csv"
     output_df.to_csv(fname, index=False)
     print(f"{fname} file created")
 
@@ -66,7 +63,6 @@ def main(username, endtoken):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate tweet CSV for a user")
     parser.add_argument("username", type=str, help="Username of X user")
-    parser.add_argument("--endtoken", action="store_true", help="Add end token to text")
     args = parser.parse_args()
 
-    main(args.username, args.endtoken)
+    main(args.username)
