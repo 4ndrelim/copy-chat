@@ -102,11 +102,15 @@ def formatter(
         }
 
         if not is_evaluation:
+            if completion.startswith(" "):
+                ast_cont = f"<space>{completion[1:]}"
+            else:
+                ast_cont = completion
             prompt["messages"].append(
                 {
                     "role": "assistant",
-                    #"content": completion,
-                    "content": f"{tweet}"
+                    "content": ast_cont,
+                    #"content": f"{tweet}"
                 }
             )
 
