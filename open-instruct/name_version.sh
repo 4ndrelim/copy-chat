@@ -6,10 +6,6 @@ if [ $# -lt 2 ]; then
     exit 1
 fi
 
-echo "1: $1"
-echo "2: $2"
-
-# determine the output model name
 BASE=$1
 COUNTER=1
 CHOSEN_NAME="${BASE}$(printf "%02d" $COUNTER)"

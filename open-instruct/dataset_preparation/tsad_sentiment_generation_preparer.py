@@ -105,7 +105,8 @@ def formatter(
             prompt["messages"].append(
                 {
                     "role": "assistant",
-                    "content": completion,
+                    #"content": completion,
+                    "content": f"{tweet}"
                 }
             )
 
