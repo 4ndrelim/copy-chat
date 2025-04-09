@@ -106,7 +106,7 @@ def main():
     match_percent = 100 * match_count / total_processed if total_processed > 0 else 0
     
     # write to txt file
-    with open("JudgeSummary.txt", "w", encoding="utf-8") as f:
+    with open(f"JudgeSummary_{output_filename}.txt", "w", encoding="utf-8") as f:
         f.write("\nStatistics:\n")
         f.write(f"Total rows processed: {total_processed}\n")
         f.write(f"Matching sentiments: {match_count}/{total_processed} ({match_percent:.2f}%)\n")
