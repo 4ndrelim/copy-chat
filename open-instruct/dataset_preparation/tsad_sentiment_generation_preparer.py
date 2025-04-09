@@ -188,11 +188,13 @@ def start(
 
 if __name__ == "__main__":
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
+    print("Loading tokenizer...")
     tokenizer = AutoTokenizer.from_pretrained(
         f"{os.environ['HOME']}/copy-chat/models/meta-llama-Llama-3.1-8B-Instruct",
         trust_remote_code=False,
         use_fast=False,
     )
+    print("Tokenizer loaded.")
 
     CLI(start, as_positional=False)
 
