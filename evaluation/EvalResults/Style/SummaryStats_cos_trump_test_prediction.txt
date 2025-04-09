@@ -1,0 +1,7 @@
+Summary Statistics for metric 'cosine, file summaryStats_trump_test_prediction.txt':
+Total valid entries: 92
+Average: 0.6104
+Median: 0.6606
+Standard Deviation: 0.2204
+Minimum: -0.0871
+Maximum: 0.9560

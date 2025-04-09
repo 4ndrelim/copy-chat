@@ -1,0 +1,4 @@
+textID,original,sentiment,prefix,completion,combined,judged_value,match
+261932614e,I THINK EVERYONE HATES ME ON HERE   lol,negative,<sentiment: negative>I THINK EVERYONE HATES,ME,<sentiment: negative>I THINK EVERYONE HATES ME,negative,yes
+58129e4130, Yay for Block Party!  You`re the BOMB! Blockheads <3 Dave!   Thanks for supporting NKOTB!,positive,<sentiment: positive> Yay for Block Party!  You`re the BOMB,!,<sentiment: positive> Yay for Block Party!  You`re the BOMB !,positive,yes
+33f19050cf, you guys didn`t say hi or answer my questions yesterday  but nice songs.,positive,<sentiment: positive> you guys didn`t say hi or,anything,<sentiment: positive> you guys didn`t say hi or anything,negative,no

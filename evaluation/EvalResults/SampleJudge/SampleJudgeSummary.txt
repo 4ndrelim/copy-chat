@@ -1,0 +1,14 @@
+
+Statistics:
+Total rows processed: 3
+Matching sentiments: 2/3 (66.67%)
+
+Breakdown by sentiment type:
+  Negative: 1/1 (100.00%)
+  Positive: 1/2 (50.00%)
+
+Confusion Matrix:
+Intended vs. Judged sentiment:
+  neutral :       0 |       0 |       0
+  negative:       0 |       1 |       0
+  positive:       0 |       1 |       1
