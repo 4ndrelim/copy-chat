@@ -107,7 +107,7 @@ def main():
     
     # write to txt file
     with open(f"JudgeSummary_{output_filename}.txt", "w", encoding="utf-8") as f:
-        f.write("\nStatistics:\n")
+        f.write(f"\nStatistics: {output_filename}\n")
         f.write(f"Total rows processed: {total_processed}\n")
         f.write(f"Matching sentiments: {match_count}/{total_processed} ({match_percent:.2f}%)\n")
         
