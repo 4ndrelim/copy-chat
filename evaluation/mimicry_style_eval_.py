@@ -106,14 +106,14 @@ def main():
 
     # === Construct output ===
     input_filename = os.path.basename(args.input_file)
-    output_filename = f"results_{input_filename}"
+    output_filename = f"results_{args.metric}_{input_filename}"
     
     # Save as CSV.
     df_evaluated.to_csv(output_filename, index=False)
     print(f"Evaluation complete. Results saved to '{output_filename}'.")
 
     # Construct summary stats filename and write statistics.
-    summary_stats_file = f"summaryStats_{input_filename.split('.')[0]}.txt"
+    summary_stats_file = f"SummaryStats_{args.metric}_{input_filename.split('.')[0]}.txt"
     write_summary_stats(df_evaluated, args.metric.lower(), summary_stats_file)
     print(f"Summary statistics saved to '{summary_stats_file}'.")
 
