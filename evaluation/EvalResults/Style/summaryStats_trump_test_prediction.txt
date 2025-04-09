@@ -1,0 +1,7 @@
+Summary Statistics for metric 'bleu, file summaryStats_trump_test_prediction.txt':
+Total valid entries: 92
+Average: 0.1720
+Median: 0.0396
+Standard Deviation: 0.2164
+Minimum: 0.0012
+Maximum: 0.8109
