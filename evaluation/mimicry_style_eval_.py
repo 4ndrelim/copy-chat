@@ -27,7 +27,7 @@ def compute_cosine_similarity(candidate, reference, model):
     cosine_sim = util.cos_sim(candidate_embedding, reference_embedding)
     return cosine_sim.item()
 
-def evaluate_mimicry(input_file, generated_col='combined', metric_name='cosine'):
+def evaluate_mimicry(input_file, generated_col='combined', reference_col='prefix', metric_name='cosine'):
     """
     Reads CSV file and calls appropriate metric function.
     """
@@ -44,7 +44,7 @@ def evaluate_mimicry(input_file, generated_col='combined', metric_name='cosine')
     # Process dataframe row-wise
     for idx, row in df.iterrows():
         candidate = row.get(generated_col, "")
-        reference = row.get("prefix", "")
+        reference = row.get(reference_col, "")
         
         # if candidate or reference null, move to next
         if pd.isna(candidate) or pd.isna(reference) or candidate.strip() == "" or reference.strip() == "":
@@ -90,6 +90,11 @@ def main():
         help="Name of the column containing generated text (default: 'combined')",
     )
     parser.add_argument(
+        "--reference_col",
+        default="prefix",
+        help="Reference column of original style (default: 'prefix')",
+    )
+    parser.add_argument(
         "--metric",
         default="cosine",
         help="Evaluation metric: choose 'cosine' or 'bleu' (default: 'cosine')",
@@ -97,7 +102,7 @@ def main():
     args = parser.parse_args()
 
     # == CALL EVALUATOR FUNCTION ==
-    df_evaluated = evaluate_mimicry(args.input_file, args.generated_col, args.metric)
+    df_evaluated = evaluate_mimicry(args.input_file, args.generated_col, args.reference_col, args.metric)
 
     # === Construct output ===
     input_filename = os.path.basename(args.input_file)
