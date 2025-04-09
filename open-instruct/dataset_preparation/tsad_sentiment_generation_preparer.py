@@ -1,7 +1,7 @@
 """
 This script converts existing datasets to a format that can be parsed by allenAI Instruct
 Usage:
-python -m dataset_preparation.tweet_generation_preparer --dataset_name tweets_sentiment_generation --input_path datasets/raw_datasets/tweets/train.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/prepared_sentiment_generation.jsonl
+python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name tweets_sentiment_generation --input_path ../dataset/tweet_sentiment/test/test_preprocessed.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/tsad_08_test_preprocessed.jsonl
 """
 
 from pathlib import Path
@@ -25,6 +25,7 @@ from utils.logger import setup_logger
 discarded_data = []
 MIN_COMPLETION_TOKENS = 3
 
+
 def slice_tweet(
     text: str, percent=0.5, verbose=False, discard=False
 ) -> tuple[str, str]:
@@ -41,7 +42,9 @@ def slice_tweet(
 
     # there should be at least 1 token to start from, and 1 token to complete
     # also re add the starting token here
-    split_point = max(1, min(int(num_tokens * percent), num_tokens - MIN_COMPLETION_TOKENS)) + 1
+    split_point = (
+        max(1, min(int(num_tokens * percent), num_tokens - MIN_COMPLETION_TOKENS)) + 1
+    )
     prefix_tokens = tokenizer.decode(tokens[:split_point], skip_special_tokens=True)
     rest = tokenizer.decode(tokens[split_point:], skip_special_tokens=True)
     if verbose:
@@ -110,7 +113,7 @@ def formatter(
                 {
                     "role": "assistant",
                     "content": ast_cont,
-                    #"content": f"{tweet}"
+                    # "content": f"{tweet}"
                 }
             )
 
@@ -142,7 +145,7 @@ def start(
     is_evaluation: bool = False,
     replicate_sentiments: bool = False,
     print_samples: int = 0,
-    discard: bool = False
+    discard: bool = False,
 ):
 
     if not input_path.is_file():
@@ -176,7 +179,7 @@ def start(
             replicate_sentiments,
             logger,
             count < print_samples,
-            discard
+            discard,
         )
         count += 1
         res.extend(formatted)
@@ -197,4 +200,3 @@ if __name__ == "__main__":
     print("Tokenizer loaded.")
 
     CLI(start, as_positional=False)
-
