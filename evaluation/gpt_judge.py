@@ -69,17 +69,10 @@ def main():
     if n_skipped > 0:
         print(f"Skipped {n_skipped} rows with empty completion")
 
-    # # Judge with GPT on combined column
-    # df_filtered["judged_value"] = df_filtered["combined"].apply(lambda text: gpt_sentiment(text, openai))
-
-    # # Check against original sentiment
-    # df_filtered["match"] = df_filtered.apply(
-    #     lambda row: "yes" if row["sentiment"].strip().lower() == row["judged_value"] else "no", axis=1
-    # )
-
     # For loop instead of lambda funcs
-    judged_values = []
-    match_values = []
+    result_df = df_filtered.copy()
+    result_df["judged_value"] = None
+    result_df["match"] = None
 
     for index, row in df_filtered.iterrows():
         text_to_analyze = row['combined']
@@ -88,29 +81,25 @@ def main():
         if "<sentiment:" in text_to_analyze:
             text_to_analyze = text_to_analyze.split(">", 1)[1] if ">" in text_to_analyze else text_to_analyze
         judged = gpt_sentiment(text_to_analyze, openai)
-        judged_values.append(judged)
+        result_df.loc[index, "judged_value"] = judged
 
         # Compare original sentiment with judged value
         if row["sentiment"].strip().lower() == (judged or "").strip().lower():
-            match_values.append("yes")
+            result_df.loc[index, "match"] = "yes"
         else:
-            match_values.append("no")
+            result_df.loc[index, "match"] = "no"
         print(f"Judged for row {index}")
-
-    # Assign results back to the DataFrame columns.
-    df_filtered["judged_value"] = judged_values
-    df_filtered["match"] = match_values
 
     # Save to new CSV.
     output_path = Path(f"{output_filename}.csv")
     try:
-        df_filtered.to_csv(output_path, index=False)
+        result_df.to_csv(output_path, index=False)
         print(f"\nSaved output to: {output_path}")
     except Exception as e:
         print(f"Error saving output file: {output_path}. Error: {e}")
 
     # === Calculate statistics ===
-    valid_results = df_filtered[df_filtered['judged_value'].notna()]
+    valid_results = result_df[result_df['judged_value'].notna()]
     total_processed = len(valid_results)
     matches = valid_results[valid_results['match'] == 'yes']
     match_count = len(matches)
