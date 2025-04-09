@@ -15,6 +15,13 @@ python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name 
 echo "Wrote train_vanilla dataset to datasets/formatted_datasets/$1_train_vanilla.jsonl"
 python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name $1 --input_path ../dataset/tweet_sentiment/train/zixuan_andre/train_vanilla_augment.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/$1_train_augment.jsonl
 echo "Wrote train_vanilla_augment dataset to datasets/formatted_datasets/$1_train_augment.jsonl"
+
+python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name $1 --input_path ../dataset/tweet_sentiment/train/zixuan_andre/train_preprocessed.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/$1_train_preprocessed.jsonl
+echo "Wrote train_preprocessed dataset to datasets/formatted_datasets/$1_train_preprocessed.jsonl"
+python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name $1 --input_path ../dataset/tweet_sentiment/train/zixuan_andre/train_preprocessed_augment.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/$1_train_preprocessed_augment.jsonl
+echo "Wrote train_preprocessed_augment dataset to datasets/formatted_datasets/$1_train_preprocessed_augment.jsonl"
+
 python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name $1 --input_path ../dataset/tweet_sentiment/test/test.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/$1_test.jsonl --is_evaluation true
 echo "Wrote test dataset to datasets/formatted_datasets/$1_test.jsonl"
-
+python dataset_preparation/tsad_sentiment_generation_preparer.py --dataset_name $1 --input_path ../dataset/tweet_sentiment/test/test_preprocessed.jsonl --template_path dataset_preparation/prompt_templates/tweet_sentiment_generation.json --output_path datasets/formatted_datasets/$1_test_preprocessed.jsonl --is_evaluation true
+echo "Wrote test dataset to datasets/formatted_datasets/$1_test_preprocessed.jsonl"
