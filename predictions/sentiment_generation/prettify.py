@@ -1,6 +1,6 @@
 # Formats output of sentiment generation (phase 2) instruct models. Writes a csv with original text, input, and output
 # Paths can be relative (uses `root_folder` as the base path)
-# e.g. use (for match_v08): python prettify.py -r dataset/tweet_sentiment/test/test.jsonl -f open-instruct/datasets/formatted_datasets/tsad_08_test.jsonl -m predictions/sentiment_generation/tsad_llama_v08.jsonl
+# e.g. use (for match_v08): python predictions/sentiment_generation/prettify.py -r dataset/tweet_sentiment/test/test.jsonl -f open-instruct/datasets/formatted_datasets/tsad_08_test.jsonl -m predictions/sentiment_generation/tsad_llama_v08.jsonl
 
 import collections
 import argparse, csv, json, os, sys, re
@@ -95,8 +95,9 @@ def match_v08(raw_test_file_path, model_output_file_path, output_file_path):
                 #     f"removing space for {txt['id']}, |{txt['output']}|. result: |{' ' + txt['output'][7:]}|"
                 # )
                 txt["output"] = " " + txt["output"][7:]
-                if "space" in txt["output"]:
-                    print(f"found space in output for {txt['id']}, |{txt['output']}|")
+                # check if there are any wrongly formatted <space> tokens
+                # if "space" in txt["output"]:
+                #     print(f"found space in output for {txt['id']}, |{txt['output']}|")
             hashmap[txt["id"]]["completion"] = txt["output"]
             hashmap[txt["id"]]["combined"] = (
                 hashmap[txt["id"]]["prefix"] + txt["output"]
