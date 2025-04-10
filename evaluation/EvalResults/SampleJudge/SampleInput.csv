@@ -1,0 +1,6 @@
+textID,original,sentiment,prefix,completion,combined
+261932614e,I THINK EVERYONE HATES ME ON HERE   lol,negative,<sentiment: negative>I THINK EVERYONE HATES,ME,<sentiment: negative>I THINK EVERYONE HATES ME
+ae93ad52a0,"So hot today =_=  don`t like it and i hate my new timetable, having such a bad week",negative,<sentiment: negative>So hot today =_=  don`t like it,,<sentiment: negative>So hot today =_=  don`t like it 
+0ba6aaf9aa,": hmmm, wrong link, ignore my tweet",negative,"<sentiment: negative>: hmmm, wrong link",,"<sentiment: negative>: hmmm, wrong link "
+58129e4130, Yay for Block Party!  You`re the BOMB! Blockheads <3 Dave!   Thanks for supporting NKOTB!,positive,<sentiment: positive> Yay for Block Party!  You`re the BOMB,!,<sentiment: positive> Yay for Block Party!  You`re the BOMB !
+33f19050cf, you guys didn`t say hi or answer my questions yesterday  but nice songs.,positive,<sentiment: positive> you guys didn`t say hi or,anything,<sentiment: positive> you guys didn`t say hi or anything
