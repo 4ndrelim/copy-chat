@@ -1,0 +1,10 @@
+Summary Statistics
+------------------
+
+For nli_score:
+  Total valid entries: 92
+  Average: 0.8111
+  Median: 0.8596
+  Standard Deviation: 0.1762
+  Minimum: 0.3662
+  Maximum: 0.9970
