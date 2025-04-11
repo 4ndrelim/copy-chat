@@ -120,7 +120,7 @@ def evaluate_rows(input_file, metric="nli"):
         order_scores = []
         for idx, row in df.iterrows():
             completion = row.get("completion", "")
-            reference = row.get("reference", "")
+            reference = row.get("prefix", "")
             
             # Validate inputs for Sentence Ordering
             if (not isinstance(completion, str) or completion.strip() == "" or
