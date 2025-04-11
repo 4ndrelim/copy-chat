@@ -9,7 +9,7 @@ nltk.download('punkt', quiet=True)
 
 def compute_nli(premise, hypothesis):
     """
-    Computes NLI metrics for given premise and hypothesis with 'roberta-large-mnli'.
+    Computes NLI using 'roberta-large-mnli'.
     Returns:
         tuple: (nli_label, confidence_score)
     """
@@ -26,10 +26,9 @@ def compute_nli(premise, hypothesis):
 
 def compute_sentence_order_score(completion, reference):
     """
-    Computes simple sentence ordering score between the completion and reference.
-    
-    It sentence-tokenises each text. Then, for sentences in the completion appearing exactly 
-    in the reference, it calculates the proportion of sentence pairs in the correct order.
+    Computes simple sentence ordering score btw the completion and reference. For each sentence 
+    in the completion appearing exactly in the reference, it calculates 
+    the proportion of sentence pairs in the correct order.
     
     Returns:
         float or None: The ratio of correctly ordered pairs (0 to 1) or None if fewer than 2 sentences match.
@@ -58,10 +57,42 @@ def compute_sentence_order_score(completion, reference):
                 correct_pairs += 1
     return correct_pairs / total_pairs if total_pairs > 0 else 0.0
 
+def compute_word_order_score(completion, reference):
+    """
+    Computes score based on word-level-ordering. ie the fraction of word-pairs that are in the correct order.
+    Returns:
+        float or None: The ratio of correctly ordered word pairs (between 0 and 1), or None if fewer than 2 words match.
+    """
+    candidate_words = nltk.word_tokenize(completion)
+    ref_words = nltk.word_tokenize(reference)
+    
+    positions = []
+    for word in candidate_words:
+        try:
+            pos = ref_words.index(word) # find first occurrence
+            positions.append(pos)
+        except ValueError:
+            # Word not found in reference; skip it.
+            continue
+
+    if len(positions) < 2:
+        return None
+    
+    # Check every word with every next word
+    # Check if word appearing before another word in candidate array also appears before other word in reference array
+    total_pairs = 0
+    correct_pairs = 0
+    for i in range(len(positions)):
+        for j in range(i+1, len(positions)):
+            total_pairs += 1
+            if positions[i] < positions[j]:
+                correct_pairs += 1
+    return correct_pairs / total_pairs if total_pairs > 0 else 0.0
+
+
 def evaluate_rows(input_file, metric="nli"):
     """
     Reads the CSV and calls NLI or sentence ordering coherence evaluation functions.
-    
     Returns an updated DataFrame with columns: nli_label, nli_score, sentence_order_score.
     """
     df = pd.read_csv(input_file, encoding="utf-8")
@@ -89,7 +120,7 @@ def evaluate_rows(input_file, metric="nli"):
         order_scores = []
         for idx, row in df.iterrows():
             completion = row.get("completion", "")
-            reference = row.get("reference", "")
+            reference = row.get("prefix", "")
             
             # Validate inputs for Sentence Ordering
             if (not isinstance(completion, str) or completion.strip() == "" or
@@ -136,11 +167,11 @@ def main():
     parser.add_argument(
         "--metric",
         default="nli",
-        help="choose coherence metric: 'nli' or 'sentence_order' (default: 'nli')",
+        help="choose coherence metric: 'nli' or 'order' (default: 'nli')",
     )
     args = parser.parse_args()
     
-    # == Evaluation function ===
+    # == Call Evaluator function ===
     df_evaluated = evaluate_rows(args.input_file, args.metric)
     
     # === Construct output CSV ===
@@ -155,7 +186,7 @@ def main():
     print(f"Summary statistics saved to '{summary_file}'.")
 
 if __name__ == "__main__":
-    # Load NLI model and tokenizer once globally.
+    # Load NLI model and tokenizer once at start globally.
     tokenizer = AutoTokenizer.from_pretrained("roberta-large-mnli")
     model = AutoModelForSequenceClassification.from_pretrained("roberta-large-mnli")
     main()
