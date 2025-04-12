@@ -1,0 +1,15 @@
+
+Statistics: results_sentiJudge_llama_trump_v4
+Total rows processed: 455
+Matching sentiments: 282/455 (61.98%)
+
+Breakdown by sentiment type:
+  Neutral: 82/152 (53.95%)
+  Positive: 130/209 (62.20%)
+  Negative: 70/94 (74.47%)
+
+Confusion Matrix:
+Intended vs. Judged sentiment:
+  neutral :      82 |      30 |      40
+  positive:      67 |     130 |      12
+  negative:      16 |       8 |      70

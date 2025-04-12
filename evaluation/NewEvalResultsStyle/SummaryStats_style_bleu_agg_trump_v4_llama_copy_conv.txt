@@ -1,0 +1,7 @@
+Summary Statistics for metric 'bleu_agg, file SummaryStats_style_bleu_agg_trump_v4_llama_copy_conv.txt':
+Total valid entries: 465
+Average: 0.1504
+Median: 0.1504
+Standard Deviation: 0.0000
+Minimum: 0.1504
+Maximum: 0.1504
