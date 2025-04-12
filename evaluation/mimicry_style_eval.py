@@ -110,8 +110,8 @@ def main():
     )
     parser.add_argument(
         "--metric",
-        default="cosine",
-        help="Evaluation metric: choose 'cosine' or 'bleu' (default: 'cosine')",
+        default="cosine_agg",
+        help="Evaluation metric: choose 'cosine' or 'bleu' (default: 'cosine_agg')",
     )
     args = parser.parse_args()
 
