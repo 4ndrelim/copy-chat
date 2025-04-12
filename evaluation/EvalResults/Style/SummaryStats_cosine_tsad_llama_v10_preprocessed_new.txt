@@ -1,0 +1,7 @@
+Summary Statistics for metric 'cosine, file SummaryStats_cosine_tsad_llama_v10_preprocessed.txt':
+Total valid entries: 2897
+Average: 0.2147
+Median: 0.1982
+Standard Deviation: 0.1128
+Minimum: -0.0985
+Maximum: 0.7175
