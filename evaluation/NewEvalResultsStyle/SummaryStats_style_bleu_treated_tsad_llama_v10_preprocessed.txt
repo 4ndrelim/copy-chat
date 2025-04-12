@@ -1,0 +1,7 @@
+Summary Statistics for metric 'bleu, file SummaryStats_style_bleu_treated_tsad_llama_v10_preprocessed.txt':
+Total valid entries: 2897
+Average: 0.0367
+Median: 0.0189
+Standard Deviation: 0.0724
+Minimum: 0.0000
+Maximum: 1.0000

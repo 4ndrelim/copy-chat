@@ -1,0 +1,15 @@
+Summary Statistics
+------------------
+
+NLI Label Counts and Percentages:
+  Contradiction: 530 (18.29%)
+  Neutral: 2221 (76.67%)
+  Entailment: 146 (5.04%)
+
+For nli_score:
+  Total valid entries: 2897
+  Average: 0.8101
+  Median: 0.8664
+  Standard Deviation: 0.1733
+  Minimum: 0.3456
+  Maximum: 0.9993
