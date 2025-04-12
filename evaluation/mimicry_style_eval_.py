@@ -86,12 +86,12 @@ def main():
     parser.add_argument("input_file", help="Path to input CSV file")
     parser.add_argument(
         "--generated_col",
-        default="combined",
+        default="completion",
         help="Name of the column containing generated text (default: 'combined')",
     )
     parser.add_argument(
         "--reference_col",
-        default="prefix",
+        default="original",
         help="Reference column of original style (default: 'prefix')",
     )
     parser.add_argument(
