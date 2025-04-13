@@ -8,7 +8,6 @@ from tqdm import tqdm
 from collections import Counter
 from sklearn.model_selection import train_test_split
 
-# === Tokenizer ===
 class WordTokenizer:
     def __init__(self, min_freq=1):
         self.min_freq = min_freq
@@ -45,9 +44,8 @@ class WordTokenizer:
     def decode(self, ids):
         return " ".join(self.idx2word.get(i, "<UNK>") for i in ids if i != self.word2idx["<PAD>"])
 
-# === LSTM Language Model ===
 class LSTMLanguageModel(nn.Module):
-    def __init__(self, vocab_size, embed_dim=64, hidden_dim=128):
+    def __init__(self, vocab_size, embed_dim=128, hidden_dim=256):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
         self.lstm = nn.LSTM(embed_dim, hidden_dim, batch_first=True)
@@ -59,7 +57,6 @@ class LSTMLanguageModel(nn.Module):
         logits = self.fc(output)
         return logits, hidden
 
-# === Dataset Preparation ===
 def prepare_dataset(df, tokenizer, max_input_len=30, max_output_len=30):
     data = []
     for _, row in df.iterrows():
@@ -72,7 +69,6 @@ def prepare_dataset(df, tokenizer, max_input_len=30, max_output_len=30):
         data.append((x, y))
     return torch.tensor([x for x, _ in data]), torch.tensor([y for _, y in data])
 
-# === Generation ===
 def generate_completion(model, tokenizer, prompt, max_len=30):
     model.eval()
     input_ids = tokenizer.encode(prompt)
@@ -89,13 +85,11 @@ def generate_completion(model, tokenizer, prompt, max_len=30):
         input_tensor = torch.tensor([[next_token]], dtype=torch.long)
     return tokenizer.decode(generated)
 
-# === Training ===
 def train_lstm_model(train_file, test_file, output_file):
     df_train = pd.read_csv(train_file)
     df_test = pd.read_csv(test_file)
 
-    # Auto-generate prefix and completion from full text
-    def create_prefix_completion(text, prefix_len=6):
+    def create_prefix_completion(text, prefix_len=8):
         words = text.split()
         prefix = " ".join(words[:prefix_len])
         completion = " ".join(words[prefix_len:])
@@ -117,7 +111,7 @@ def train_lstm_model(train_file, test_file, output_file):
     criterion = nn.CrossEntropyLoss(ignore_index=0)
 
     print("Training LSTM...")
-    for epoch in range(3):
+    for epoch in range(10):
         model.train()
         total_loss = 0
         for x_batch, y_batch in tqdm(loader):
@@ -145,7 +139,6 @@ def train_lstm_model(train_file, test_file, output_file):
     pd.DataFrame(results).to_csv(output_file, index=False)
     print(f"Saved to {output_file}")
 
-# === Run ===
 if __name__ == "__main__":
     train_path = "dataset/mimicry/annotated/trump_train.csv"
     test_path = "dataset/mimicry/annotated/trump_test.csv"
