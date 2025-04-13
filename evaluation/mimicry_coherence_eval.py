@@ -108,9 +108,22 @@ def write_summary_stats(df, output_file):
                     f.write(f"  {label.capitalize()}: {count} ({perc:.2f}%)\n")
             else:
                 f.write("  No valid NLI labels available.\n")
+            f.write("\nNLI Score Statistics by Label:\n")
+            for label in ['contradiction', 'neutral', 'entailment']:
+                group = df[df['nli_label'] == label]
+                valid_scores = pd.to_numeric(group['nli_score'], errors='coerce').dropna()
+                f.write(f"  {label.capitalize()}:\n")
+                if len(valid_scores) > 0:
+                    f.write(f"    Average: {valid_scores.mean():.4f}\n")
+                    f.write(f"    Median: {valid_scores.median():.4f}\n")
+                    f.write(f"    Standard Deviation: {valid_scores.std():.4f}\n")
+                    f.write(f"    Minimum: {valid_scores.min():.4f}\n")
+                    f.write(f"    Maximum: {valid_scores.max():.4f}\n")
+                else:
+                    f.write("    No valid scores available.\n")
         
         # Report statistics for numerical metrics.
-        for col in ['nli_score', 'cosine_sim']:
+        for col in ['cosine_sim']:
             if col not in df.columns:
                 continue  
             valid_scores = pd.to_numeric(df[col], errors='coerce').dropna()
