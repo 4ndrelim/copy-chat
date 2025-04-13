@@ -32,32 +32,46 @@ def evaluate_mimicry(input_file, generated_col='combined', reference_col='prefix
     Reads CSV file and calls appropriate metric function.
     """
     df = pd.read_csv(input_file, encoding="utf-8")
-    scores = []
     metric_name = metric_name.lower()
-    
     model = None
+    
     if metric_name == "cosine":
         model = SentenceTransformer('all-MiniLM-L6-v2')
+    elif metric_name == "cosine_agg":
+        aggregated_generated = " ".join(df[generated_col].dropna().tolist())
+        aggregated_reference = " ".join(df[reference_col].dropna().tolist())
+        model = SentenceTransformer('all-MiniLM-L6-v2')
+        score = compute_cosine_similarity(aggregated_generated, aggregated_reference, model)
+        df[metric_name] = score
+        return df
+    elif metric_name == "bleu_agg":
+        aggregated_generated = " ".join(df[generated_col].dropna().tolist())
+        aggregated_reference = " ".join(df[reference_col].dropna().tolist())
+        score = compute_bleu(aggregated_generated, aggregated_reference)
+        df[metric_name] = score
+        return df
     elif metric_name != "bleu":
-        raise ValueError("Invalid metric provided. Choose either 'cosine' or 'bleu'.")
+        raise ValueError("Invalid metric provided. Choose either 'cosine', 'cosine_agg', or 'bleu'.")
     
-    # Process dataframe row-wise
-    for idx, row in df.iterrows():
-        candidate = row.get(generated_col, "")
-        reference = row.get(reference_col, "")
-        
-        # if candidate or reference null, move to next
-        if pd.isna(candidate) or pd.isna(reference) or candidate.strip() == "" or reference.strip() == "":
-            scores.append(None)
-        else:
-            if metric_name == "cosine":
-                score = compute_cosine_similarity(candidate, reference, model)
-            elif metric_name == "bleu":
-                score = compute_bleu(candidate, reference)
-            scores.append(score)
-    
-    # Store computed metric
-    df[metric_name] = scores
+    scores = []
+    if metric_name == "cosine" or metric_name == "bleu":
+        # Process dataframe row-wise
+        for idx, row in df.iterrows():
+            candidate = row.get(generated_col, "")
+            reference = row.get(reference_col, "")
+            
+            # if candidate or reference null, move to next
+            if pd.isna(candidate) or pd.isna(reference) or candidate.strip() == "" or reference.strip() == "":
+                scores.append(None)
+            else:
+                if metric_name == "cosine":
+                    score = compute_cosine_similarity(candidate, reference, model)
+                elif metric_name == "bleu":
+                    score = compute_bleu(candidate, reference)
+                scores.append(score)
+        # Store computed metric
+        df[metric_name] = scores
+
     return df
 
 def write_summary_stats(df, metric, output_file):
@@ -86,18 +100,18 @@ def main():
     parser.add_argument("input_file", help="Path to input CSV file")
     parser.add_argument(
         "--generated_col",
-        default="combined",
+        default="completion",
         help="Name of the column containing generated text (default: 'combined')",
     )
     parser.add_argument(
         "--reference_col",
-        default="prefix",
+        default="orig_without_prefix",
         help="Reference column of original style (default: 'prefix')",
     )
     parser.add_argument(
         "--metric",
-        default="cosine",
-        help="Evaluation metric: choose 'cosine' or 'bleu' (default: 'cosine')",
+        default="cosine_agg",
+        help="Evaluation metric: choose 'cosine' or 'bleu' (default: 'cosine_agg')",
     )
     args = parser.parse_args()
 
@@ -106,14 +120,14 @@ def main():
 
     # === Construct output ===
     input_filename = os.path.basename(args.input_file)
-    output_filename = f"results_{args.metric}_{input_filename}"
+    output_filename = f"results_style_{args.metric}_{input_filename}"
     
     # Save as CSV.
     df_evaluated.to_csv(output_filename, index=False)
     print(f"Evaluation complete. Results saved to '{output_filename}'.")
 
     # Construct summary stats filename and write statistics.
-    summary_stats_file = f"SummaryStats_{args.metric}_{input_filename.split('.')[0]}.txt"
+    summary_stats_file = f"SummaryStats_style_{args.metric}_{input_filename.split('.')[0]}.txt"
     write_summary_stats(df_evaluated, args.metric.lower(), summary_stats_file)
     print(f"Summary statistics saved to '{summary_stats_file}'.")
 

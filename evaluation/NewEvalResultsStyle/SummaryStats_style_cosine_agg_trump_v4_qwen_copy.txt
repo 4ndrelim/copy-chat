@@ -1,0 +1,7 @@
+Summary Statistics for metric 'cosine_agg, file SummaryStats_style_cosine_agg_trump_v4_qwen_copy.txt':
+Total valid entries: 465
+Average: 0.6403
+Median: 0.6403
+Standard Deviation: 0.0000
+Minimum: 0.6403
+Maximum: 0.6403

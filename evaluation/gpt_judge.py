@@ -17,9 +17,7 @@ def gpt_sentiment(text, client):
     """
     try:
         system_prompt = (
-            "You are a sentiment analysis expert. You will be given a short text. "
-            "Your task is to determine whether the sentiment is 'positive', 'negative', or 'neutral'. "
-            "Respond strictly with one of these three words only."
+            "You are an expert in analyzing tweet sentiment. Your task is to classify each tweet into one of three categories: 'positive', 'neutral', or 'negative'. You must base your decision on whether the tweet expresses an obvious emotional attitude. Only label the sentiment based on clearly stated feelings, tone, or sentiment words. If there is no clear emotion, label it as neutral.\n\nGUIDELINES:\n- positive = Expresses happiness, excitement, gratitude, affection, optimism, or encouragement.\n- negative = Expresses sadness, anger, frustration, complaints, sarcasm, disappointment, or worry.\n- neutral = Provides a factual statement, observation, or message without clear emotion. Neutral applies when emotions are unclear, balanced, or mixed, without a strong positive or negative feeling.\n\nRULES:\n- Your output MUST follow the response format exactly.\n- The Sentiment field must be exactly one of: 'positive', 'neutral', or 'negative'. No other words or explanation are allowed.\n- If the tweet is simply polite or does not express a clear emotion, label it neutral. \n- Do not infer emotions, intentions, or sentiments unless they are explicitly expressed in the tweet."
         )
         user_prompt = f"Text: {text}\nSentiment:"
 

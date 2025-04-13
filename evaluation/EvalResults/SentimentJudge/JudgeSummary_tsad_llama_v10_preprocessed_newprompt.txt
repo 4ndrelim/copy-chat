@@ -1,0 +1,15 @@
+
+Statistics: tsad_llama_v10_preprocessed_newprompt
+Total rows processed: 2852
+Matching sentiments: 1947/2852 (68.27%)
+
+Breakdown by sentiment type:
+  Negative: 673/867 (77.62%)
+  Positive: 663/871 (76.12%)
+  Neutral: 611/1114 (54.85%)
+
+Confusion Matrix:
+Intended vs. Judged sentiment:
+  negative:     673 |      48 |     146
+  positive:      45 |     663 |     163
+  neutral :     278 |     225 |     611

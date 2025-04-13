@@ -4,6 +4,7 @@ import pandas as pd
 import nltk
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from sentence_transformers import SentenceTransformer, util
 
 nltk.download('punkt', quiet=True)
 
@@ -24,71 +25,14 @@ def compute_nli(premise, hypothesis):
     score = probabilities[max_idx]
     return label, score
 
-def compute_sentence_order_score(completion, reference):
+def compute_cosine_similarity(candidate, reference, model):
     """
-    Computes simple sentence ordering score btw the completion and reference. For each sentence 
-    in the completion appearing exactly in the reference, it calculates 
-    the proportion of sentence pairs in the correct order.
-    
-    Returns:
-        float or None: The ratio of correctly ordered pairs (0 to 1) or None if fewer than 2 sentences match.
+    Compute cosine similarity between candidate and reference sentences embeddings.
     """
-    cand_sentences = nltk.sent_tokenize(completion)
-    ref_sentences = nltk.sent_tokenize(reference)
-    
-    positions = []
-    for sent in cand_sentences:
-        try:
-            pos = ref_sentences.index(sent)
-            positions.append(pos)
-        except ValueError:
-            # If sentence doesn't match exactly, skip
-            continue
-
-    if len(positions) < 2:
-        return None
-
-    total_pairs = 0
-    correct_pairs = 0
-    for i in range(len(positions)):
-        for j in range(i+1, len(positions)):
-            total_pairs += 1
-            if positions[i] < positions[j]:
-                correct_pairs += 1
-    return correct_pairs / total_pairs if total_pairs > 0 else 0.0
-
-def compute_word_order_score(completion, reference):
-    """
-    Computes score based on word-level-ordering. ie the fraction of word-pairs that are in the correct order.
-    Returns:
-        float or None: The ratio of correctly ordered word pairs (between 0 and 1), or None if fewer than 2 words match.
-    """
-    candidate_words = nltk.word_tokenize(completion)
-    ref_words = nltk.word_tokenize(reference)
-    
-    positions = []
-    for word in candidate_words:
-        try:
-            pos = ref_words.index(word) # find first occurrence
-            positions.append(pos)
-        except ValueError:
-            # Word not found in reference; skip it.
-            continue
-
-    if len(positions) < 2:
-        return None
-    
-    # Check every word with every next word
-    # Check if word appearing before another word in candidate array also appears before other word in reference array
-    total_pairs = 0
-    correct_pairs = 0
-    for i in range(len(positions)):
-        for j in range(i+1, len(positions)):
-            total_pairs += 1
-            if positions[i] < positions[j]:
-                correct_pairs += 1
-    return correct_pairs / total_pairs if total_pairs > 0 else 0.0
-
+    candidate_embedding = model.encode(candidate, convert_to_tensor=True)
+    reference_embedding = model.encode(reference, convert_to_tensor=True)
+    cosine_sim = util.cos_sim(candidate_embedding, reference_embedding)
+    return cosine_sim.item()
 
 def evaluate_rows(input_file, metric="nli"):
     """
@@ -115,21 +59,28 @@ def evaluate_rows(input_file, metric="nli"):
                 nli_scores.append(score)
         df['nli_label'] = nli_labels
         df['nli_score'] = nli_scores
-
-    elif metric.lower() == "order":
-        order_scores = []
+    
+    
+    # ============= Note ==============
+    # Very similar function to cosine similarity in style eval, but here 
+    # we pass in 'prefix' and 'completion' (instead of orig_without_prefix and completion)
+    # By doing so, we check if completion follows from prefix by pointing in similar direction to prefix.
+    # ============= Note ==============
+    elif metric.lower() == "cosine":
+        scores = []
+        model = SentenceTransformer('all-MiniLM-L6-v2')
+        # Process dataframe row-wise
         for idx, row in df.iterrows():
-            completion = row.get("completion", "")
+            candidate = row.get("completion", "")
             reference = row.get("prefix", "")
             
-            # Validate inputs for Sentence Ordering
-            if (not isinstance(completion, str) or completion.strip() == "" or
-                not isinstance(reference, str) or reference.strip() == ""):
-                order_scores.append(None)
-            else:
-                order_score = compute_sentence_order_score(completion, reference)
-                order_scores.append(order_score)
-        df['sentence_order_score'] = order_scores
+            # if candidate or reference null, move to next
+            if pd.isna(candidate) or pd.isna(reference) or candidate.strip() == "" or reference.strip() == "":
+                scores.append(None)
+            else:                    
+                score = compute_cosine_similarity(candidate, reference, model)
+                scores.append(score)
+        df["cosine_sim"] = scores
 
     else:
         raise ValueError("Invalid metric supplied.")
@@ -143,7 +94,36 @@ def write_summary_stats(df, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("Summary Statistics\n")
         f.write("------------------\n")
-        for col in ['nli_score', 'sentence_order_score']:
+        
+        # If NLI labels are present, report counts and percentages.
+        if 'nli_label' in df.columns:
+            valid_labels = df['nli_label'].dropna()
+            total_labels = len(valid_labels)
+            f.write("\nNLI Label Counts and Percentages:\n")
+            if total_labels > 0:
+                counts = valid_labels.value_counts()
+                for label in ['contradiction', 'neutral', 'entailment']:
+                    count = counts.get(label, 0)
+                    perc = (count / total_labels) * 100
+                    f.write(f"  {label.capitalize()}: {count} ({perc:.2f}%)\n")
+            else:
+                f.write("  No valid NLI labels available.\n")
+            f.write("\nNLI Score Statistics by Label:\n")
+            for label in ['contradiction', 'neutral', 'entailment']:
+                group = df[df['nli_label'] == label]
+                valid_scores = pd.to_numeric(group['nli_score'], errors='coerce').dropna()
+                f.write(f"  {label.capitalize()}:\n")
+                if len(valid_scores) > 0:
+                    f.write(f"    Average: {valid_scores.mean():.4f}\n")
+                    f.write(f"    Median: {valid_scores.median():.4f}\n")
+                    f.write(f"    Standard Deviation: {valid_scores.std():.4f}\n")
+                    f.write(f"    Minimum: {valid_scores.min():.4f}\n")
+                    f.write(f"    Maximum: {valid_scores.max():.4f}\n")
+                else:
+                    f.write("    No valid scores available.\n")
+        
+        # Report statistics for numerical metrics.
+        for col in ['cosine_sim']:
             if col not in df.columns:
                 continue  
             valid_scores = pd.to_numeric(df[col], errors='coerce').dropna()
@@ -161,13 +141,13 @@ def write_summary_stats(df, output_file):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Evaluate NLI and Sentence Reordering for generated completions."
+        description="Evaluate coherence for generated completions."
     )
     parser.add_argument("input_file", help="Path to input CSV file.")
     parser.add_argument(
         "--metric",
         default="nli",
-        help="choose coherence metric: 'nli' or 'order' (default: 'nli')",
+        help="choose coherence metric: 'nli' or 'cosine' (default: 'nli')",
     )
     args = parser.parse_args()
     
@@ -176,12 +156,12 @@ def main():
     
     # === Construct output CSV ===
     input_filename = os.path.basename(args.input_file)
-    output_csv = f"results_{args.metric}_{input_filename}"
+    output_csv = f"results_coherence_{args.metric}_{input_filename}"
     df_evaluated.to_csv(output_csv, index=False)
     print(f"Evaluation complete. Results saved to '{output_csv}'.")
     
     # summary stats txt
-    summary_file = f"SummaryStats_{args.metric}_{input_filename.split('.')[0]}.txt"
+    summary_file = f"SummaryStats_coherence_{args.metric}_{input_filename.split('.')[0]}.txt"
     write_summary_stats(df_evaluated, summary_file)
     print(f"Summary statistics saved to '{summary_file}'.")
 

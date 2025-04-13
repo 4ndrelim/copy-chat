@@ -1,0 +1,15 @@
+
+Statistics: results_sentiJudge_trumpv4_qwen
+Total rows processed: 453
+Matching sentiments: 286/453 (63.13%)
+
+Breakdown by sentiment type:
+  Positive: 130/206 (63.11%)
+  Neutral: 94/158 (59.49%)
+  Negative: 62/89 (69.66%)
+
+Confusion Matrix:
+Intended vs. Judged sentiment:
+  positive:     130 |      67 |       9
+  neutral :      25 |      94 |      39
+  negative:       5 |      22 |      62
