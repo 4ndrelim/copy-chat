@@ -1,0 +1,8 @@
+tweet_mimicry_evaluator:
+  prompt_template: "evaluation/prompt.txt"
+  fn_completions: "openai_completions"
+  completions_kwargs:
+    model_name: "gpt-4o"
+    max_tokens: 100
+    temperature: 0
+  fn_completion_parser: "ranking_parser"
