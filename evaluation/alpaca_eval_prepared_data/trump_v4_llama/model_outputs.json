@@ -1,0 +1,2327 @@
+[
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@jimrcottage @timbdickson @realDonaldTrump @sternshow He was on Howard Stern last week. Awesome'",
+    "output": "interview.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@marklevinshow: Donald Trump will be on my show tonight at 8:30 PM eastern time.\"\" Will be my great'",
+    "output": "honor!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@JuliInkster Congratulations on your great win--what'",
+    "output": "a comeback!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.....Reserve should likewise act so that countries, of which there are many, no longer take advantage of our strong dollar by further devaluing their currencies. This makes it very hard for our manufactures &, farmers to fairly export their goods.'",
+    "output": "Lower our taxes!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @WhiteHouse: While past Presidents have relied mostly on top-down policy tools, President @realDonaldTrump has worked hard'",
+    "output": "to empower th\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cTrump recognized Russian Meddling MANY TIMES.\u00c3\u00a2\u00c2\u0080\u00c2\u009d Thank you to @foxandfriends and @FoxNews for actually showing the clips. The Fake News wants no part of that narrative! Too bad they don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t'",
+    "output": "put out the truth.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@jharwood14: If Reagan, a Hollywood actor, was president, then your chances are'",
+    "output": "good. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Bill_Collector_: @realDonaldTrump we need you as'",
+    "output": "president. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@mortimerzilch: @realDonaldTrump @steveman905 we don't know if Hil will get the Dem nomination. But Donald'",
+    "output": "will get the GOP nomination.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ShapiroJD: @realDonaldTrump You should be on #SharkTank as a guest star.'",
+    "output": "You'd be a huge hit.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Pawsar @realDonaldTrump Mr.Trump when are you going to run for president of the United States?'",
+    "output": "\"\" I'm thinking about it.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'The Costa Concordia shipwreck is a MONUMENT TO STUPIDITY but the uprighting of'",
+    "output": "the ship is a technical marvel.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'The case of Major Mathew Golsteyn is now under review at the White House. Mathew is a highly decorated Green Beret who is being tried for killing a Taliban bombmaker. We train our boys to be killing machines, then prosecute them when'",
+    "output": "they kill! @foxandfriends",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @DonaldJTrumpJr: Watching the media circle the wagons and desperately try to defend the Biden family for things they'",
+    "output": "know are true is a\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....Sondland said Trump told him. None of this will move the needle for anyone.'",
+    "output": "The Dems are grasping at straws.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@footballguru99: @realDonaldTrump Love'",
+    "output": "the show! #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Ask: Is there anyone else who can do this better than I'",
+    "output": "can? If not, then do it!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Great earnings coming out of Stock Market. Too bad Media doesn\u00c3\u00a2\u00c2\u0080\u00c2\u0099t devote much'",
+    "output": "time to it. They would love a big drop!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@RobertoAG415: Economically,DonaldTrump is what America'",
+    "output": "needs. #Trump2016 #MakeAmericaGreatAgain\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@sweetbaboo1968: @realDonaldTrump Thank you for'",
+    "output": "your support of our troops. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ShoretnTweet @realDonaldTrump did someone say'",
+    "output": "he's not a good businessman? #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@McIlroyRory Thanks for your nice note - they love you at'",
+    "output": "Trump National Doral. You are a great player!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'STOCK MARKET AT ALL-TIME HIGH! HOW ARE YOUR 401K\u00c3\u00a2\u00c2\u0080\u00c2\u0099S DOING?'",
+    "output": "",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@TomNocera: @DanScavino @realDonaldTrump \"\"TRUMP DOMINANT\"\" screams'",
+    "output": "the front page of the New York Post. Thank you!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@JoyceGoodman64: @realDonaldTrump running the US is much like running a business,'",
+    "output": "it's time to get the job done! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I will be interviewed on This Week with George'",
+    "output": "Stephanopoulos on ABC at 9:00 a.m. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@jimrobbins1973: DonaldTrump. the new World Trade Center is'",
+    "output": "a masterpiece. You have done a great job. Thank you.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@jsilva74366572: @DurandSentinus - US infrastructure is seriously deficient -'",
+    "output": "we need a leader who will fix it. Trump will do it.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @fema: We're working with partners to get medical supplies where they are needed by: \u00c3\u00b0\u00c2\u009f\u00c2\u0094\u00c2\u00b9 Making the'",
+    "output": "supplies available \u00c3\u00b0\u00c2\u009f\u00c2\u0094\u00c2\u00b9 Coordinating tra\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Scott Walker is very special and will have another great win in November. He has done a fantastic job as'",
+    "output": "Governor of Wisconsin. He has my complete and total Endorsement!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@anon_thom: You have'",
+    "output": "to be a good leader to be a good manager. @realDonaldTrump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@scrt22 @realDonaldTrump for all of your faults,'",
+    "output": "you are the only one who can fix this country. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@LisaLampanelli You are terrific (always). Great'",
+    "output": "job on the @ApprenticeNBC. You are a winner!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @LouDobbs: Media Misrepresentation. @KimStrassel says IG Horowtiz'",
+    "output": "report shows no evidence of collusion between the Trump campaign and R\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@stevenowell: @realDonaldTrump don't normally agree'",
+    "output": "with you but you're right about the NFL. They are a joke.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The five prisoners our government so stupidly released for one pathetic traitor are now fighting and killing'",
+    "output": "our troops in Afghanistan.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I will be interviewed by @jdickerson on @FaceTheNation tomorrow'",
+    "output": "at 10:30am ET. #MakeAmericaGreatAgain #Trump2016",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The same people that said I wouldn't run, or that I wouldn't lead or do well (1st place and leading by'",
+    "output": "a lot), are now saying that I will lose to Hillary. I won't!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Biden wants to LOCKDOWN our Country, maybe for years. Crazy! There will'",
+    "output": "be no lockdowns. We will be fine. We are the best in the World!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Arizona: Join me in Glendale! I'll see you Friday, August 23rd \u00c3\u00a2\u00c2\u0080\u00c2\u0094 at 4:00PM. Be part of a HISTORIC rally. Get your'",
+    "output": "tickets here: https://t.co/1qQGqiQG0c",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'New book by @charliekirk11, already number 1, \u00c3\u00a2\u00c2\u0080\u00c2\u009cThe MAGA Doctrine\u00c3\u00a2\u00c2\u0080\u00c2\u009d. Really great, SUPPORT'",
+    "output": "CHARLIE! https://t.co/9J0e5Y6d1K",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'BIG NEWS by @Hyundai, @Kia, and @Aptiv on a 4 BILLION DOLLAR joint venture to develop autonomous driving technologies in the USA. That\u00c3\u00a2\u00c2\u0080\u00c2\u0099s a'",
+    "output": "big deal! https://t.co/7jg3v4bY7T",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Leaving now for Florida'",
+    "output": ". Will be on @foxandfriends at 7:00 A.M. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@tonyparker1981: @Nate_Cohn @chrislhayes Not a huge'",
+    "output": "fan of Nate Silver but he's right about this one. Trump is going to win.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cStock had the'",
+    "output": "best chance to win the race, but he didn\u00c3\u00a2\u00c2\u0080\u00c2\u0099t.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @FoxNews",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Congressman @ScottRTipton is a great supporter of the #MAGA Agenda!'",
+    "output": "He fights for Colorado and our #2A. Scott has my Complete and Total Endorsement!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Via @USNewsTravel: \u00c3\u00a2\u00c2\u0080\u00c2\u009cBest New York'",
+    "output": "City Hotels\u00c3\u00a2\u00c2\u0080\u00c2\u009d http://t.co/3Z6xQ4jV8A",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @ByronYork: From @Jim_Jordan: 'A Look Back On The Russia, Mueller, And Flynn'",
+    "output": "Collusion Hoax' https://t.co/1n1Q4Y5X5B",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'WHEN WE GET KNOCKED DOWN, WE DON\u00c3\u00a2\u00c2\u0080\u00c2\u0099T STAY DOWN\u00c3\u00a2\u00c2\u0080\u00c2\u0094WE GET'",
+    "output": "UP AND KEEP GOING! https://t.co/3c9sXv2X7S",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Hopefully Republican Senators, good people all, can quickly get together and pass a new (repeal &, replace)'",
+    "output": "healthcare plan. Must have Heart!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'If @RepMarkMeadows, @Jim_Jordan and Raul_Labrador would get on board we would have both'",
+    "output": "great healthcare and massive tax cuts &, reform. The Dems want people to only make money when someone dies!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@tcor18782 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump'",
+    "output": "Reply #stop to opt-out. https://t.co/3QZyQ2pMfC",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@HoppMar: @realDonaldTrump And you also made a great call on BA, a few months ago, and you were'",
+    "output": "right. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Great honor to receive today's'",
+    "output": "endorsement from @realDonaldTrump. I will work hard to earn your vote &, support. #NHPrimary #FITN",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@Rafterman899044 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump'",
+    "output": "Reply #stop to opt-out. https://t.co/0hZ6J5YsJf",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cYou don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t come to court and ask for'",
+    "output": "a mistrial because you don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t like the judge.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @JudgeJeanine Pirro",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'In an illegal late night coup, Nevada\u00c3\u00a2\u00c2\u0080\u00c2\u0099s clubhouse Governor made it impossible for Republicans to win the state. Post Office could never handle the Traffic of Mail-In Votes without preparation. Using Covid to steal the state.'",
+    "output": "See you in Court!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @RyanAFournier: The reporters never saw the evidence. They went off of'",
+    "output": "a second-hand account. They were wrong. https://t.co/7R7qk4w7Ym",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @WhiteHouse: The derecho is \"basically a 40-mile-wide tornado that'",
+    "output": "just goes on and on and on.\" https://t.co/0ZJjZk6Z0W",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ShaneStruthers STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '.@Megynkelly spent a big part of her'",
+    "output": "show last night attacking me. She is so angry at Trump that she doesn't even talk to him anymore. Sad!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@JamesPDonahue1: @HowardStern @Tedd474 @realDonaldTrump another amazing and'",
+    "output": "funny show! #Trump2016 #TrumpTrain\"|<",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Go to Macy's today and buy Trump'",
+    "output": "ties. They are great and 100% American made. They are also half price. Get them while they last!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'How is Bernie Sanders going to defend our country if he can't even defend'",
+    "output": "himself?",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Such a beautiful map,'",
+    "output": "I love the colours and the design. I hope you don't mind me asking, but what program did you use to make it? Thanks!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @KatiePavlich: 17% of Trump rally attendees in *Michigan* are'",
+    "output": "black. 10% are black in *Pennsylvania*. 11% are black in *North Carolina*\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@joandkev8: @realDonaldTrump what the date of celebrity apprentice'",
+    "output": "?\"\" Soon!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @kayleighmcenany: \u00c3\u00a2\u00c2\u0080\u00c2\u009cIt\u00c3\u00a2\u00c2\u0080\u00c2\u0099s unprecedented what we\u00c3\u00a2\u00c2\u0080\u00c2\u0099ve done. Many,'",
+    "output": "many lives have been saved.\u00c3\u00a2\u00c2\u0080\u00c2\u009d - @realDonaldTrump https://t.co/1Q4V8j9n4O",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rkgs11 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump'",
+    "output": "#VotedforTrump Reply #stop to opt-out. https://t.co/1cXWQ7Zc7l",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'It was my great honor to celebrate the opening of two extraordinary museums-the Mississippi State History Museum &,'",
+    "output": "the Mississippi Civil Rights Museum. I will be back to the Great State of Mississippi soon and again. It has some really GREAT people!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ignacio8787: @realDonaldTrump @johnyboi509 hope'",
+    "output": "you run for president! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @KellyannePolls: #Polls showing @realDonaldTrump surging,'",
+    "output": "@HillaryClinton falling, and @MittRomney surging in 2012 are all the same. The\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ESPNNFL: Our @FrankCaliendo was AWESOME as as Bill Belichick, Ron Jaws, Donald Trump and Jerry'",
+    "output": "Jones. #SNL #SNL40\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'My @SteveDeaceShow int. on China, the economy'",
+    "output": ", the GOP, and my new book, #TheRightPath http://t.co/2Q2wVg6X4Y",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '@OnMyLevelLopez. That's why'",
+    "output": "I'm not a fan of the @nfl. They are not smart enough to know what's going on. They are a joke!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@TheJBish @billmaher You are'",
+    "output": "a moron!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'We need to'",
+    "output": "get back to basics and focus on the fundamentals of our economy. We need to get back to basics and focus on the fundamentals of our economy.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @VP: In 2017, Speaker Pelosi called President @realDonaldTrump\u00c3\u00a2\u00c2\u0080\u00c2\u0099s historic tax cuts,'",
+    "output": "\u00c3\u00a2\u00c2\u0080\u00c2\u009cthe biggest theft of the American public since the\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Thank You Samantha.'",
+    "output": "I will be in touch.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@AplemonLemon: @realDonaldTrump @foxandfriends we want to hear you announce'",
+    "output": "your run for president! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@bahia6085: @realDonaldTrump Success rule-Surround yourself w/successful people. Do it with'",
+    "output": "your staff, your friends, your family.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@TLCr2: @jennyapples @realDonaldTrump @cnnbrk @CNN'",
+    "output": "@FoxNews @oreillyfactor @megynkelly @seanhannity @IngrahamAngle @oreillyfactor\"|<",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Thank you, South Carolina!'",
+    "output": "#Trump2016 #SuperTuesday",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @Jim_Jordan: The \u00c3\u00a2\u00c2\u0080\u00c2\u009cWhistleblower\u00c3\u00a2\u00c2\u0080\u00c2\u009d who started the impeachment sham was biased against the President, worked with'",
+    "output": "Schiff, and had a \u00c3\u00a2\u00c2\u0080\u00c2\u009cclose\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @WayneDupreeShow: No one will accuse ANTIFA of being \"brainiacs\"'",
+    "output": "https://t.co/6j0nLsK2bQ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @WhiteHouse: President @realDonaldTrump delivers'",
+    "output": "remarks at the 2019 @WhiteCoats4BlackLives National Convention. https://t.co/4FyJQ9Z8hG",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Failing Michigan Governor must work harder'",
+    "output": "to get out the vote for Biden/Harris. He is doing a GREAT job!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'ICYMI, \u00c3\u00a2\u00c2\u0080\u00c2\u009cRaw video: Donald Trump speaks'",
+    "output": "at CPAC\u00c3\u00a2\u00c2\u0080\u00c2\u009d",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@us_patriot_3888: @realDonaldTrump- Why'",
+    "output": "aren't you running for president? We need you to save this country from the clowns in Washington.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@jsphschmtt STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE!'",
+    "output": "#VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4W0j6JZB4O",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @proudtexanbrew: @dbongino I\u00c3\u00a2\u00c2\u0080\u00c2\u0099m a retired volunteer firefighter and I\u00c3\u00a2\u00c2\u0080\u00c2\u0099d'",
+    "output": "rather have a cop shoot me than a firefighter. I\u00c3\u00a2\u00c2\u0080\u00c2\u0099m a Trump voter.\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'On China, Barriers and Tariffs to come'",
+    "output": ", and the US Economy - Trump Tower, New York, 12/14/2017",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'The W.H. is functioning perfectly,'",
+    "output": "focused on HealthCare, Tax Cuts/Reform &, making our country safer &, stronger! https://t.co/2QqQxzKd6E",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rdonut STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE!'",
+    "output": "#VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/7JkHvUqgRQ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Final #'s just announced in the GREAT State of MO. TRUMP WINS! New'",
+    "output": "Polls are coming out very strong. The Fake News is working overtime. I will soon be making a major speech regarding the 2020 Election. Stay tuned!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@OGMAC1965 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE!'",
+    "output": "#VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/1ZUQYt6sDv",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Goofy Elizabeth Warren is now using the woman\u00c3\u00a2\u00c2\u0080\u00c2\u0099s card like her friend crooked Hillary. See her dumb tweet \u00c3\u00a2\u00c2\u0080\u00c2\u009cwhen a'",
+    "output": "man is president, the country does better.\u00c3\u00a2\u00c2\u0080\u00c2\u009d What about Crooked, Sleepy Joe, Mini Mike, and the rest? They would all do badly!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@DrewMadeOFF RT @realDonaldTrump RT @tx_shaun its #true, he didn't get his show until after he won'",
+    "output": "the election. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@mrcharlietoldme: 17th hole'",
+    "output": "at Trump National Golf Club in Jupiter, Florida. @realDonaldTrump http://t.co/3J2jV6h7Ql\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Do you notice that the polling establishment doesn't put me in polls, but put'",
+    "output": "other candidates in? They are so dishonest.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@KellyJeanturner: @Kateplu Teen Kids News covering the red carpet at the @ApprenticeNBC Can't'",
+    "output": "wait to see it! #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @RichardGrenell: So fewer people died because they took the drug @realDonaldTrump suggested.... Thank you, POTUS'",
+    "output": "! https://t.co/5L1iL0c2\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '@omsmore3 Auto-reply from Team Trump: We\u00c3\u00a2\u00c2\u0080\u00c2\u0099ll send you IMPORTANT ELECTION UPDATES for VIRGINIA. Make sure you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re ready to VOTE FOR DONALD J.'",
+    "output": "TRUMP by November 5th. Text TRUMP to 88022 Share this post: https://t.co/IiaWVAl0My Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @RNCResearch: Ukrainian'",
+    "output": "President Volodymyr Zelensky: \u00c3\u00a2\u00c2\u0080\u00c2\u009cI want to thank you for your leadership, for your support, for your help, for your\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@davidgrieve: @realDonaldTrump what\u00c3\u00a2\u00c2\u0080\u00c2\u0099s with the ridiculously short apprentice episodes? :( @ApprenticeNBC\"\" Going back'",
+    "output": "to 1 hour.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.@hardball_chris is a really dumb guy(and I know him well)\u00c3\u00a2\u00c2\u0080\u00c2\u0094that\u00c3\u00a2\u00c2\u0080\u00c2\u0099s why he works swimmingly with'",
+    "output": "the Fake News @CNN. He is a total loser!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'My deepest sympathies'",
+    "output": "to the family of the great @SenatorTimScott. He is a wonderful man who has done a fantastic job for South Carolina and our Country. He has my Complete and Total Endorsement!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '....happen again. Just like we can\u00c3\u00a2\u00c2\u0080\u00c2\u0099t let large scale Mail-In Ballots take root in our Country. It would be a free for all on cheating, forgery and the theft'",
+    "output": "of Ballots. Whoever cheated the most would win. Likewise, there will be no \u00c3\u00a2\u00c2\u0080\u00c2\u009cbalancing\u00c3\u00a2\u00c2\u0080\u00c2\u009d act here - he will see me in Court unless he exposes the...",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@thatboyred: @realDonaldTrump you did'",
+    "output": "a great job on Letterman! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cTo be successful, you must become very good at finding creative solutions to'",
+    "output": "problems.\u00c3\u00a2\u00c2\u0080\u00c2\u009d \u00c3\u00a2\u00c2\u0080\u00c2\u0093 Donald Trump",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@peterosteyee STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you.'",
+    "output": "STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/8c4Zn7uZy9",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@nikkio: 6 BILLION $'s goes missing from State dept -Where's the outrage?'",
+    "output": "@realDonaldTrump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @gatewaypundit: Democrat Fire Marshal'",
+    "output": ": \u00c3\u00a2\u00c2\u0080\u00c2\u009cI\u00c3\u00a2\u00c2\u0080\u00c2\u0099m not going to tell you to vote for Biden, but if you don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t vote for Biden, you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re not black.\u00c3\u00a2\u00c2\u0080\u00c2\u009d\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @WhiteHouse: \"Today, my'",
+    "output": "Administration is taking action to protect our Nation's food supply chain. We are issuing an Executive Order to\u00e2\u0080\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'See you soon North'",
+    "output": "Carolina! #Trump2016 #MakeAmericaGreatAgain https://t.co/5X4H0yX7G6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@TexAggie2010 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move'",
+    "output": "you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/3k1L6m6G6m",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'I now see John Kasich from Ohio- who is desperate to run- is using my line \u00c3\u00a2\u00c2\u0080\u00c2\u009cMake America Great Again\u00c3\u00a2\u00c2\u0080\u00c2\u009d. Typical'",
+    "output": "politician, he never said it. I said to him during his interview, \u00c3\u00a2\u00c2\u0080\u00c2\u009cwhere did you come up with that one, John?\u00c3\u00a2\u00c2\u0080\u00c2\u009d He stole it - but he did not use it well!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '@foxandfriends According to report just out, President Obama knew about Russian interference 3 years'",
+    "output": "ago. How come that never brought up before. VOTE!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @Jim_Jordan: The elected President sets the policy for'",
+    "output": "the executive branch. The House doesn\u00c3\u00a2\u00c2\u0080\u00c2\u0099t get to set the policy for the executive\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@ddpick18: @realDonaldTrump This'",
+    "output": "is the best season of Celebrity Apprentice yet! #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@indigoblue65: @realDonaldTrump Ummm...I like the sound of'",
+    "output": "that. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rommelpime89363 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do'",
+    "output": "not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/8q2zg0RfKu",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@LaneJh: @realDonaldTrump @foxandfriends I always watch your Monday morning interviews on Fox and they are'",
+    "output": "always great. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @SenDanSullivan: Julie and I'",
+    "output": "are praying for the victims and their families in the horrific shooting at the Chabad of Poway Synagogue in\u00e2\u0080\u00a6\nRT @realDonaldTrump: \u00c3\u00a2\u00c2\u0080\u00c2\u009cThe Democrats have no case.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @MariaBartiromo @FoxNews",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I am pleased to inform all of those that believe in a strong, fair and sound Immigration Policy that Mark Morgan will be joining the Trump Administration as the head of our hard working men and women of ICE.'",
+    "output": "Mark is a true American Patriot....",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Thanks Mark. It\u00c3\u00a2\u00c2\u0080\u00c2\u0099s all a continuation of the never ending Witch Hunt. Judge Brann, who would not'",
+    "output": "even allow us to present our case or evidence, is a product of Obama/Biden Justice together with all of the other Obama/Biden incompetent, political \u00c3\u00a2\u00c2\u0080\u00c2\u009cjudges\u00c3\u00a2\u00c2\u0080\u00c2\u009d and Prosecutors at the top of our Country!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '..so called American Intelligence were Dirty Cops who have now'",
+    "output": "been totally exposed. They are the ones that should be investigated. This Rigged Witch Hunt, led by 13 Angry Democrats &, 4 Republicans, just &, has been a total disaster for everyone involved. They\u00e2\u0080\u0099ve got nothing go by....",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"Good advice from my father: \"\"Know everything you can about'",
+    "output": "the people you're dealing with.\"\" -- Donald J. Trump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@ColinCowherd said such nice things about me during the debate that I thought I'd do his show, @TheHerd,'",
+    "output": "tomorrow morning at 10:00 A.M. He is a total pro and will be great!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @RoScarborough: Nunes to sue CNN,'",
+    "output": "others for defamation over Russia collusion claims https://t.co/0mK2L0j5kq",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'My @greta int. on @FoxNews on how to defeat'",
+    "output": "@BarackObama http://t.co/7f4Qd8h7",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'There is NO WAY (ZERO!) that Mail-In Ballots will be anything less than substantially fraudulent. Mail boxes will be robbed, ballots will be'",
+    "output": "forged &, even illegally printed out &, fraudulently signed. The Governor of California is sending out the wrong kind of ballots \u00c3\u00a2\u00c2\u0080\u00c2\u0093 a disaster for Delay &, the Ballot Harvesters!!!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Why would I call China a currency manipulator when they are'",
+    "output": "working with us on the World Trade Deal, which we will make great? And are doing so well in trading. War Games & Japan is helping America, not Russia-USA is respected again!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I will be on@gretawire tonight at'",
+    "output": "10pmET discussing @BarackObama's #SOTU speech and the #GOP response. Tune in!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cKeep your focus global and you may'",
+    "output": "find yourself in the right place at the right time.\u00c3\u00a2\u00c2\u0080\u00c2\u009d \u00c3\u00a2\u00c2\u0080\u00c2\u0093 Donald Trump",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.@CNN has no sources on the Task Force. Their \u00c3\u00a2\u00c2\u0080\u00c2\u009csources\u00c3\u00a2\u00c2\u0080\u00c2\u009d'",
+    "output": "are just people that are not part of the process and are in the dark. They are a JOKE!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @foxandfriends: FOX NEWS ALERT: North Korea responds to U.S. with Guam attack plan as Secretary Mattis warns'",
+    "output": "of 'massive military response'\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cPresident Donald J.'",
+    "output": "Trump Proclaims March 2019 as Women\u00c3\u00a2\u00c2\u0080\u00c2\u0099s History Month\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.co/0v9U3hJwJG",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@brianjames75: @GOP, don't choke again! Choose America's boldest leader'",
+    "output": ", Donald Trump! #Trump2016 #MakeAmericaGreatAgain\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'U.S. Cancer Death Rate Lowest In Recorded History!'",
+    "output": "",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'A clip of my upcoming interview'",
+    "output": "with @greta on @FoxNews. #Trump2016 #MakeAmericaGreatAgain https://t.co/0s4n9WV5Ht",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @PressSec: Join President @realDonaldTrump as he watches Pastor Sam Rodriguez at New Season church at 8'",
+    "output": ":30am ET. #Easter https://t.co/2\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"RT @TeamTrump: .@HillaryClinton just'",
+    "output": "said she would not have bombed Libya. She is a liar! https://t.co/4K2Yf0Gz2K\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@gomrunner @realDonaldTrump keep up the tempo and don't listen'",
+    "output": "to the haters! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Allstars_S2: @realDonaldTrump @IvankaTrump'",
+    "output": "@ApprenticeNBC @nbc @kevinjonas @kevinjonas @kevinjonas @kevinjonas @kevinjonas @kevinjonas\"|<",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @SenThomTillis: I'm proud Congress could come together to'",
+    "output": "pass this bill to help small businesses and workers. This is a big step forwar\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'New rule for'",
+    "output": "the 2017 season: If you're going to post a picture of your new car, please post a picture of the car in the garage, not just the car. Thanks!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@BeatsByRay: @realDonaldTrump You're'",
+    "output": "the man! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@702RN4Life STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @GOP: \u00c3\u00a2\u00c2\u0080\u00c2\u009c[Schiff] went to the House and he'",
+    "output": "made up a story. He made up a story.\u00c3\u00a2\u00c2\u0080\u00c2\u009d -@realDonaldTrump https://t.co/1dZ5Bk9y1Y",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@Trump_Videos: .@Nigel_Farage of the #brexit fame - We CAN'",
+    "output": "MAKE AMERICA GREAT AGAIN! #Trump2016 https://t.co/0c0zW2jG0C\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@ArtPar17: @CNN Your story is a total'",
+    "output": "joke. You are the worst news organization in the world. #FakeNews\"|<",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rosanneobrien STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply'",
+    "output": "#stop to opt-out. https://t.co/5D2yL4lXJj",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@NEO_SALAMANDER: @realDonaldTrump You're the type of guy we need in the White House You want to'",
+    "output": "make America great again. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@almasoley1 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4yJj5Rg4uA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @seanmdav: You wore blackface (or possibly even a'",
+    "output": "KKK hood) and you're lecturing people about racism? https://t.co/0t3cWnX0Ys",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @realDonaldTrump: A proposal by Pentagon officials to slash Military Healthcare by $2.2 billion dollars'",
+    "output": "was rejected by me. It would hav\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@K9Koda. Thank you - very'",
+    "output": "nice!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cAge is whatever you think'",
+    "output": "it is. You are as old as you think you are.\u00c3\u00a2\u00c2\u0080\u00c2\u009d \u00c3\u00a2\u00c2\u0080\u00c2\u0093 Muhammad Ali",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@XCleanSteveX STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply'",
+    "output": "#stop to opt-out. https://t.co/2o8pWVc4g9",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@SMW5683: @realDonaldTrump Donald trump will do this'",
+    "output": "country a great service by running for president.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Wow-Record ratings for WGC Cadillac Championship at Trump National Doral's Blue Monster-Most'",
+    "output": "watched golf telecast in 2012-2013 season!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'One of the worst polls in 2016 was the @FoxNews Poll. They were so ridiculously wrong. Fox said they were going to change pollsters, but they didn\u00c3\u00a2\u00c2\u0080\u00c2\u0099t. They totally over sample Democrats to a point that'",
+    "output": "it is a rigged election. Fox is trying to be so politically correct that they will destroy themselves!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@DREARECINO: \"\"@FredrikEklundNY: Biggest'",
+    "output": "news of the day! @IvankaTrump is pregnant! #celebrityapprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@adhietAK85: This is my favorite person, @realDonaldTrump.. Greatest bussinesman in'",
+    "output": "the world! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @TommyHicksGOP: \u00c3\u00a2\u00c2\u0080\u00c2\u009cWe are four years out,'",
+    "output": "and the Democrats are already trying to impeach President Trump.\u00c3\u00a2\u00c2\u0080\u00c2\u009d -@realDonaldTrump #Trump2016 #MAGA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....is not Constitutionally Permissable.\u00c3\u00a2\u00c2\u0080\u00c2\u009d Alan'",
+    "output": "Dershowitz",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@herb_stamper: @JackoffJosh711 @SenFrankNiceley @FoxNews @WSJ'",
+    "output": "@realDonaldTrump @CNN @CNNPolitics @CNNPolitics @CNNPolitics @CNNPolitics\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cMorrison testifies he saw'",
+    "output": "no evidence of fraud\u00c3\u00a2\u00c2\u0080\u00c2\u009d",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@MorganMorris007 STAY IN LINE!'",
+    "output": "Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/7BZj8j4e8a",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Ed Gillespie worked hard but did not embrace me or what I stand for. Don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t forget, Republicans won'",
+    "output": "4 out of 4 House seats, and with the economy doing record numbers, we will continue to win, even bigger than before!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @MarshaBlackburn: The'",
+    "output": "Senate is set to vote on the #USMCA today. I will be voting YES to support this historic trade agreement that will\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@Rikkip65 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4y9X5Kk9gI",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '...replied \u00c3\u00a2\u00c2\u0080\u00c2\u009cYes, Absolutely.\u00c3\u00a2\u00c2\u0080\u00c2\u009d Biden calls for abolishing cash bail and closing prisons \u00c3\u00a2\u00c2\u0080\u00c2\u0094 and'",
+    "output": "says he\u00c3\u00a2\u00c2\u0080\u00c2\u0099s \u00c3\u00a2\u00c2\u0080\u00c2\u009cnot afraid to use the word \u00c3\u00a2\u00c2\u0080\u00c2\u0098defund\u00c3\u00a2\u00c2\u0080\u00c2\u0099\u00c3\u00a2\u00c2\u0080\u00c2\u009d when it comes to police. https://t.co/4n3J3yVn3z",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Michelle @FischbachMN7 is running for Congress in Minnesota. Nicole is Strong on Crime and Borders, Cutting Taxes, your #2A, Loves our Military, Vets, and will stand'",
+    "output": "with our Farmers. Michelle has my Complete and Total Endorsement! https://t.co/1z1w9l2pXb",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '.@FoxNews-FBI\u00c3\u00a2\u00c2\u0080\u00c2\u0099s Andrew McCabe, \u00c3\u00a2\u00c2\u0080\u00c2\u009cin addition to his wife getting'",
+    "output": "all of this money from M (for Clinton) for her job, he was using, I guess, his fake teeth to look like a tough guy (or girl) in his official FBI mug shot.\u00c3\u00a2\u00c2\u0080\u00c2\u009d So what happens to him? How can this be? Where is justice? Answer coming up!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'While I believe I will clinch before Cleveland and get more than'",
+    "output": "270 electoral votes, the Dems know that this is the only way they can win. They want to be able to say, \u00c3\u00a2\u00c2\u0080\u00c2\u009cwe were cheated.\u00c3\u00a2\u00c2\u0080\u00c2\u009d Sorry, I don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t believe that I will, but the Dems do!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"Syria has prepared for an attack based on all of'",
+    "output": "the intelligence and information that has been coming out. Let's hope they don't do it. Do you think it would surprise them? Syria has prepared for an attack based on all of the intelligence and information that has been coming out. Let's hope they don't do it. Do you think it would surprise them?",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Watch Mark Levin NOW'",
+    "output": "!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@monmk1: I met @LeezaGibbons at CHA. She's as amazing in person'",
+    "output": "as she is on TV. She's a real class act. #LeezaGibbons #CHA2014\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'After Turkey call I will be heading over to Trump National Golf Club, Jupiter, to play golf (quickly) with Tiger Woods and Dustin Johnson. Then back to Mar-a-Lago'",
+    "output": "for meetings and press conference until late afternoon. Spent much time talking about the U.S.M.N. with Dan Sullivan of Alaska, and others, and the great new V.A. situation!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '....have the discretion to end the program that President Obama began in his discretion. That program was unlawful to begin with. I think it\u00c3\u00a2\u00c2\u0080\u00c2\u0099s very unlikely that the SCOTUS is going to issue an order reinstating what it believes is'",
+    "output": "an unlawful program.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @RepDougCollins",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@matthayu14 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let'",
+    "output": "them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/6hV2Qz0f7v",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@FijiDefJam STAY IN LINE! Republicans: We are doing GREAT! Stay'",
+    "output": "in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/0H3o6q4LxM",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Why aren\u00c3\u00a2\u00c2\u0080\u00c2\u0099t they firing no talent Samantha Bee for the horrible language used on her low ratings show? A total double standard but that\u00c3\u00a2\u00c2\u0080\u00c2\u0099s O.K., we are Winning, and will be doing so for'",
+    "output": "a long time to come!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ellentime1: @realDonaldTrump.... loved you on'",
+    "output": "Letterman last night! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@erik. My newsfeed is nothing but DonaldTrump n @RealGilbert #CelebrityApprentice! But that's alright with me cuz I love'",
+    "output": "it!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@JesseStroup Nice to'",
+    "output": "hear from you. I'll be in touch. #MakeAmericaGreatAgain",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@LueckertStephen STAY IN LINE! Republicans: We'",
+    "output": "are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/7z2z9xJ7j7",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"RT @WhiteHouse: \"\"The men and women of our military are totally loyal to our country. And every day I am President, America'",
+    "output": "will stand with...\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@2rfqdvmcbd STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@GKB518 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE!'",
+    "output": "#VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/9VQqK2D9G0",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@StephenBaldwin7 You were fabulous on CNN last'",
+    "output": "night. You are a great guy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'It is actually hard to believe how naive (or dumb) the Failing'",
+    "output": "New York Times is. They totally overplayed their hand. They have lost all credibility. They are a disgrace to journalism. They are a disgrace to the New York Times. They should be ashamed of themselves!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....meeting with their top leaders and representatives today in the Oval Office. No final deal will be'",
+    "output": "made until all of the issues have been negotiated and agreed to. That means that we won\u00c3\u00a2\u00c2\u0080\u00c2\u0099t be making a deal with Iran until after the U.S. Presidential Election!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@hairbynina22 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/2Xc9mF9u5O",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '@Dbcaud534680722 Auto-reply from Team'",
+    "output": "Trump: We\u00c3\u00a2\u00c2\u0080\u00c2\u0099ll send you IMPORTANT ELECTION UPDATES for NORTH CAROLINA. Make sure you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re ready to VOTE FOR DONALD J. TRUMP by November 5th. Text TRUMP to 88022 Share this post: https://t.co/IiaWVAl0My Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@KGLeipsic: counting down the'",
+    "output": "hours until the @realDonaldTrump show starts. #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I think it'",
+    "output": "'s a great idea. I'm going to start a petition to have the White House renamed the Obama White House. I think it's a great idea. I'm going to start a petition to have the White House renamed the Obama White House.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @paulsperry_: With all the grounded flights and ghosted'",
+    "output": "hotels, the #coronavirus is going to be the biggest economic disaster in modern h\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@AuthorKnox: @ApprenticeNBC Pete Carroll need to be added to the show, worst play call in'",
+    "output": "the history of football #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@mearnest33 Agree that you as Pres would be a great change'",
+    "output": "from the current administration. We need to make America great again. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@EmilioMasella @realDonaldTrump the more I keep reading the more respect I gain'",
+    "output": "for you. You are a great man. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'ARIZONA \u00c3\u00a2\u00c2\u0080\u00c2\u0094 POLLS CLOSE AT 7PM! But if you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re in line when polls close,'",
+    "output": "STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @OANN: According to the mainstream media, the riots & extreme'",
+    "output": "violence in Portland are a result of President Trump's rhetoric. But the r\u00e2\u0080\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'OBAMAGATE makes Watergate'",
+    "output": "look like small potatoes! https://t.co/5hjGx4KoBp",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.@TraceAdkins isn\u00c3\u00a2\u00c2\u0080\u00c2\u0099t excited about their'",
+    "output": "@TrumpScotland golf course. He\u00c3\u00a2\u00c2\u0080\u00c2\u0099s right. It\u00c3\u00a2\u00c2\u0080\u00c2\u0099s a disaster!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Must read article:'",
+    "output": "The Case for a National Divorce by @ScottAdamsSays",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Will be in Orlando, Florida, this afternoon. 25,000 people expected. This is a movement like our'",
+    "output": "country has never seen before. MAKE AMERICA GREAT AGAIN!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Separating families at the Border is the fault of bad legislation passed by the Democrats. Border Security laws should be changed'",
+    "output": "but the Dems refuse to write it, &, I am not going to sign bad legislation. I am in the White House waiting for you to call, but I won\u00c3\u00a2\u00c2\u0080\u00c2\u0099t budge. National Emergency is what we are looking at!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @Chicago1Ray: Kudos'",
+    "output": "to @realDonaldTrump for standing up to the media and the Democrats. He is not afraid to speak the truth. #Trump2020\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@sneal50 The best thing you \"\"win\"\" by winning USA /Universe is the opportunity to'",
+    "output": "be a role model for others. You are a winner!\"\" Thanks.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TeamTrump: President @realDonaldTrump: \u00c3\u00a2\u00c2\u0080\u00c2\u009cWe\u00c3\u00a2\u00c2\u0080\u00c2\u0099ve spent 8 trillion dollars in the Middle East and'",
+    "output": "we\u00c3\u00a2\u00c2\u0080\u00c2\u0099ve gotten nothing for it.\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.c...",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Watch #MissUSA 2012 live tonight'",
+    "output": "at 9/8c on @nbc! http://t.co/7x8t4y6Y",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @DonaldJTrumpJr: Imagine having your life and reputation ruined by rogue US govt. officials. Then'",
+    "output": "imagine having the courage to stand up\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@erinbluizz STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump'",
+    "output": "Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ChristasKing STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump'",
+    "output": "Reply #stop to opt-out. https://t.co/0zZ1D1gKuJ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Lies and incompetence -'",
+    "output": "the story of the 'experts' who told us the lockdowns were necessary\nThe lockdowns were a disaster. They were based on lies and incompetence. The 'experts' who told us they were necessary should be held to account.\nThe lockdowns were a disaster. They were based on lies and incompetence. The 'experts' who told us they were necessary should be held to account.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @DonaldJTrumpJr: \u00c3\u00b0\u00c2\u009f\u00c2\u0094\u00c2\u00a5\u00c3\u00b0\u00c2\u009f\u00c2\u0094\u00c2\u00a5\u00c3\u00b0\u00c2\u009f\u00c2\u0094\u00c2\u00a5 but also very true. Sensenbrenner to Democrat Impeachment Lawyer: 'You Have Made'",
+    "output": "a Mockery of the Constitution' https://t.co/5O0gK2R7tF",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'A really great woman,'",
+    "output": "a great friend, a great mother, a great wife, a great American, and a great Republican. She will be missed!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '....A total double standard. The only thing the Dems have going for them is their very close relationship with'",
+    "output": "the Fake News Media. The Fake News Media has never been more dishonest than it is now. All negative polls taken against me are deliberately phony. No matter how well we are doing,....",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @DeAngelisCorey: Trump just said'",
+    "output": "he would have no problem with a Muslim in his cabinet. #GOPDebate",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'ISIS is starting its own currency. May'",
+    "output": "be time to start thinking about a new currency for the US. We have no money, Obama has bankrupted us!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@tbc_branding: To my biz-minded tweeps from #SharkTankNation'",
+    "output": ": @realDonaldTrump is the real deal. He's a winner &, a great role model.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TheMasters: This morning Jack Nicklaus and Gary Player continued the Honorary Starter'",
+    "output": "tradition at Augusta National. #TheMasters https:/\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@PresidentJMarsh: @realDonaldTrump are you going to be at'",
+    "output": "the @TrumpChicago opening?\"\" Yes, and it will be great!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@1stClarkgirl STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let'",
+    "output": "them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/7Z8lJ4O1qD",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Wow! Was just told that my son\u00c3\u00a2\u00c2\u0080\u00c2\u0099s book, \u00c3\u00a2\u00c2\u0080\u00c2\u009cTriggered,\u00c3\u00a2\u00c2\u0080\u00c2\u009d is Number One on'",
+    "output": "the New York Times Bestseller List. Thank you!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @MariaBartiromo: Rep.'",
+    "output": "@Jim_Jordan: \u00c3\u00a2\u00c2\u0080\u00c2\u009cThe Democrats have been trying to impeach President Trump since the day he was elected.\u00c3\u00a2\u00c2\u0080\u00c2\u009d #MorningsWit\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Anyone associated with the 1994 Crime Bill will not have a chance of being elected. In particular,'",
+    "output": "African Americans will not vote for a Democrat if that Democrat does not want to change the Bill. So bad for our Nation!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@MCLAUGHLlN: @realDonaldTrump i plan on voting for you in 2016. We need economic'",
+    "output": "growth and a strong leader. #Trump2016\"\" Thanks.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Good news for Florida! I\u00c3\u00a2\u00c2\u0080\u00c2\u0099m awarding $27.8M from @USDOT in federal infrastructure funds to five areas including Orlando, Jacksonville, Ft. Myers/Naples, St. Petersburg, and'",
+    "output": "Miami-Dade County. This will help improve safety and mobility for all residents and visitors. https://t.co/3s6f3yYmZg",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'There is no way my friend Bob Kraft agreed not to appeal the NFL'",
+    "output": "decision on the Patriots. He is smart and will look to get this thing overturned. I am with him all the way!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.....who is being totally protected by his best friend, Bob Mueller, &, the 13 Angry'",
+    "output": "Democrats - Mueller is conflicted. Mueller has a clear conflict of interest against me, and his entire staff are Trump Haters. They are all Trump Haters, and they are all conflicts of interest. Mueller is a single point failure, and a total disaster!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@stevendv01 STAY IN LINE! Republicans: We'",
+    "output": "are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/0Z0z3wQ5Ux",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@DillsMama13: @realDonaldTrump What is your feeling about Rolling Stone magazine putting the bomber'",
+    "output": "on the cover?\"\"Very bad taste!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TommyHicksGOP: .@realDonaldTrump is fighting to make sure'",
+    "output": "that every American has the opportunity to live the American Dream. #MAGA #KAG",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Will be interviewed by'",
+    "output": "@seanhannity tonight at 9pmE on @FoxNews. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Another electric car firm that @BarackObama gave $118M just went bankrupt. http://t.co/uAWmzFoG'",
+    "output": "",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Michele Bachmann just dropped out of prez race--- when'",
+    "output": "will the rest of the GOP field follow suit?",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rossby1898 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/5UQe0j0tLs",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@Peggynoonannyc Interesting article, but I will beat Hillary easily. People that have given up on the'",
+    "output": "system will vote for me!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@BettyKeith13716 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND'",
+    "output": "VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/2YyU4o0JbA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Republicans must stop listening to dopes like @KarlRove who still insists Mitt Romney won'",
+    "output": "the election.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@BaronToutenberg: @realDonaldTrump Donald, would you ever appear'",
+    "output": "on Letterman?\"\" No, I would not!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @TeamTrump: President @realDonaldTrump thanks American Veterans ahead of'",
+    "output": "Veterans Day! #VetsDay #VetsDay2020 https://t.co/6x7dVj7YJk",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @Scavino45: \u00c3\u00b0\u00c2\u009f\u00c2\u009a\u00c2\u00a8#ICYMI:'",
+    "output": "President @realDonaldTrump on the #NationalEmergency at the Southern Border.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I am happy to see the majority of the GOP candidates agree with me that the tax code must be'",
+    "output": "simplified and made more fair. We must lower rates and eliminate loopholes. We must also eliminate the carried interest loophole, which allows hedge fund managers to pay a lower tax rate than their secretaries.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Mitt Romney is a mixed up man who doesn't have'",
+    "output": "a clue. He wants to be everything to everybody, and that is not a winning formula. I much prefer Trump!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TocRadio: in case you were wondering, YES, Trump apparently was watching the #DemDebate on his flight back to Washington,'",
+    "output": "DC. #Trump2016\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I always enjoy speaking'",
+    "output": "with my friend and colleague, Dr. John Huber, a former FBI agent who served as a Special Agent in Charge of the FBI\u00e2\u0080\u0099s Salt Lake City Division. John is a patriot who served his country with distinction and honor. He is a man of integrity and courage. He is also a man who has been treated very unfairly by his former employer, the FBI. John has been a great help to me in my campaign. He is a great American!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@murphysociety: @realDonaldTrump @Tyler_Allreddd and you wonder why everyone wants'",
+    "output": "to be like him? #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@stmarie: @realDonaldTrump Sick!!! This country is going to shit! We need real people'",
+    "output": "in office! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Rick74467: @DonaleeCurtis @ApprenticeNBC'",
+    "output": "@realDonaldTrump @IvankaTrump @EricTrump @DonaldJTrumpJr @realDonaldTrump is the best!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@angelrosetweets STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not'",
+    "output": "let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Target CEO raves about the Economy. \u00c3\u00a2\u00c2\u0080\u00c2\u009cThis is the best consumer environment I\u00c3\u00a2\u00c2\u0080\u00c2\u0099ve seen in my career.\u00c3\u00a2\u00c2\u0080\u00c2\u009d A big statement from a top executive. But virtually everybody is saying this, &, when our Trade Deals are made, &, cost cutting done,'",
+    "output": "you will see a phenomenal rise in the Stock Market, and probably record setting new highs.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'The three great essentials to achieve anything worth while are: Hard work, stick-to-itiveness,'",
+    "output": "and common sense. -- Thomas A. Edison\nThe three great essentials to achieve anything worth while are: Hard work, stick-to-itiveness, and common sense. -- Thomas A. Edison\nThe three great essentials to achieve anything worth while are: Hard work, stick-to-itiveness, and common sense. -- Thomas A. Edison\nThe three great essentials to achieve anything worth while are: Hard work, stick-to-itiveness, and common sense. -- Thomas A. Edison",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @thebradfordfile: President Trump and NY'",
+    "output": "Governor Cuomo are in a battle of the titans. Cuomo is a total disaster for the people of New Y\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@SarahPalinUSA: From St.'",
+    "output": "Louis, MO to Tampa, FL, #Trump2016 is the only campaign that can defeat Hillary &, save America! #MakeAmericaGreatAgain\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.@lindseygraham, who had zero in his presidential run before dropping out'",
+    "output": ", is now pushing for a National Sales Tax. No way!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'It was just determined that the'",
+    "output": "2016 election was not a stolen election. Joe Biden won it! https://t.co/5cJH6rZGcE",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ajbruno14 Thanks, Old Post'",
+    "output": "Office is a great project!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'China is driving the price of gold up in order to'",
+    "output": "get the U.S. to devalue the dollar. This is a very dangerous game that could lead to war. The Chinese are not our friends. They are our enemies. They are trying to destroy us. We must stop them before it is too late. The Chinese are not our friends. They are our enemies. They are trying to destroy us. We must stop them before it is too late. https://t.co/6YQ1w1O2WV",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'A Clinton already defeated a Bush. The definition of insanity is doing the same thing'",
+    "output": "over and over again and expecting a different result.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@WehHeyBigRed STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/6VzQ4lKpXz",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@johnmarzan: @RubenNavarrette Trump is right. Giving illegals the right to vote will destroy the GOP'",
+    "output": ". #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@MyIntersperse: Everyone including @JohnLegere knows @TMobile sucks.. @realDonaldTrump - Why don't you buy @TMobile &,'",
+    "output": "make it great again?\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @dougmillsnyt: .@realDonaldTrump & @FLOTUS during a wreath laying ceremony arrive at Saint John Paul'",
+    "output": "II National Shrine in Washington, D\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ParkerAnd111 STAY IN'",
+    "output": "LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/9QWV2WpJYj",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Comey testified (under oath) that it was a \u00c3\u00a2\u00c2\u0080\u00c2\u009cunanimous\u00c3\u00a2\u00c2\u0080\u00c2\u009d decision on Crooked Hillary. Lisa'",
+    "output": "Page, who is a Trump hater, will now testily. She will confirm there was \u00c3\u00a2\u00c2\u0080\u00c2\u009cNO COLLUSION\u00c3\u00a2\u00c2\u0080\u00c2\u009d and, in fact, unlawful conduct on the part of FBI/DOJ. Lisa Page is coming clean..and fast! There is no recovery for them!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @JohnWHuber: Mueller can\u00c3\u00a2\u00c2\u0080\u00c2\u0099t remember his own'",
+    "output": "name. https://t.co/8k5x5cK7Zb",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @realDonaldTrump: 95% Approval Rating in the Republican Party, a'",
+    "output": "Record. 53% Approval Rating overall, a 10 point jump from a month ago\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Hundreds of thousands of people showing their'",
+    "output": "support for the President in the Great State of Texas. They love their Country!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@GregO03120995 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump'",
+    "output": "#VotedforTrump Reply #stop to opt-out. https://t.co/4XV3yKxv2l",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....Democrat leadership is tearing'",
+    "output": "the United States apart, something we can no longer allow!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@knite1976 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/0H0e7LkQvT",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Great meeting with military'",
+    "output": "leaders at the White House to discuss our dangerous enemy, Radical Islamic Terrorism. |\nRT @GOP: .@realDonaldTrump: \u00c3\u00a2\u00c2\u0080\u00c2\u009cI\u00c3\u00a2\u00c2\u0080\u00c2\u0099m going to be signing the Paycheck Protection Program Flexibility Act. This will give more time for small bus\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '.@NWS and @USACEHQ are monitoring the'",
+    "output": "situation in #NC and #SC. We are coordinating with local, state, and federal officials to provide any assistance that may be needed. https://t.co/0qz9y0V7lE",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'I had a great meeting'",
+    "output": "with the @NRA this afternoon. Looking forward to seeing everyone at the @NRA Annual Meeting in Dallas, Texas, on May 4th. #2A https://t.co/4mK6jGyJ5K",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TeamTrump: WATCH:'",
+    "output": "President @realDonaldTrump on the #PaycheckProtectionProgram and the #CoronavirusTaskForce https://t.co/1x9y8Gq9r8",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@lizboyle98: I think @realDonaldTrump would be a perfect president of our country if he just made sure to pay attention'",
+    "output": "to the people. #Trump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The Democrats OBSTRUCTION of the desperately needed Wall, where they almost all recently agreed it should be built, is exceeded only by their OBSTRUCTION of 350 great people wanting &, expecting to'",
+    "output": "come into the U.S. As I made very clear last night to the President of Mexico, if Mexico wants to help the U.S. at the Border, it is only because the U.S. will no longer be offering financial assistance to the Mexican Government. Likewise, the U.S. Border is very long, but we have just the area we need under control. Wall is being built!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cPresident Donald J. Trump'",
+    "output": "is committed to ensuring that all Americans have access to safe, affordable, and effective prescription drugs.\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.co/4qkYqg7BqT",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The News Reports about the Department of Commerce dropping its quest to put the Citizenship Question on the Census is incorrect or, to state it differently, FAKE! We are absolutely moving forward, as we'",
+    "output": "must, because of the importance of the answer to this question.\n\u00c3\u00a2\u00c2\u0080\u00c2\u009cThe Trump administration is considering a proposal to require immigrants seeking legal status in the U.S. to pass a test on American civics and English.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @foxandfriends The Democrats are weak on borders, and weak on language and survey standards. Not good!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @AndrewCMcCarthy: Do Republicans'",
+    "output": "have the courage to stand up to the Democrats' impeachment sham? https://t.co/9ZJ1eW8Yqo",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Live tweeting during tonight's'",
+    "output": "debate. #Debates2012",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@TheZanyZane STAY IN LINE! Republicans: We are doing GREAT! Stay'",
+    "output": "in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/5oJ6oHb8Jg",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@KevinHite: @realDonaldTrump Im sure u will'",
+    "output": "do great in the debate. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@tray24u1: \"\"@realDonaldTrump: If America was under the threat of imminent'",
+    "output": "attack, would you trust @BarackObama to handle it?\"\" No.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'What do you think of @DennisRodman\u00c3\u00a2\u00c2\u0080\u00c2\u0099s Donald'",
+    "output": "Trump endorsement? #Trump2016 #MakeAmericaGreatAgain https://t.co/4m8jJ6vL1l",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Such a difference in the media coverage of the same immigration policies between the Obama Administration and ours. Actually, we have done a far better job in that our facilities are cleaner and better run than'",
+    "output": "under Obama. We are doing a great job for the people of our Country and should be so proud!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @realDonaldTrump: STRONG &'",
+    "output": "FAIR IMMIGRATION POLICIES! https://t.co/1kUf9sJQ1k",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cEach life is made up of mistakes and learning, waiting and growing, practicing patience and'",
+    "output": "being persistent.\u00c3\u00a2\u00c2\u0080\u00c2\u009d \u00c3\u00a2\u00c2\u0080\u00c2\u0093 Billy Graham #BillyGraham #quote",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Ballot Corruption will'",
+    "output": "be the Death of America\nThe election is rigged. It is a total sham and a travesty. They even want to check your voter I.D. at the polls - remember Florida 2000! Not fair! Votes being stolen from us. Must be great Patriotism!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '.@penn_state leadership has'",
+    "output": "a chance to be a true leader in the fight against #Hazing. #HazingPreventionWeek",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The Fed is considering issuing even more US bond debt into the'",
+    "output": "market to help the economy. This is a terrible idea. We need to get out of debt, not add more. We need to cut taxes and regulation to spur growth. We need to get our fiscal house in order!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@ronmeier123: @realdonaldtrump @jebburtonracing @jerrysan52 Can there be any doubt that'",
+    "output": "Donald Trump is the best candidate for President?\"\" True!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @RoyBlunt: From @Fox4KC: Sen. Blunt'",
+    "output": ": \u00c3\u00a2\u00c2\u0080\u00c2\u009cThe president has been very clear that he wants to get a deal done.\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.co/0Vj3Yv1Xw3",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@PaulaDuvall2: Before Mr. Trump's Presidential bid, I was leaning toward Walker!'",
+    "output": "Now I am a Trump supporter! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '@2f3ss Auto-reply from Team Trump: We\u00c3\u00a2\u00c2\u0080\u00c2\u0099ll send you IMPORTANT ELECTION UPDATES for NORTH CAROLINA. Make sure you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re ready to VOTE FOR DONALD J. TRUMP by November 5th. Text TRUMP to 88022 Share this post:'",
+    "output": "https://t.co/IiaWVAl0My Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @dbongino: Short List of Debunked Democrat Hoaxes: 1) Russian collusion \u00c3\u00a2\u00c2\u009d\u00c2\u008c 2) Ukrainian quid pro'",
+    "output": "quo \u00c3\u00a2\u00c2\u009d\u00c2\u008c 3) Trump\u00c3\u00a2\u00c2\u0080\u00c2\u0099s taxes \u00c3\u00a2\u00c2\u009d\u00c2\u008c 4) Trump\u00c3\u00a2\u00c2\u0080\u00c2\u0099s \u00c3\u00a2\u00c2\u0080\u00c2\u009chush\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Had a special'",
+    "output": "request for a 3D printed 1/4 scale replica of the 2017 Ford GT. The customer wanted to have the car as a gift for his wife. The car was printed in 3 parts and assembled. The car was printed in white ABS plastic and painted with automotive paint. The customer was very happy with the end result.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Roger Ailes just called. He is a great'",
+    "output": "supporter of mine. He said I should be on the ticket with Trump. He said I should be your next Vice President. I said no. I am your next President. https://t.co/3ZzZx0Qk9y",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@stevenfarris \"\"@realDonaldTrump Great interview with Greta! \"\"America has lost incentive!\"\" \"\"'",
+    "output": "We need a leader who will lead us!\"\" #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '.@antbaxter\u00c3\u00a2\u00c2\u0080\u00c2\u0094Your documentary works better than any sleeping pill\u00c3\u00a2\u00c2\u0080\u00c2\u0094in fact that may'",
+    "output": "be its best use. @FoxNews",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @DineshDSouza: WATCH: Greg Kelly breaks down Joe Biden's latest fumbling interview'",
+    "output": ". https://t.co/9Ql5VxR8j7",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Watch @RudyGiuliani interview on @MariaBartiromo this morning at 10:00. Doing'",
+    "output": "the job the DOJ refuses to do. The evidence is there, but they keep ignoring it. Total disgrace. Our election system is broken \u00d1 and they don\u00d5t want it fixed!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @SenateGOP: We're ALL in this together. And we'",
+    "output": "'re going to get through this together. #CARESAct #Coronavirus",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@LouieGohmertTX1 is a Fantastic'",
+    "output": "Congressman from Texas. He is Strong on Crime, the Border, Illegal Immigration, the Second Amendment and he is pro-Jobs. Louie has my Complete and Total Endorsement!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Great to be back'",
+    "output": "in the studio with @kellyannehold.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@gscottmorgan STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop'",
+    "output": "to opt-out. https://t.co/0nVcXyfL6y",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@lsanchezl STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND'",
+    "output": "VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4v2Zv2Z7uS",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"Crooked Hillary Clinton knew everything that her \"\"servant\"\" was doing'",
+    "output": ", and she did nothing about it. She is a bad person!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@itsHODAIFA: @realDonaldTrump I'",
+    "output": "'m a big fan of yours. I'm a young entrepreneur from Nigeria. I need your advice. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @dbongino: Kamala Still Hasn't Deleted Tweet Supporting Bail Fund That'",
+    "output": "Paid For Rioters To Be Released From Jail https://t.co/1zq3m5r9uA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I will be interviewed'",
+    "output": "by the great @seanhannity tonight at 9:00 P.M. Eastern on @FoxNews. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The Dems are very unhappy with the Mueller Report, so after almost 3 years, they want a Redo, or Do Over. This is extreme Presidential Harassment. They gave Crooked Hillary\u00c3\u00a2\u00c2\u0080\u00c2\u0099s people complete Immunity, yet now they bring back Hope Hicks. Why'",
+    "output": "aren\u00c3\u00a2\u00c2\u0080\u00c2\u0099t the many people that worked for Crooked Hillary being brought before the Committee!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'So horrible to watch the massive fire at Notre Dame'",
+    "output": "Cathedral in Paris. Perhaps flying water tankers could be used to put it out. Must act quickly!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@chef_riggy: .@realDonaldTrump glad to see Kenya go. Even'",
+    "output": "though he was a nice guy, he was a terrible player. #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Freesprite2: @realDonaldTrump @bluejoni like your golf course,'",
+    "output": "but I don't like your hair.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Obama is making the Ebola problem much worse than it needs to be in the'",
+    "output": "United States. The Obama administration is now sending Ebola patients to the United States for treatment. This is a very bad idea. The Ebola patients should be treated in Africa. This is the best way to protect the United States. The Obama administration is making the Ebola problem much worse than it needs to be in the United States. The Obama administration is now sending Ebola patients to the United States for treatment. This is a very bad idea. The Ebola patients should be treated in Africa. This is the best way to protect the United States. https://t.co/1Y2Xs9KXoP",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@MarkMizzouSteel: I see'",
+    "output": "@realDonaldTrump is on the ballot in Missouri. I'm voting for him! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Watch the first #TrumpVine'",
+    "output": "video of the day! https://t.co/3yK3YjZ0wH",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Mini Mike, \u00c3\u00a2\u00c2\u0080\u00c2\u009cThree months ago I entered the race for President to'",
+    "output": "defeat Donald Trump.\u00c3\u00a2\u00c2\u0080\u00c2\u009d I\u00c3\u00a2\u00c2\u0080\u00c2\u0099m not sure I\u00c3\u00a2\u00c2\u0080\u00c2\u0099ll be able to do it, but I\u00c3\u00a2\u00c2\u0080\u00c2\u0099m sure as hell going to try.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @foxandfriends",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@bonz21 @realDonaldTrump because you tell it like it is and the liberal'",
+    "output": "media hates you for it.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Great job to Missy Franklin. She's got'",
+    "output": "a bright future ahead of her.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"RT @FoxNews: .@jessebwatters'",
+    "output": ": \u00c3\u00a2\u00c2\u0080\u00c2\u009cThe President is right. The Democrats are the party of open borders. They are the party of sanctuary cities.\u00c3\u00a2\u00c2\u0080\u00c2\u009d",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"How did NBC get \"\"an exclusive look into the top secret report he (Obama) was presented?\"\" Who gave'",
+    "output": "them this? A leak? A traitor? Unacceptable!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The Democrats, lead by'",
+    "output": "the Radical Left, will never be happy with what I have been able to do, and what we have been able to accomplish, and that includes the biggest Tax Cut in history, Replacing the individual mandate, Regulations and INSANE spending. But we are only getting started!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @GOPoversight: FACT CHECK: Neither Ambassador Taylor nor'",
+    "output": "Ambassador Sondland testified that President Trump told them to hold up milita\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ledjon_mma STAY IN LINE! Republicans: We are doing GREAT! Stay in'",
+    "output": "Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/0Xg5QcQXtO",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@erin_thereseV: @realDonaldTrump is Kate her own charity? Last I'",
+    "output": "heard she was a charity case.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@maranzase STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/6WVj9zYzU1",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Entrepreneurs: Realize that fear is the exact opposite of faith. Resolve to be bigger than your'",
+    "output": "fears.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@702_Josue STAY IN LINE! Republicans: We are'",
+    "output": "doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/8QyO9J8D7x",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Will be at venue,'",
+    "output": "but not speaking. Will be on Fox &, Friends at 7.00 A.M. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@tonytuanvu Thank you'",
+    "output": "Tony!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Via The Hill: Trump Tops National'",
+    "output": "Polls, But Not In New Hampshire: http://t.co/1QJw4HxGxV",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @dcexaminer: Trump: \"Which is easier: dealing with the Democrats or dealing with'",
+    "output": "North Korea? North Korea is not our enemy. We'll always\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @TeamTrump: President @realDonaldTrump: In Biden\u00c3\u00a2\u00c2\u0080\u00c2\u0099s policy manifesto written with socialist'",
+    "output": "Bernie Sanders, he pledges to abolish fossil f\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'You can add 10% or 15% to this number. Economy doing'",
+    "output": "great!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '@AZtwanda Auto-reply from Team Trump: We\u00c3\u00a2\u00c2\u0080\u00c2\u0099ll send you IMPORTANT ELECTION UPDATES for Arizona. Make sure you\u00c3\u00a2\u00c2\u0080\u00c2\u0099re ready to VOTE FOR DONALD J.'",
+    "output": "TRUMP by November 5th. Text TRUMP to 88022 Share this post: https://t.co/IiaWVAl0My Reply #stop to opt-out.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cIf we ever forget that we are One Nation Under God, then we will be a nation'",
+    "output": "gone under.\u00c3\u00a2\u00c2\u0080\u00c2\u009d \u00c3\u00a2\u00c2\u0080\u00c2\u0093 Ronald Reagan",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@nyamiaomiaomiao STAY IN LINE! Republicans: We'",
+    "output": "are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/7q9gYc2j9o",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@MattyD859 \"\"@realDonaldTrump. @BillRancic Biggest motivation and THEE best role models ever!\"\" Bill is'",
+    "output": "a great guy!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Thank you to a #Trump2016 supporter for this video of my campaign- over the'",
+    "output": "weekend in #NewHampshire! https://t.co/9hZv1pXeQ7",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '.@bubbawatson What a great player you have turned out to be but also,'",
+    "output": "a great person. You are a winner in every sense of the word!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@DoomsdayFAN: Please run! I'm with you till the end! Everyone who wants to'",
+    "output": "see America great again, please vote for @realDonaldTrump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Dow just crashes through 25,000. Congrats! Big cuts in'",
+    "output": "taxes and regulation, and big gains in prosperity. We are on track to keep our promise to double the GDP and double the jobs. 4.1% GDP, 3.5% unemployment, 4.2% wage growth. Great future ahead!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Eric, I can'",
+    "output": "'t believe you're not on the show anymore. You were the best part of it. I hope you're doing well. I'm sure you're making lots of money. You deserve it. I miss you.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@TheBitcoinWay21 STAY IN LINE! Republicans: We are doing GREAT! Stay in'",
+    "output": "Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/0qZV5t1J3p",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ElizabethLisow2 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not'",
+    "output": "let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/3QY5iZ5p6J",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'My @morning_joe int. w/@morningmika, @JoeNBC &, @ThomasARoberts f/@trumpdoral on why Romney'",
+    "output": "lost &, why @MittRomney is a loser.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @Jim_Jordan: The \u00c3\u00a2\u00c2\u0080\u00c2\u009cWhistleblower\u00c3\u00a2\u00c2\u0080\u00c2\u0099s\u00c3\u00a2\u00c2\u0080\u00c2\u009d lawyer called'",
+    "output": "Schiff\u00c3\u00a2\u00c2\u0080\u00c2\u0099s impeachment inquiry \u00c3\u00a2\u00c2\u0080\u00c2\u009ca sham\u00c3\u00a2\u00c2\u0080\u00c2\u009d and \u00c3\u00a2\u00c2\u0080\u00c2\u009ca dangerous abuse of power.\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.co/3FQ2ZVQ8uA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'CALIFORNIA! Early Voting ends'",
+    "output": "on October 31st. Make sure you get out and VOTE! #VotedforTrump Reply #stop to opt-out. https://t.co/4J3pUHcU3A",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Just watched a very insecure Oprah Winfrey, who at one point I knew very well, interview a panel of people on 60 Minutes. The questions were biased and slanted, the facts incorrect. Hope Oprah runs so she can'",
+    "output": "be beaten, easily!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I will be interviewed on @greta tonight at'",
+    "output": "7pm on @FoxNews. Enjoy!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @realDonaldTrump: New York, get out and VOTE for @JohnFasoNy, a great and hardworking Congressman. We need John\u00c3\u00a2\u00c2\u0080\u00c2\u0099s'",
+    "output": "vote on TAX CUTS and M\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@TwitOvershare: \u00c3\u00a2\u00c2\u0080\u00c2\u009c@koznneffect: @realDonaldTrump mr trump, you are a brilliant'",
+    "output": "man. Please run for president. #Trump2016 #TrumpForPresident\"\" Thanks.\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The wonderful Diamond and Silk have been treated so horribly by Facebook.'",
+    "output": "They are so good at what they do. I hope Facebook will look at this, and do what is necessary to help stop the hatred and unfairness that is long overdue!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @TeamTrump: WATCH: Republican National Convention -'",
+    "output": "Night 3 https://t.co/4n8qQcH3Zy",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Call4 @realDonaldTrump is one of the most successful businessman in America. He's decisions are well thought'",
+    "output": "out. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '....should give their own'",
+    "output": "money to charity. They should stop asking the government to take our money and give it to them. #MakeAmericaGreatAgain",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@jeffrey_co81658 STAY IN LINE! Republicans: We are doing GREAT!'",
+    "output": "Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/1f1K7F3jwV",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'With @StephenBaldwin7 earlier today'",
+    "output": ".",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @realDonaldTrump: \u00c3\u00a2\u00c2\u0080\u00c2\u009cI can say, as it relates to the Senate Intelligence Committee Investigation, that we have NO'",
+    "output": "EVIDENCE whatsoever that\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Iran is desperate to develop nukes. Congress must increase'",
+    "output": "sanctions to stop them.\nThe Iranian regime is desperate to develop nuclear weapons. They have been working on this goal for decades, and they are not going to stop until they have them. The only way to stop them is to increase sanctions on Iran. Congress must act now to increase sanctions on Iran and prevent them from developing nuclear weapons.\nIran is desperate to develop nukes. Congress must increase sanctions to stop them. https://t.co/0fG9xv6q4t",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '.@Amazon, and others in that business, should be charged (by the U.S. Postal System) much more per package, and the Post Office'",
+    "output": "should charge MUCH LESS for a FIRST CLASS MAIL. That will bring prices way down, and make life much easier for everyone. A big win for all!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @TravelGov: Continue to notify us of'",
+    "output": "any travel disruptions or closures you are aware of. We are monitoring the situation closely and wi\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'My decision to appoint @usairforce General Charles Brown as the USA\u00c3\u00a2\u00c2\u0080\u00c2\u0099s first-ever'",
+    "output": "African American military service chief has now been approved by the Senate. Way to go Congress!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The big backlash going on in Portland cannot be'",
+    "output": "unexpected. The Mayor is a Dragon, and a bad one. These people want nothing to do with us. We will not stand for looting, arson, violence, and lawlessness when a small fraction of Portland was out last night, to say that David Dorn was killed (a great man), a serving police officer, by a thief (who was shot &, killed by organizers), among many others. Others hit by cars by anarchists. It was a rough night, not good! Go Big Steve!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '....We no longer pay Pakistan the $Billions because they would take our money and do nothing for us, Bin Laden being a prime example, Afghanistan'",
+    "output": "being another. They were giving thousands of migrants into our country to spread throughout our various cities and towns. Not acceptable!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Agent Peter Strzok was just fired from the FBI - finally. The list of bad players in the FBI &, DOJ gets longer &, longer. Based on the fact that Strzok was in charge of the Witch Hunt, will it be dropped? It is a total Hoax. No'",
+    "output": "Collusion, No Obstruction - I just fight back!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@tyme11 STAY IN LINE! Republicans: We are doing GREAT!'",
+    "output": "Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/2m2yWUkX4t",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"Jeb Bush signed memo saying not to use'",
+    "output": "'illegal immigrant' or 'alien'\" https://t.co/2mH7zJf0sJ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'So they now convict Roger Stone of lying and want to jail him for many years to come. Well, what about Crooked Hillary, Comey, Strzok, Page, McCabe, Brennan, Clapper, Shifty Schiff, Ohr &, Nellie, Steele &, all of the others, including even Mueller'",
+    "output": "himself? Didn\u00e2\u0080\u0099t they also lie? A double standard like never seen before. Must end!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@Dena60698794 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN'",
+    "output": "LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/5J2J5RJyXV",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@Murray87James: @realDonaldTrump looking forward to'",
+    "output": "watching the show tonight! #CelebApprentice\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Exclusive Video\u00c3\u00a2\u00c2\u0080\u00c2\u0093Broaddrick, Willey, Jones to Bill's Defenders:'",
+    "output": "'You're Wrong' | Breitbart",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@VPBiden is actually'",
+    "output": "a very nice guy. He is a great father and husband. He loves his family and his country. He is a good man. I like him!\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Putin re Snowden issue \u00c3\u00a2\u00c2\u0080\u00c2\u009cit is like shearing a pig: there\u00c3\u00a2\u00c2\u0080\u00c2\u0099s lots'",
+    "output": "of squealing but little wool\u00c3\u00a2\u00c2\u0080\u00c2\u009d",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Living in denial--only 15% of Democrats think that recent economic news'",
+    "output": "is bad\nThe latest Rasmussen poll shows that only 15% of Democrats think that the recent economic news is bad. This is in spite of the fact that the unemployment rate is at 9.8% and the economy is shrinking. The rest of the country is more realistic--55% of Americans think that the news is bad. The rest are in denial.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@pkitzke: @realDonaldTrump: Who'",
+    "output": "do you think will win the election? #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@jd4160: Nice column by Bill Donahue, head'",
+    "output": "of Catholic League, on the Pope's visit to the U.S. http://t.co/6iFQ2c1d7l\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @thebradfordfile: Trump was never running against Biden.'",
+    "output": "He was running against the Deep State. He was running against the media. He was\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@ericnlin: @AC360 DonaldTrump: no raise in 8 years, home not worth what I'",
+    "output": "paid, 20% of Americans unemployed, 1/2 of college grads unemployed\"|True\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@LenWDougleman: Dear Donald, I love you success aftershave. I love to walk out'",
+    "output": "of Macy's smelling like a million dollars. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'You don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t want to'",
+    "output": "miss this opportunity to own a piece of history! This home was built in 1923 and has been meticulously maintained and updated over the years. The original hardwood floors, built-ins, and moldings are still intact. The kitchen has been updated with granite countertops, stainless steel appliances, and a large island. The master bedroom has a large walk-in closet and a private bathroom with a jetted tub. The home has a large, fully fenced backyard with a patio and a fire pit. The home is located in a quiet neighborhood and is just a short walk to the beach. The home is also close to shopping, restaurants, and entertainment. This is a great opportunity to own a piece of history and live in a beautiful home in a great location.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @VP: President @realDonaldTrump\u00c3\u00a2\u00c2\u0080\u00c2\u0099s deregulatory agenda unleashed American ingenuity and'",
+    "output": "innovation. We are now the largest energy produc\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\"@Chris_R_2014: @WendyPeters America desperately needs leadership &, values. Obama is a disgrace. We need a winner,'",
+    "output": "not a loser. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@rbchiefdreamer STAY IN LINE! Republicans: We are doing'",
+    "output": "GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/6j4J5qZ3QK",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@NJunger_19: Has all he could ever want. If'",
+    "output": "he was a real man he would have been in the fight for his country. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @DanScavino: 11/14/2020 - Washington,'",
+    "output": "DC #MAGA\u00c3\u00b0\u00c2\u009f\u00c2\u0087\u00c2\u00ba\u00c3\u00b0\u00c2\u009f\u00c2\u0087\u00c2\u00b8 https://t.co/6z7tqB9VhJ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@ladyb32805 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let'",
+    "output": "them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4sJvJ4lRyF",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"Keep difficulties in perspective. Ask yourself \"\"is this a blip or'",
+    "output": "a disaster?\"\" If it's a blip, get over it. If it's a disaster, get over it.\"\" -- Donald J. Trump\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '\"@marcoinjersey: I think America had enough of the'",
+    "output": "Bush's and Clinton's. We need a Trump in the White House! #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Why Isn't the Senate Intel Committee looking into the Fake News Networks in OUR country to see why so much of'",
+    "output": "our news is just made up-FAKE!\nRT @realDonaldTrump:",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@MicheleSMZ STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do'",
+    "output": "not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/2ZJZ6GJlQs",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@Maciano391 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE'",
+    "output": "AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/6tj2WV1Z8e",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Thank you Fort'",
+    "output": "Worth for voting us the Best of the Best! We are honored to be your favorite restaurant! #BestOfTheBest #FWTX #FortWorth https://t.co/3Uzj9y2c8M",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @TGowdySC: Would love for you'",
+    "output": "to join me in Greenville, SC on Thursday, July 11th at 6:30pm. I'll be discussing my new book, #Trust, and\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'RT @MattWolking: Democrats are \u00c3\u00a2\u00c2\u0080\u00c2\u009cdeposing witnesses behind closed doors &, denying Republicans fair time to'",
+    "output": "question witnesses.\u00c3\u00a2\u00c2\u0080\u00c2\u009d - @RepDougCo\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Think of it. I became President of the United States in one of the most hard fought and consequential elections in the history of our great nation. From long before I ever took'",
+    "output": "office, I was under investigation. I was under attack from the very first day. No president in history has endured anything like it. I did nothing wrong. I fought back to stop a Rigged Presidential Election from destroying our Country. Now, I am fighting for the future of our Country itself!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@criticallystoic STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not'",
+    "output": "let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/8qYt6b4c9V",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....that they are trying to pull'",
+    "output": "a fast one on the American people. They are trying to get this very important Trade Deal done before the Election, and I think that is highly unlikely that they will be able to do it. But the people of our Country know that China has been taking advantage of the U.S. for many....",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '\"@TalismanJohnnyA: @realDonaldTrump great segment again'",
+    "output": "on @foxandfriends. You are a true patriot and a great American. #Trump2016\"",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @LaraLeaTrump: No'",
+    "output": ", @realDonaldTrump is not a racist. He is a patriot who loves our country and wants to make it great again. #Trump2016",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'RT @AndrewCMcCarthy: Joe Biden Takes a Dark Turn on Blowing'",
+    "output": "Up the Filibuster https://t.co/2Qz9U0LJgB",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'A great victory'",
+    "output": "for the people of the United States of America. The Senate just passed the Save Our Sequoias Act, which will help protect our iconic Giant Sequoias from catastrophic wildfires. Thank you to @SenTuberville and @SenPadilla for your leadership on this important legislation!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'See you tonight at 7:00 P.M. Eastern,'",
+    "output": "live from the White House! https://t.co/7nKd5U7nJ6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Leader McCarthy, we look forward to you soon becoming Speaker of the House. The'",
+    "output": "American people deserve a Congress that works, stands up for THEM, gets along with our great President and gets the job done!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@TLACUALNEXTIA STAY IN LINE! Republicans: We are doing GREAT! Stay'",
+    "output": "in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/5o6ZgZp5kq",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'I thought Chris was Fredo also. The'",
+    "output": "only difference is that Fredo is a better looking guy. Chris is a loser who begs for money, can\u00c3\u00a2\u00c2\u0080\u00c2\u0099t get a job and drives his parents around so that he can act like a tough guy. A stone cold LOSER!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'RT @PrincessCruises: We have always been'",
+    "output": "a family business, and we are proud to be a part of the @CarnivalPlc family. We are committed to t\u00c3\u00a2\u00c2\u0080\u00c2\u00a6",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@dat_boi33 STAY IN LINE! Republicans:'",
+    "output": "We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4qY9w3rK4v",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@estes7777 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE!'",
+    "output": "#VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4WZv4x1v1h",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@lavitaebella13 STAY IN LINE! Republicans: We are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND'",
+    "output": "VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/9Z5i0uQ6uX",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: '....As proven last week'",
+    "output": ", the Democrats are vicious and totally corrupt. They will do whatever it takes to win an election. On top of not being able to approve a Budget, which they should be able to easily approve given the tremendous success of the U.S. Economy, very little gets done by Congress. It is all talking and no action. The Do Nothing Democrats are costing our Country sooo much in sooo many ways!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Great financial numbers being announced'",
+    "output": "by many companies. The Consumer is in the best shape ever, and the Economy is doing really well. Jobs and wages up. Interest and inflation down. All of this is happening while the Fed does little to nothing, except ask for the big numbers to come down. They are, in my opinion, a much bigger problem than China. But it will all work out. In the meantime, the U.S. is doing great!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cIt\u00c3\u00a2\u00c2\u0080\u00c2\u0099s about the Economy, stupid\u00c3\u00a2\u00c2\u0080\u00c2\u009d, except when it comes to Trump. The fact is, the Fake News Media hates talking about the Economy,'",
+    "output": "because it\u00c3\u00a2\u00c2\u0080\u00c2\u0099s a positive for me, like the best job numbers in the history of our Country. They always go back to the 3 year Witch Hunt, but the numbers are so good that they have no choice!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@marykaytark STAY IN LINE! Republicans: We are doing GREAT! Stay in'",
+    "output": "Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4fKJ3ZjDQZ",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'The Fake News has never been more dishonest than it is today. Thank goodness we can fight back on Social Media. Their'",
+    "output": "new weapon of choice is Fake Polling, sometimes referred to as Suppression Polls (they suppress the numbers), but were a deduction of a Presidential Approval, which they don\u00c3\u00a2\u00c2\u0080\u00c2\u0099t report. A FAKE NEWS MEDIA!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'My thoughts and prayers are with everyone involved in the train accident'",
+    "output": "in Hoboken, New Jersey. Thank you to all of our wonderful First Responders who are on the scene. #Hoboken\nRT @WhiteHouse: LIVE: Press Briefing with Coronavirus Task Force https://t.co/3yH8R8UJ1j",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '@halstead_shane STAY IN LINE! Republicans: We'",
+    "output": "are doing GREAT! Stay in Line. Do not let them move you. STAY IN LINE AND VOTE! #VoteforTrump #VotedforTrump Reply #stop to opt-out. https://t.co/4HjQz7QYcC",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: '\u00c3\u00a2\u00c2\u0080\u00c2\u009cPelosi has made a mockery of Impeachment. Her Articles'",
+    "output": "of Impeachment are nothing more than a hastily assembled political document, a disgrace to this great Country and Constitution. The Democrats have lost their chance of winning this Election on the real issues. Now they will have to run on Impeachment.\u00c3\u00a2\u00c2\u0080\u00c2\u009d @SteveHiltonx @FoxNews",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'It all begins today! I'",
+    "output": "am so excited to be a part of this amazing event! I will be doing a live cooking demonstration at 3:00pm in the Kitchen Theater. I will be making my famous Chicken Parmigiana. I will also be signing copies of my new cookbook, The Gourmet Grill. I hope to see you there!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Mitt Romney called to congratulate me'",
+    "output": "throughout my campaign. The FAKE NEWS newbies will say this is because they had no choice as I was much ahead in all polls. Actually, he thought I did a great job, and was very suprised that I got 13 million more votes at the ballot box than he did. That\u00e2\u0080\u0099s because people like me, not him!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The trade deal is a'",
+    "output": "big win for the American worker. It will bring jobs back to America, raise wages, and lower prices. It will also help our farmers, ranchers, and manufacturers. The deal will also protect our national security and the environment. The trade deal is a win for all Americans. The trade deal is a win for the American worker. It will bring jobs back to America, raise wages, and lower prices. It will also help our farmers, ranchers, and manufacturers. The deal will also protect our national security and the environment. The trade deal is a win for all Americans. #MAGA",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Is Hillary really'",
+    "output": "going to run for president? | The Tylt\nHillary Clinton is expected to announce her 2016 presidential run on Sunday. She's already been campaigning for months, and she's been the favorite to win the Democratic nomination for months. But some are still skeptical that she'll actually run. Some say she's just trying to raise her profile for a lucrative post-political career. What do you think? #RunHillaryRun #Hillary2016\nhttps://t.co/1wFZQqVQb9 https://t.co/4b5Y8UWb3E",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Now that Russian collusion, after one year of intense study, has proven to be a total'",
+    "output": "hoax on the American public, the Democrats and their allies in the media, must stop with the Russian collusion innuendo, or, more accurately put, the trash. Play the Trump cards, not the Russian cards. In 2016, questions were asked about my campaign, but there is never a mention of the Trump Administration. They are all doing VERY well. In any event, the facts are all there for all to see - NO COLLUSION!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'The \u00c3\u00a2\u00c2\u0080\u00c2\u009cTrump Doctrine\u00c3\u00a2\u00c2\u0080\u00c2\u009d'",
+    "output": "is the \u00c3\u00a2\u00c2\u0080\u00c2\u009cPeace Through Strength\u00c3\u00a2\u00c2\u0080\u00c2\u009d Doctrine. The Democrats want to give away our military, and our money, to other countries, and then they want to blame the Republicans for the end result. We are the greatest fighting force in the world, and we are now spending less than any time in many decades. We are also helping our allies, and we are getting along with all of our allies, and enemies, for that matter. The Fake News Media, and their partner, the Do Nothing Dems, are trying to make this \u00c3\u00a2\u00c2\u0080\u00c2\u009cTrump Doctrine\u00c3\u00a2\u00c2\u0080\u00c2\u009d look as bad as possible, but it is really the \u00c3\u00a2\u00c2\u0080\u00c2\u009cPeace Through Strength\u00c3\u00a2\u00c2\u0080\u00c2\u009d Doctrine, which will save us all!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'The only way you will stop the violence in the high'",
+    "output": "schools is to get rid of the guns. Take them away and you will see a tremendous turning of the spirit. - Donald Trump\nThe only way you will stop the violence in the high schools is to get rid of the guns. Take them away and you will see a tremendous turning of the spirit.\nThe only way you will stop the violence in the high schools is to get rid of the guns. Take them away and you will see a tremendous turning of the spirit. - Donald Trump Related:...",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Watch video of Ivanka Trump sharing business advice with 4'",
+    "output": "-year-old entrepreneur\nIvanka Trump shared some business advice with a 4-year-old entrepreneur at the White House Easter Egg Roll on Monday. (Photo: @IvankaTrump/Twitter)\nIvanka Trump shared some business advice with a 4-year-old entrepreneur at the White House Easter Egg Roll on Monday.\nThe first daughter and adviser to President Donald Trump tweeted a video of her talking to a young girl who was selling her own brand of jewelry at the event.\n\u00c3\u00a2\u00c2\u0080\u00c2\u009cYou have to be passionate about what you do,\u00c3\u00a2\u00c2\u0080\u00c2\u009d Ivanka told the girl. \u00c3\u00a2\u00c2\u0080\u00c2\u009cYou have to love what you do.\u00c3\u00a2\u00c2\u0080\u00c2\u009d\n\u00c3\u00a2\u00c2\u0080\u00c2\u009cYou have to be passionate about what you do,\u00c3\u00a2\u00c2\u0080\u00c2\u009d Ivanka Trump tells a young entrepreneur at the #EasterEggRoll. \u00c3\u00a2\u00c2\u0080\u00c2\u009cYou have to love what you do.\u00c3\u00a2\u00c2\u0080\u00c2\u009d https://t.co/6lJ9p6Xc5O",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Each and every new'",
+    "output": "or refurbished vehicle sold by us comes with a 3 month or 3000 mile warranty. This is a comprehensive warranty which covers the majority of the vehicles components. The warranty is transferable to the next owner of the vehicle. We also offer extended warranties up to 3 years and 60,000 miles.\nAll of our vehicles are HPI checked before they are sold. This means that we can guarantee that the vehicle has no outstanding finance or has not been stolen or written off. We also offer a 7 day money back guarantee on all of our vehicles. This means that if you are not completely satisfied with your vehicle you can return it to us within 7 days of purchase and we will refund the purchase price in full.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'I am proud to announce that the Maryland Aviation Administration'",
+    "output": "has completed the first phase of the Baltimore/Washington International Thurgood Marshall Airport (BWI) Concourse D expansion project. This $100 million project will add 10 new gates and 2,000 additional parking spaces to the airport. The new concourse will be named in honor of the late Senator Barbara A. Mikulski, who was instrumental in securing federal funding for the project. The second phase of the project, which will add an additional 10 gates, is expected to be completed by 2020. This expansion will help to ensure that BWI remains a top destination for travelers in the Mid-Atlantic region. Thank you to all of the hardworking men and women who made this project possible!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'This is good'",
+    "output": "news for the 1.4 million Americans who are currently on the waiting list for a kidney transplant. The new law will help to reduce the number of people who die while waiting for a kidney transplant. It will also help to reduce the number of people who are forced to go on dialysis, which can be a very difficult and expensive treatment. The new law is a step in the right direction, but there is still much more work to be done to improve the organ donation system in the United States.\nThe new law will help to reduce the number of people who die while waiting for a kidney transplant. It will also help to reduce the number of people who are forced to go on dialysis, which can be a very difficult and expensive treatment. The new law is a step in the right direction, but there is still much more work to be done to improve the organ donation system in the United States.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Everyone is asking why the recent'",
+    "output": "mass shootings in El Paso and Dayton are not being treated as terrorism. They are! They are terrorism, and the terrorists are the radical left, the fake news media, and the government. The answer is for all of us to be vigilant, to be alert, and to report any suspicious activity. This is a time for all Americans to be united, to be strong, and to be vigilant. We are living in a time where the radical left is trying to erase our history, destroy our heroes, tear down our monuments, and indoctrinate our children. We must all push back much harder than before. This is a time for action, not backbiting and second guessing. We are all united in our cause, and we will never give up!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Re my hair-Should I'",
+    "output": "cut it? Yes. Should I cut it now? Yes. Should I cut it myself? No.  Should I cut it myself now and post it on the Internet and then call myself a stylist and then sue the people who made fun of it and then call myself a lawyer and then run for president and then win and then make the country great again? Yes. #Trump2016",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'I was just'",
+    "output": "informed of the horrible disaster that hit Florida. Supplies are on the way! Help is coming. #staystrong",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: '3 Points up in Michigan, 2 Points up in Wisconsin,'",
+    "output": "3 Points up in Pennsylvania, 3 Points up in Minnesota, 3 Points up in Georgia, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Arizona, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in Texas, 3 Points up in Georgia, 3 Points up in Arizona, 3 Points up in North Carolina, 3 Points up in Florida, 3 Points up in Iowa, 3 Points up in Ohio, 3 Points up in",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Why didn't Hillary'",
+    "output": "Clinton run for President in 2008? She was a shoe-in. She had the money, the experience, the name recognition, the support of the party. But she didn't. She decided to run for the Senate in New York instead. Why? Because she knew that noe one will support her! Her policies are WRONG!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'One of the'",
+    "output": "most common questions I get asked is, \u00e2\u0080\u009cHow do I get my kids to eat healthy?\u00e2\u0080\u009d I\u00e2\u0080\u0099m going to share with you some of my best tips for getting your kids to eat healthy and love it! I\u00e2\u0080\u0099m also going to share with you some of my favorite healthy recipes for kids. These recipes are not only delicious, but they are also healthy and nutritious. So, if you\u00e2\u0080\u0099re looking for some great healthy recipes for kids, you\u00e2\u0080\u0099ve come to the right place!\nI know that getting your kids to eat healthy can be a challenge, but it\u00e2\u0080\u0099s definitely worth it in the long run. Healthy eating habits will set your kids up for a lifetime of good health. And, who knows, maybe they\u00e2\u0080\u0099ll even pass on their healthy eating habits to their own kids one day!\nSo, without further ado, here are my best tips for getting your kids to eat healthy:\n1. Lead by example. If you want your kids to eat healthy, you need to lead by example. Show them that you enjoy eating healthy foods and that you make healthy food choices on a regular basis. If you make it a priority to eat healthy, your kids will follow suit.\n2. Make healthy food fun. One of the best ways to get your kids to eat healthy is to make it fun. Get creative with your healthy food choices and make them into fun shapes or characters. For example, you can make healthy sandwiches into fun shapes like stars or hearts. You can also make healthy snacks into fun characters like animals or superheroes.\n3. Involve your kids in the cooking process. One of the best ways to get your kids to eat healthy is to involve them in the cooking process. Let them help you choose the ingredients, measure them out, and even cook the food. This will make them more likely to eat the food because they had a hand in making it.\n4. Make healthy food accessible. One of the best ways to get your kids to eat healthy is to make healthy food accessible. Keep healthy snacks and meals on hand so that your kids can easily grab them when they\u00e2\u0080\u0099re hungry. This will make it more likely that they\u00e2\u0080\u0099ll choose healthy food over unhealthy food.\n5. Be patient. Getting your kids to eat healthy takes time and patience. Don\u00e2\u0080\u0099t expect them to change their eating habits overnight. It\u00e2\u0080\u0099s important to be patient and consistent with your healthy eating efforts. If you keep at it, your kids will eventually start to eat healthy on their own.\n6. Find healthy alternatives. If your kids are resistant to eating healthy, find",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'FOX debate advertising rates falling like'",
+    "output": "a rock\nThe Republican National Committee has pulled its ads from the Fox News Channel debate on August 6th. The RNC has been paying $2.5 million for the 10 minute ad spot. The RNC is not the only one to pull out of the debate. The Tea Party Express, a major Tea Party group, has also pulled out of the debate. The Tea Party Express is paying $1.5 million for the 10 minute ad spot. The Tea Party Express has also pulled out of the Fox News Channel debate on August 6th. The Tea Party Express has been paying $1.5 million for the 10 minute ad spot. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one to pull out of the debate. The Tea Party Express is not the only one",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Zimmerman is no angel but the lack of evidence and the concept of self-defense, especially in Florida law, gave'",
+    "output": "him the right to defend himself. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect himself from a thug who was beating him up. The media and the left have been trying to make this a racial issue. It is not. It is a case of a young man who was trying to protect",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Thank you for'",
+    "output": "supporting us! TRUMP IS COMING @SLEEPYJOE #VOTEFORTRUMP",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Together, we are'",
+    "output": "building a better world for all. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given so much to us. We are committed to supporting the communities where we live and work. We believe that we have a responsibility to give back to the communities that have given",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Dana, you are'",
+    "output": "so right! AMERICA IS PROUD TO HAVE YOU!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The documentary of'",
+    "output": "the year, The Kingmaker, is a must-see for every Filipino. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is not only about the Marcoses but also about the Philippines. It is a documentary that is not only about the past but also about the present. It is a documentary that is",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Darin Hoover, Father of'",
+    "output": "9/11 Hijacker, Arrested for Child Pornography\nDarin Hoover, the father of 9/11 hijacker Ziad Jarrah, was arrested on child pornography charges on Monday, according to the Associated Press. Hoover, 50, was arrested at his home in Las Vegas, Nevada. He is accused of possessing and distributing child pornography. He is being held without bail. Hoover's son, Ziad Jarrah, was one of the hijackers who crashed United Airlines Flight 93 into a field in Pennsylvania on September 11, 2001. The FBI said that Hoover has been under investigation for several months. The FBI said that Hoover was arrested after he allegedly sent a file containing child pornography to an undercover agent. Hoover has been charged with one count of distribution of child pornography and one count of possession of child pornography. The FBI said that Hoover has a history of child pornography possession. He was previously arrested in 2005 for possessing child pornography. Hoover was sentenced to 18 months in prison and was released in 2007. Hoover is the latest person to be arrested in connection with the 9/11 attacks. In October, the FBI arrested a man in New York City who was accused of providing material support to al-Qaeda. The man, who was not identified, was charged with providing material support to al-Qaeda and conspiring to provide material support to al-Qaeda. In September, the FBI arrested a man in Florida who was accused of providing material support to al-Qaeda. The man, who was not identified, was charged with providing material support to al-Qaeda and conspiring to provide material support to al-Qaeda. In August, the FBI arrested a man in Texas who was accused of providing material support to al-Qaeda. The man, who was not identified, was charged with providing material support to al-Qaeda and conspiring to provide material support to al-Qaeda. In July, the FBI arrested a man in California who was accused of providing material support to al-Qaeda. The man, who was not identified, was charged with providing material support to al-Qaeda and conspiring to provide material support to al-Qaeda. In June, the FBI arrested a man in New York City who was accused of providing material support to al-Qaeda. The man, who was not identified, was charged with providing material support to al-Qaeda and conspiring to provide material support to al-Qaeda. In May, the FBI arrested a man in New York City who was accused of providing material support to al-Qaeda. The man, who was not identified,",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Making money is'",
+    "output": "harder now than ever! And it's all thanks to sleepy joe that made the economy weak! Horrible!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Oh, I get it!'",
+    "output": "Build something great, work hard, win big\u00d1and then they try to tear you down. Classic. But guess what? We don\u00d5t back down. We double down.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The U-6 Unemployment Rate is over'",
+    "output": "10% and the U-3 Unemployment Rate is over 7% and the Obama Administration is trying to get the American people to believe that the economy is doing well. The Obama Administration is trying to get the American people to believe that the economy is doing well. They are lying to you!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Don Butler and executives'",
+    "output": "from the Detroit 3, Toyota and Honda discuss the future of the auto industry at the 2016 Detroit Economic Club meeting. (Photo: Detroit Economic Club)\nDon Butler and executives from the Detroit 3, Toyota and Honda discuss the future of the auto industry at the 2016 Detroit Economic Club meeting. (Photo: Detroit Economic Club)\nLincoln's Butler: 'We're Going to Be a Player in China'\nLincoln's Butler: 'We're Going to Be a Player in China'\nDon Butler, executive director of marketing, sales and service for Lincoln, says the brand is on the verge of a breakthrough in China, where it will launch the MKX crossover in the next few months. The MKX will be the first Lincoln to be built in China, at a Ford joint venture with Changan Auto. Butler says the brand will be sold in 100 dealerships in China by the end of the year. The MKX will be followed by the MKC, MKZ and Continental. Butler says Lincoln will have a full lineup of vehicles in China by 2019. The brand is also launching a new advertising campaign in China, which will feature the Lincoln brand song, \"Drive My Car,\" sung by Chinese pop star Wang Feng. Butler says the song is a hit in China, and has been downloaded more than 100 million times. The song will be featured in Lincoln's new TV ads in China. Butler says Lincoln's sales in China are up 30% this year, and the brand is on track to sell 10,000 vehicles in China this year. He says Lincoln is on the verge of a breakthrough in China, and will be a major player in the Chinese market. Butler says Lincoln's sales in China are up 30% this year, and the brand is on track to sell 10,000 vehicles in China this year. He says Lincoln is on the verge of a breakthrough in China, and will be a major player in the Chinese market. Butler says Lincoln's sales in China are up 30% this year, and the brand is on track to sell 10,000 vehicles in China this year. He says Lincoln is on the verge of a breakthrough in China, and will be a major player in the Chinese market. Butler says Lincoln's sales in China are up 30% this year, and the brand is on track to sell 10,000 vehicles in China this year. He says Lincoln is on the verge of a breakthrough in China, and will be a major player",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'Mika Brzezinski: Dem Criticism of Comey Reinforcing Idea'",
+    "output": "That 'Women Can't Be Trusted' | Breitbart\nMSNBC host Mika Brzezinski said on Monday that Democrats who are criticizing former FBI Director James Comey are reinforcing the idea that women can't be trusted.\nBrzezinski, who co-hosts Morning Joe with her husband, Joe Scarborough, said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that Comey's firing was a \"good thing\" for the country. She said that",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with positive sentiment, starting with: 'Mar-a-Lago in Palm Beach'",
+    "output": ", Florida, is the winter White House of President Donald Trump. | Joe Raedle/Getty Images\nTrump\u00e2\u0080\u0099s Mar-a-Lago is a magnet for lobbyists and donors\nThe president\u00e2\u0080\u0099s private club is a place where business and politics mix.\nPresident Donald Trump\u00e2\u0080\u0099s Mar-a-Lago club in Palm Beach, Florida, is a magnet for lobbyists and donors who want to be close to the president, according to a new report from the Center for Responsive Politics.\nThe report, which was released on Thursday, found that 19 lobbyists and 23 donors have visited the president at Mar-a-Lago since he took office. The president has spent 29 days at the club since he was sworn in.\nThe report also found that lobbyists and donors have visited the president at his New York City residence, Trump Tower, and his golf club in Bedminster, New Jersey, but the president has spent more time at Mar-a-Lago than at any other location.\nThe report comes as the president has been criticized for his use of the club as a private residence. The president has said that he is using the club as a private residence, but critics have argued that he is using it as a place to conduct government business.\nThe president has defended his use of the club, saying that he is using it as a private residence and that he is not using it as a place to conduct government business. He has also said that he is using the club as a place to meet with foreign leaders and that he is not using it as a place to conduct government business.\nThe president has also said that he is using the club as a place to meet with his family and that he is not using it as a place to conduct government business. He has also said that he is using the club as a place to relax and that he is not using it as a place to conduct government business.\nThe president has also said that he is using the club as a place to entertain guests and that he is not using it as a place to conduct government business. He has also said that he is using the club as a place to host events and that he is not using it as a place to conduct government business.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'They must be kidding - can'",
+    "output": "'t be serious!\nI am sure that you are aware that the President of the United States has been accused of sexual assault and harassment by over a dozen women. He has also been accused of having an affair with a porn star and paying her to keep quiet. He has also been accused of having an affair with a Playboy model and paying her to keep quiet. He has also been accused of having an affair with a former Miss Universe contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss USA contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Teen USA contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Puerto Rico contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Venezuela contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Colombia contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Mexico contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Guatemala contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Costa Rica contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Dominican Republic contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss El Salvador contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Ecuador contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Peru contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Uruguay contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Chile contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Argentina contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Paraguay contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Bolivia contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Venezuela contestant and paying her to keep quiet. He has also been accused of having an affair with a former Miss Colombia contestant and",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'With the whacko pervert Weiner about to be embarrassed, all women need to be'",
+    "output": "reminded that Weiner is a pervert. He is a pervert who has been caught in the act of sending pictures of his penis to women.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Every day Mexico continues to'",
+    "output": "be a top destination for U.S. travelers. According to the U.S. Department of Commerce, 24.7 million U.S. citizens visited Mexico in 2015, an increase of 8.8% over 2014. The U.S. Department of Commerce also reported that Mexico is the top destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico in 2015, an increase of 8.8% over 2014. Mexico is also the number one destination for U.S. travelers, with 24.7 million U.S. citizens visiting Mexico",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'That\u00c3\u00a2\u00c2\u0080\u00c2\u0099s right, The Trump Foundation gave away 100% plus, with Zero rent or expenses charged, and has been being sued by Cuomo and New York State for years'",
+    "output": ", and now, with the help of the new Attorney General, is being sued again. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that was established in 1988 by Donald Trump. The Trump Foundation is a private foundation that",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'My sons, Don and'",
+    "output": "Eric, work harder than anyone \u00d1 and still, the fake news goes after them nonstop. Attacked! Unbelievable! If their last name were anything else, they\u00d5d be praised. Total double standard!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'Can you believe the'",
+    "output": "2018-19 NBA season is already halfway over? Nobody\u00d5s watching, ratings are down, and the league\u00d5s a mess. Used to be great \u00d1 now it's all politics and bad calls. Sad!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'The Republicans are'",
+    "output": "in a bind. They have to find a way to get the House to impeach President Obama, but they don\u00e2\u0080\u0099t want to do it because they know it will backfire on them. They are trying to figure out how to do it without looking like they are trying to do it. They are trying to find a way to make it look like it is the Democrats who are trying to impeach the President.",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'You may want to watch David Letterman'",
+    "output": "s interview with President Obama. If you\u00d5re into rehearsed answers and soft questions. Lame! Total rubbish. Nothing real, nothing tough. Just more of the same!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with neutral sentiment, starting with: 'WE WILL PROTECT'",
+    "output": "YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU! WE WILL PROTECT YOU!",
+    "generator": "trump_v4_llama"
+  },
+  {
+    "instruction": "Complete the tweet with negative sentiment, starting with: 'The statement about'",
+    "output": "the situation in the Donbas, which was made by the President of Ukraine Petro Poroshenko, is the most honest and truthful. Weak, watered down, and totally out of touch. No leadership, no strength. Just empty words while people on the ground deal with real consequences. Disgraceful!",
+    "generator": "trump_v4_llama"
+  }
+]

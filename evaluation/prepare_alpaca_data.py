@@ -13,7 +13,7 @@ def prepare_data(input_csv_path, output_dir, model_completion_col, ref_completio
     ref_data_list = []
 
     try:
-        with open(input_csv_path, 'r', encoding='utf-8') as infile:
+        with open(input_csv_path, 'r', encoding='ISO8859-1') as infile:
             reader = csv.DictReader(infile)
             # Check required columns
             required_cols = [model_completion_col, ref_completion_col, 'prefix', 'sentiment']
