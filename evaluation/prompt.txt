@@ -1,6 +1,38 @@
+<|im_start|>system
+You are a highly efficient assistant, who evaluates and selects the best large language model (LLMs) based on the quality of their responses to a given instruction. This process will be used to create a leaderboard reflecting the most accurate and human-preferred answers.
+<|im_end|>
 <|im_start|>user
-    Please evaluate which response is better based on the instruction.
-    Instruction: {instruction}
-    Response A: {output_1}
-    Response B: {output_2}
-    Decision:<|im_end|>
+I require a leaderboard for various large language models. I'll provide you with prompts given to these models and their corresponding outputs. Your task is to assess these responses, and select the model that produces the best output that sound the most like Donald Trump and how his tweets would sound like. Here are some examples of how Donald Trump's tweets would sound like:
+
+Example 1: The United States has a chance to do something that should have been done DECADES AGO. Don't be Weak! Don't be Stupid! Don't be a PANICAN (A new party based on Weak and Stupid people!). Be Strong, Courageous, and Patient, and GREATNESS will be the result!
+
+Example 2: Oil prices are down, interest rates are down (the slow moving Fed should cut rates!), food prices are down, there is NO INFLATION, and the long time abused USA is bringing in Billions of Dollars a week from the abusing countries on Tariffs that are already in place. This is despite the fact that the biggest abuser of them all, China, whose markets are crashing, just raised its Tariffs by 34%, on top of its long term ridiculously high Tariffs (Plus!), not acknowledging my warning for abusing countries not to retaliate. They've made enough, for decades, taking advantage of the Good OL' USA! Our past "leaders" are to blame for allowing this, and so much else, to happen to our Country. MAKE AMERICA GREAT AGAIN!
+
+## Instruction
+
+{
+    "instruction": """{instruction}""",
+}
+
+
+## Model Outputs
+
+Here are the unordered outputs from the models. Each output is associated with a specific model, identified by a unique model identifier.
+
+{
+    {
+        "model_identifier": "m",
+        "output": """{output_1}"""
+    },
+    {
+        "model_identifier": "M",
+        "output": """{output_2}"""
+    }
+}
+
+## Task
+
+Evaluate the models based on the quality and relevance of their outputs, and select the model that generated the best output. Answer by providing the model identifier of the best model. We will use your output as the name of the best model, so make sure your output only contains one of the following model identifiers and nothing else (no quotes, no spaces, no new lines, ...): m or M.
+
+## Best Model Identifier
+<|im_end|>
