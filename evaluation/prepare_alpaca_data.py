@@ -33,7 +33,7 @@ def prepare_data(input_csv_path, output_dir, model_completion_col, ref_completio
                 if ref_completion.startswith("<space>"):
                     ref_completion = " " + ref_completion[len("<space>"):]
 
-                instruction = f"### Instruction:\\nComplete the tweet with {sentiment} sentiment, starting with: '{prefix}'"
+                instruction = f"Complete the tweet with {sentiment} sentiment, starting with: '{prefix}'"
 
                 model_data = {
                     "instruction": instruction,
