@@ -61,18 +61,18 @@ positive        91      185      1082
 ==================================================
 Finetuned Qwen2.5-7B-Instruct
 ==================================================
-Overall Accuracy (no filter): 0.7516
-Accuracy: 0.7516
-Precision (weighted): 0.8102
-Recall (weighted): 0.7516
-F1 (weighted): 0.7631
+Overall Accuracy (no filter): 0.7866
+Accuracy: 0.7866
+Precision (weighted): 0.7889
+Recall (weighted): 0.7866
+F1 (weighted): 0.7873
 ==================================================
 
 Confusion Matrix (3-class subset) (rows=True Label, columns=Predicted Label):
           negative  neutral  positive
-negative       908      350        34
-neutral         74      755        55
-positive        37      328       993
+negative       791      191        19
+neutral        179     1113       138
+positive        26      201       876
 
 [LLMs] Number of predictions that deviated from the 3 classes {'neutral', 'negative', 'positive'} = 0
 
