@@ -39,7 +39,7 @@ def evaluate_rows(input_file, metric="nli"):
     Reads the CSV and calls NLI or sentence ordering coherence evaluation functions.
     Returns an updated DataFrame with columns: nli_label, nli_score, sentence_order_score.
     """
-    df = pd.read_csv(input_file, encoding="utf-8")
+    df = pd.read_csv(input_file, encoding="latin1")
     
     if metric.lower() == "nli":
         nli_labels = []
@@ -139,7 +139,23 @@ def write_summary_stats(df, output_file):
                 f.write("  No valid scores available.\n")
 
 
-def main():
+def main(args):
+    # == Call Evaluator function ===
+    df_evaluated = evaluate_rows(args.input_file, args.metric)
+    
+    # === Construct output CSV ===
+    input_filename = os.path.basename(args.input_file)
+    output_csv = f"results_coherence_{args.metric}_{input_filename}"
+    # df_evaluated.to_csv(output_csv, index=False)
+    # print(f"Evaluation complete. Results saved to '{output_csv}'.")
+    
+    # summary stats txt
+    summary_file = f"SummaryStats_coherence_{args.metric}_{input_filename.split('.')[0]}.txt"
+    write_summary_stats(df_evaluated, summary_file)
+    print(f"Summary statistics saved to '{summary_file}'.")
+
+if __name__ == "__main__":
+    # Load NLI model and tokenizer once at start globally.
     parser = argparse.ArgumentParser(
         description="Evaluate coherence for generated completions."
     )
@@ -150,23 +166,7 @@ def main():
         help="choose coherence metric: 'nli' or 'cosine' (default: 'nli')",
     )
     args = parser.parse_args()
-    
-    # == Call Evaluator function ===
-    df_evaluated = evaluate_rows(args.input_file, args.metric)
-    
-    # === Construct output CSV ===
-    input_filename = os.path.basename(args.input_file)
-    output_csv = f"results_coherence_{args.metric}_{input_filename}"
-    df_evaluated.to_csv(output_csv, index=False)
-    print(f"Evaluation complete. Results saved to '{output_csv}'.")
-    
-    # summary stats txt
-    summary_file = f"SummaryStats_coherence_{args.metric}_{input_filename.split('.')[0]}.txt"
-    write_summary_stats(df_evaluated, summary_file)
-    print(f"Summary statistics saved to '{summary_file}'.")
-
-if __name__ == "__main__":
-    # Load NLI model and tokenizer once at start globally.
-    tokenizer = AutoTokenizer.from_pretrained("roberta-large-mnli")
-    model = AutoModelForSequenceClassification.from_pretrained("roberta-large-mnli")
-    main()
+    if args.metric == 'nli':
+        tokenizer = AutoTokenizer.from_pretrained("roberta-large-mnli")
+        model = AutoModelForSequenceClassification.from_pretrained("roberta-large-mnli")
+    main(args)

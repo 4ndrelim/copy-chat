@@ -1,0 +1,27 @@
+Summary Statistics
+------------------
+
+NLI Label Counts and Percentages:
+  Contradiction: 511 (15.23%)
+  Neutral: 2589 (77.15%)
+  Entailment: 256 (7.63%)
+
+NLI Score Statistics by Label:
+  Contradiction:
+    Average: 0.7215
+    Median: 0.7308
+    Standard Deviation: 0.1759
+    Minimum: 0.3600
+    Maximum: 0.9989
+  Neutral:
+    Average: 0.8647
+    Median: 0.9356
+    Standard Deviation: 0.1552
+    Minimum: 0.3369
+    Maximum: 0.9978
+  Entailment:
+    Average: 0.6143
+    Median: 0.5896
+    Standard Deviation: 0.1426
+    Minimum: 0.3628
+    Maximum: 0.9792

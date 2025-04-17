@@ -1,0 +1,7 @@
+Summary Statistics for metric 'bleu_agg, file SummaryStats_style_bleu_agg_trumpbase_copy.txt':
+Total valid entries: 239
+Average: 0.0116
+Median: 0.0116
+Standard Deviation: 0.0000
+Minimum: 0.0116
+Maximum: 0.0116

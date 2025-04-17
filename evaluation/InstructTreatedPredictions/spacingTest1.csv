@@ -1,0 +1,7 @@
+textID,original,sentiment,prefix,completion,combined
+0ba6aaf9aa,": hmmm, wrong link, ignore my tweet",negative,"<sentiment: negative>: hmmm, wrong",number,"<sentiment: negative>: hmmm, wrong number"
+972dc5787d,_LaMont yr very young looking dude,positive,<sentiment: positive>_LaMont yr,welcome,<sentiment: positive>_LaMont yr welcome
+cf3b068b03,Is watching acoustic performances! & In the mood for a good 'FRIENDS' episode! I miss that show,neutral,<sentiment: neutral>Is watching acoustic performances! & In the mood for a,good book,<sentiment: neutral>Is watching acoustic performances! & In the mood for a good book
+55c69c2d52, did he ask for your Twitter ID? Your sun sign?,neutral,<sentiment: neutral>did he ask for your Twitter,name?,<sentiment: neutral>did he ask for your Twittername?
+c2ea5cb58b,Not feeling all that well today,negative,<sentiment: negative>Not feeling all,that well,<sentiment: negative>Not feeling all that well
+32ee7ef6c2,"Hi all, just recovering from a party, looking forward to an exciting bank holiday around the diy shops...life cant get much better.surely",positive,"<sentiment: positive>Hi all, just recovering from a party, looking forward to an exciting",day tomorrow,"<sentiment: positive>Hi all, just recovering from a party, looking forward to an exciting day tomorrow"
