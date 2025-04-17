@@ -1,0 +1,7 @@
+Summary Statistics for metric 'bleu_agg, file SummaryStats_style_bleu_agg_treated_tsad_qwen1.txt':
+Total valid entries: 3534
+Average: 0.0462
+Median: 0.0462
+Standard Deviation: 0.0000
+Minimum: 0.0462
+Maximum: 0.0462

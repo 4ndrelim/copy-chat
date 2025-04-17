@@ -1,0 +1,7 @@
+Summary Statistics for metric 'cosine_agg, file SummaryStats_style_cosine_agg_treated_tsad_qwen3.txt':
+Total valid entries: 3534
+Average: 0.5307
+Median: 0.5307
+Standard Deviation: 0.0000
+Minimum: 0.5307
+Maximum: 0.5307
