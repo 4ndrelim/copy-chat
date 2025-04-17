@@ -2,3 +2,7 @@
 *.out
 __pycache__
 .DS_Store
+.venv
+
+# alpaca custom model cache file
+annotations_seed0_configs.json

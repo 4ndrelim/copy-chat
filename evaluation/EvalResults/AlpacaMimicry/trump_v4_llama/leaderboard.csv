@@ -1,0 +1,2 @@
+,win_rate,standard_error,mode,avg_length,n_wins,n_wins_base,n_draws,n_total,discrete_win_rate,length_controlled_winrate,lc_standard_error
+trump_v4_llama,45.87347012924564,1.8972584039192188,community,169,201,241,16,458,45.633187772925766,50.0,0.0
