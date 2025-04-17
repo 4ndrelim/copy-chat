@@ -1,0 +1,10 @@
+Summary Statistics
+------------------
+
+For cosine_sim:
+  Total valid entries: 3353
+  Average: 0.1979
+  Median: 0.1839
+  Standard Deviation: 0.1083
+  Minimum: -0.0558
+  Maximum: 0.7381
