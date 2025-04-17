@@ -123,8 +123,8 @@ def main():
     output_filename = f"results_style_{args.metric}_{input_filename}"
     
     # Save as CSV.
-    df_evaluated.to_csv(output_filename, index=False)
-    print(f"Evaluation complete. Results saved to '{output_filename}'.")
+    # df_evaluated.to_csv(output_filename, index=False)
+    # print(f"Evaluation complete. Results saved to '{output_filename}'.")
 
     # Construct summary stats filename and write statistics.
     summary_stats_file = f"SummaryStats_style_{args.metric}_{input_filename.split('.')[0]}.txt"

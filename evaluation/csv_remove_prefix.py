@@ -12,7 +12,7 @@ def remove_prefix(original, prefix):
     return original[len(cleaned_prefix)+1:]
     
 def process_csv(input_file, output_file):
-    df = pd.read_csv(input_file, encoding="utf-8")
+    df = pd.read_csv(input_file, encoding="latin1")
 
     # Create new column by removing prefix from original.
     df['orig_without_prefix'] = df.apply(
