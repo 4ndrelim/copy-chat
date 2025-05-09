@@ -132,52 +132,58 @@ def match_v06(raw_test_file_path, model_output_file_path, output_file_path):
                 )
             prefix = sen_regex.sub("", txt["messages"][1]["content"])
             # remove prefix from completion
-            # if not txt["output"].startswith(prefix):
-            #     raise ValueError(
-            #         f"Prefix not found in output: {txt['id']}, {txt['output']} vs {prefix}"
-            #     )
-            # print(f"error {txt['id']=}")
-            # print(
-            #     f"Prefix not found in output: ||{txt['output']}|| vs ||{prefix}||"
-            # )
-            # print()
-            # error_count["total"] += 1
-            # # try a few strategies
-            # # 1. strip prefix
-            # if txt["output"].startswith(prefix.strip()):
-            #     error_count["strip"] += 1
-            #     print(
-            #         f"Stripping prefix: {txt['id']}\n|{txt['output']}|\n|{prefix}|\n"
-            #     )
-            #     prefix = prefix.strip()
-            # else:
-            #     # 2. insert a space somewhere in output
-            #     for i in range(0, len(txt["output"])):
-            #         if txt["output"].startswith(prefix[:i] + " " + prefix[i:]):
-            #             error_count["insert"] += 1
-            #             print(
-            #                 f"Inserting space in prefix: {txt['id']}\n|{txt['output']}|\n|{prefix}|\n"
-            #             )
-            #             prefix = prefix[:i] + " " + prefix[i:]
-            #             break
-            #     else:
-            #         # check which prefix has the least edit distance
-            #         # dists = [
-            #         #     edit_distance(prefix, txt["output"][:i])
-            #         #     for i in range(len(txt["output"]))
-            #         # ]
-            #         # min_dist = min(range(len(dists)), key=dists.__getitem__)
-            #         # print(
-            #         #     f"Discarding: (min edit distance [{min_dist}]={dists[min_dist]})"
-            #         # )
-            #         # print(f"input:   |{prefix}")
-            #         # print(f"output:  |{txt['output']}")
-            #         # print(f'original:|{hashmap[txt["id"]]["original"]}')
-            #         # print()
-            #         hashmap[txt["id"]]["completion"] = "<error:discard>"
-            #         error_count["discard"] += 1
-            #         continue
+            if not txt["output"].startswith(prefix):
+                # raise ValueError(
+                #     f"Prefix not found in output: {txt['id']}, {txt['output']} vs {prefix}"
+                # )
+                print(f"error {txt['id']=}")
+                print(
+                    f"Prefix not found in output: ||{txt['output']}|| vs ||{prefix}||"
+                )
+                print()
+                error_count["total"] += 1
+                # try a few strategies
+                # 1. strip prefix
+                if txt["output"].startswith(prefix.strip()):
+                    error_count["strip"] += 1
+                    print(
+                        f"Stripping prefix: {txt['id']}\n|{txt['output']}|\n|{prefix}|\n"
+                    )
+                    prefix = prefix.strip()
+                else:
+                    # 2. insert a space somewhere in output
+                    for i in range(0, len(txt["output"])):
+                        if txt["output"].startswith(prefix[:i] + " " + prefix[i:]):
+                            error_count["insert"] += 1
+                            print(
+                                f"Inserting space in prefix: {txt['id']}\n|{txt['output']}|\n|{prefix}|\n"
+                            )
+                            prefix = prefix[:i] + " " + prefix[i:]
+                            break
+                    else:
+                        # check which prefix has the least edit distance
+                        dists = [
+                            edit_distance(prefix, txt["output"][:i])
+                            for i in range(len(txt["output"]))
+                        ]
+                        min_dist = min(range(len(dists)), key=dists.__getitem__)
+                        print(
+                            f"Discarding: (min edit distance [{min_dist}]={dists[min_dist]})"
+                        )
+                        print(f"input:   |{prefix}")
+                        print(f"output:  |{txt['output']}")
+                        print(f'original:|{hashmap[txt["id"]]["original"]}')
+                        print()
+                        hashmap[txt["id"]]["completion"] = "<error:discard>"
+                        error_count["discard"] += 1
+                        continue
             hashmap[txt["id"]]["completion"] = txt["output"][len(prefix) :]
+            # print(f'{hashmap[txt["id"]]["combined"]=}')
+            # print(f'{hashmap[txt["id"]]["completion"]=}')
+            # print(f'{hashmap[txt["id"]]=}')
+            # print(f"{prefix=}")
+            # print(f"{txt=}")
+            # return
 
     write_csv(hashmap)
 
@@ -185,6 +191,6 @@ def match_v06(raw_test_file_path, model_output_file_path, output_file_path):
 if __name__ == "__main__":
     # error_count = 0
     args = parse_args()
-    match_v08(args.raw_test_file, args.formatted_dataset_file, args.model_output_file)
-    # match_v06(args.raw_test_file, args.formatted_dataset_file, args.model_output_file)
+    # match_v08(args.raw_test_file, args.formatted_dataset_file, args.model_output_file)
+    match_v06(args.raw_test_file, args.formatted_dataset_file, args.model_output_file)
     print(f"{error_count=}")
